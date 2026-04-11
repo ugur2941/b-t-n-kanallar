@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="💎 BoncukTV 💎" tvg-id="BoncukTV.tr" tvg-logo="http://104.238.23.221/BoncukTV/logo/logo.png" ,💎 BoncukTV 💎
-http://104.238.23.221/BoncukTV/live/index.m3u8
 #EXTINF:-1 group-title="dİZİ" tvg-id="." tvg-logo="." ,halef
 https://cdndirector.dailymotion.com/cdn/manifest/video/xa459we.m3u8?sec=boQ9K4fjTpj-99KAa8bA8VtxAmdS1vfFZMW7WOfyAiiVUPDOR4x179hEE5hO7mgsOByApu0RJED2W32oQEe2YcNkBxWPpb4rPxT22mT_oqvOVz92rBpbg23m6pnVuImd&dmTs=77946&dmV1st=408f535f-b56a-4707-88b8-42bd00977e38
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 1.tr" tvg-logo="https://cdn.technettv.com/channel/19958/logo_256_1699961525.png" ,TRT 1
