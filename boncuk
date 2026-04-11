@@ -24,8 +24,6 @@ http://dygvideo.dygdigital.com/live/hls/puhustardai?m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Euro Star.tr" tvg-logo="https://www.eurostartv.com.tr/img/eurostar-logo.png" ,Euro Star
 https://stream-extractor.koprulu2.workers.dev/?url=https://www.parsatv.com/m/name=Euro-Star&ext=m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal D.tr" tvg-logo="https://cdn.technettv.com/channel/20483/logo_256_1707397616.png" ,Kanal D
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/kanald
-#EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal D.tr" tvg-logo="https://cdn.technettv.com/channel/20483/logo_256_1707397616.png" ,Kanal D
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal D.tr" tvg-logo="https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/euro-d-buyuk.png" ,Euro D
 https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
