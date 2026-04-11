@@ -45,12 +45,8 @@ https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/now
 https://yakala.atakann.workers.dev/?url=https://www.nowtv.com.tr/canli-yayin&ext=m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="ShowTurk.tr" tvg-logo="https://cdn.technettv.com/channel/20560/logo_256.png" ,Show Turk
 https://yakala.atakann.workers.dev/?url=https://www.showtv.com.tr/canli-yayin&ext=m3u8
-#EXTINF:-1 group-title="ULUSAL" tvg-id="KANAL 7.tr" tvg-logo="https://cdn.technettv.com/channel/29485/logo_256_1733831753.png" ,Kanal 7
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/kanal7
 #EXTINF:-1 group-title="ULUSAL" tvg-id="KANAL 7.tr" tvg-logo="https://cdn.technettv.com/channel/29485/logo_256_1733831753.png" ,Kanal 7 (ALT)
 https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
-#EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal7Avrupa.tr" tvg-logo="https://cdn.technettv.com/channel/29723/logo_256_1734935765.png" ,Kanal 7 Avrupa
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/kanal7avrupa
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal7Avrupa.tr" tvg-logo="https://cdn.technettv.com/channel/29723/logo_256_1734935765.png" ,Kanal 7 Avrupa
 https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="TRT HABER.tr" tvg-logo="https://cdn.technettv.com/channel/20623/logo_256_1699961936.png" ,TRT Haber
