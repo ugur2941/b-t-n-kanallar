@@ -1,24 +1,12 @@
 #EXTM3U
-#EXTINF:-1 group-title="dİZİ" tvg-id="." tvg-logo="." ,halef
-https://cdndirector.dailymotion.com/cdn/manifest/video/xa459we.m3u8?sec=boQ9K4fjTpj-99KAa8bA8VtxAmdS1vfFZMW7WOfyAiiVUPDOR4x179hEE5hO7mgsOByApu0RJED2W32oQEe2YcNkBxWPpb4rPxT22mT_oqvOVz92rBpbg23m6pnVuImd&dmTs=77946&dmV1st=408f535f-b56a-4707-88b8-42bd00977e38
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 1.tr" tvg-logo="https://cdn.technettv.com/channel/19958/logo_256_1699961525.png" ,TRT 1
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trt1
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 1.tr" tvg-logo="https://cdn.technettv.com/channel/19958/logo_256_1699961525.png" ,TRT 1 (Alternatif)
 https://trt.daioncdn.net/trt-1/master.m3u8?app=clean
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 1.tr" tvg-logo="https://cdn.technettv.com/channel/19958/logo_256_1699961525.png" ,TRT 1 (Alternatif 3)
 https://trt.daioncdn.net/trt-1/master_1080p.m3u8?&sid=7lt9umlk1uqx&app=ed3904e8-737b-4a5e-856a-1b0d7a0a94e2&ce=2
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 2.tr" tvg-logo="https://cdn.technettv.com/channel/20315/logo_256_1699961575.png" ,TRT 2
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trt2
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 2.tr" tvg-logo="https://cdn.technettv.com/channel/20315/logo_256_1699961575.png" ,TRT 2
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="SHOW TV.tr" tvg-logo="https://cdn.technettv.com/channel/29716/logo_256_1734935547.jpg" ,Show TV
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/showtv
-#EXTINF:-1 group-title="ULUSAL" tvg-id="SHOW TV.tr" tvg-logo="https://cdn.technettv.com/channel/29716/logo_256_1734935547.jpg" ,Show TV
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
-#EXTINF:-1 group-title="ULUSAL" tvg-id="STAR TV.tr" tvg-logo="https://cdn.technettv.com/channel/20567/logo_256_1699960596.png" ,STAR TV
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/startv
-#EXTINF:-1 group-title="ULUSAL" tvg-id="STAR TV.tr" tvg-logo="https://cdn.technettv.com/channel/20567/logo_256_1699960596.png" ,STAR TV
-https://raw.githubusercontent.com/ipstreet312/freeiptv/refs/heads/master/ressources/tur/star.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="STAR TV.tr" tvg-logo="https://cdn.technettv.com/channel/20567/logo_256_1699960596.png" ,STAR TV 
 http://dygvideo.dygdigital.com/live/hls/puhustardai?m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Euro Star.tr" tvg-logo="https://www.eurostartv.com.tr/img/eurostar-logo.png" ,Euro Star
