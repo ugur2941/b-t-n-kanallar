@@ -232,13 +232,13 @@ http://65.108.239.207/tarihtv/index.m3u8
 #EXTINF:-1 group-title="DİNİ" tvg-id="DİYANET TV.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Diyanet_TV_logo.svg/512px-Diyanet_TV_logo.svg.png" ,DIYANET TV
 https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BBC_Earth.svg/1280px-BBC_Earth.svg.png" ,BBC earth
-http://65.108.239.207/bbc/index.m3u8
+http://66capanoglu.com:8080/live/zehra@senol/15082022/704.ts
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BBC_Earth.svg/1280px-BBC_Earth.svg.png" ,Dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7
+http://66capanoglu.com:8080/live/zehra@senol/15082022/704.ts
 #EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/History%20Logo%20on%20Black%20BG.PNG" ,History
-http://45.159.92.200:8080/live/play/ZGpWdGFXMUViekpZYm1aYVVEaDBhMjU1WVM5T09HVjFSekppZFVOTFJsSXdNMFZWUWxack1FcDBSVDA9/57750
+http://66capanoglu.com:8080/live/zehra@senol/15082022/784.ts
 #EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png" ,Discovery
-http://109.61.81.147:1935/cdn7/4029/video.m3u8?token=42e57e1e78da0b8220b1ec69bc8384d1
+http://66capanoglu.com:8080/live/zehra@senol/15082022/766.ts
 #EXTINF:-1 group-title="BELGESEL" tvg-id="ID.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/539be808-86e7-4ed2-aa0b-130dbc1ac450.png" ,Discovery ID
 http://109.61.81.147:1935/cdn7/4026/video.m3u8?token=42e57e1e78da0b8220b1ec69bc8384d1
 #EXTINF:-1 group-title="BELGESEL" tvg-id="NATIONAL GEOGRAPHIC WILD.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/4cc38817-6eb0-4f26-ac2b-cb5baa3b68ba.png" ,Nat Geo Wild
@@ -252,7 +252,7 @@ https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trtbelgesel
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://pbs.twimg.com/profile_images/2009963534021459968/JwBVdge0_400x400.jpg" ,TRT GENÇ
 https://tv-trtgenc.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="YabanTV.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/3/38/Yabantv_logo.png" ,Yaban TV
-http://116.202.238.88/YABANTV_TR/index.m3u8
+https://trn03.tulix.tv/gt-yabantv/tracks-v1a1/mono.m3u8?token=0631e8753bcdf25bb2a5015db22ec082
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TRT BELGESEL.tr" tvg-logo="https://cdn.technettv.com/channel/20609/logo_256_1699961655.png" ,TRT Belgesel
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="TRT ÇOCUK.tr" tvg-logo="https://cdn.technettv.com/channel/20616/logo_256_1707397583.png" ,TRT Çocuk
