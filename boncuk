@@ -236,7 +236,7 @@ http://66capanoglu.com:8080/live/zehra@senol/15082022/704.ts
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BBC_Earth.svg/1280px-BBC_Earth.svg.png" ,Dmax
 http://66capanoglu.com:8080/live/zehra@senol/15082022/704.ts
 #EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/History%20Logo%20on%20Black%20BG.PNG" ,History
-http://66capanoglu.com:8080/live/zehra@senol/15082022/784.ts
+http://50dg.vfilbox.com:8080/live/zehra@senol/15082022/784.m3u8?token=HxcLURFfE14aVlYFDwMDUABcAVcDVQQEAFFdBwEABVFcU1sDWgFSXQFBTkRKQEBWUFVpXVVHCQcJBElAERBXETtcBxJYFQBXD1dXUxsYEEdYVVMWC1UfEkFZAUBeQQVaUwVBHEBSSRBdEQwHVWtWVkdRVVETX11FXVxJQAsNbQcBWAJeBhULRglBTkRQR0IRCxpiQUMOE2RUXAAJCw5HDQ1eAkMbWF9EeQ0NCFBZEmBYSl1RRQwRHBNSDBYWAkYGRg9BAlQAAkYUQQEJTFpGQUgaDBZlNxEcE1UdFgENQQoLW0EKQFoCEQBBTkRQR21BVEtCRlQEXlVDEl9AVEEeQQlUG28BWF8KXQAWD1ZaQRELGgcWHUdeX19ZEQ0WPEIKABdZElMGBVcNQR8=
 #EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png" ,Discovery
 http://66capanoglu.com:8080/live/zehra@senol/15082022/766.ts
 #EXTINF:-1 group-title="BELGESEL" tvg-id="ID.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/539be808-86e7-4ed2-aa0b-130dbc1ac450.png" ,Discovery ID
