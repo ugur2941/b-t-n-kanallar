@@ -88,21 +88,13 @@ https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor&ppid=f59d8
 #EXTINF:-1 group-title="SPOR" tvg-id="A SPOR.tr" tvg-logo="https://cdn.technettv.com/channel/33860/logo_256.png" ,A Spor
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_1080p.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="HT SPOR HD.tr" tvg-logo="https://cdn.technettv.com/channel/33545/logo_256.jpg" ,HT Sports
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/htsports
-#EXTINF:-1 group-title="SPOR" tvg-id="HT SPOR HD.tr" tvg-logo="https://cdn.technettv.com/channel/33545/logo_256.jpg" ,HT Sports
 https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web&ppid=f59d8f7730dca3788c0d28e9c48eb087
-#EXTINF:-1 group-title="SPOR" tvg-id="Sports Tv.tr" tvg-logo="https://cdn.technettv.com/channel/33258/logo_256.jpg" ,Sports Tv
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/sportstv
 #EXTINF:-1 group-title="SPOR" tvg-id="Sports Tv.tr" tvg-logo="https://cdn.technettv.com/channel/33258/logo_256.jpg" ,Sports TV
 https://live.sportstv.com.tr/hls/low/sportstv.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="TRT SPOR YILDIZ.tr" tvg-logo="https://www.trtspor.com.tr/images/logo.png" ,TRT Spor Yıldız
 https://tv-trtspor2.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="TRT SPOR YILDIZ.tr" tvg-logo="http://ginikoturkish.com/channels/logo/trt-spor-yildiz-epg-.png" ,TRT Spor Yıldız(Avrupa)
 https://trn03.tulix.tv/gt-trt-spor2/index.m3u8
-#EXTINF:-1 group-title="SPOR" tvg-id="EUROSPORT 1.tr" tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/jpg/f40c9c2ad62bd4e3ff87d5859ea2bb54.jpg" , Euro Sport 1
-https://ds.ayakkabiparti.lol/euro1/index.m3u8
-#EXTINF:-1 group-title="SPOR" tvg-id="EUROSPORT 2.tr" tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/png/8802d4e354a9ca77d6aa3bbd8362e3e8.png" , Euro Sport 2
-https://ds.ayakkabiparti.lol/euro2/index.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="EKOL SPORTS.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/c4ca1fe1-e4ef-496a-9e97-b41a55910e43.png" ,Ekol Sport
 https://ekoltv-live.ercdn.net/ekolsport/ekolsport_1080p.m3u8?autoplay=1
 #EXTINF:-1 group-title="SPOR" tvg-id="Sıfır TV.tr" tvg-logo="https://foto.haberler.com/haber/2025/09/21/sifir-tv-canli-izleme-linki-var-mi-sifir-tv-19072148_8126_amp.jpg" ,Sıfır TV
