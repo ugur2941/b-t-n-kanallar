@@ -224,8 +224,6 @@ https://trn03.tulix.tv/gt-yabantv/tracks-v1a1/mono.m3u8?token=0631e8753bcdf25bb2
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TRT BELGESEL.tr" tvg-logo="https://cdn.technettv.com/channel/20609/logo_256_1699961655.png" ,TRT Belgesel
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="TRT ÇOCUK.tr" tvg-logo="https://cdn.technettv.com/channel/20616/logo_256_1707397583.png" ,TRT Çocuk
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trtcocuk
-#EXTINF:-1 group-title="ÇOCUK" tvg-id="TRT ÇOCUK.tr" tvg-logo="https://cdn.technettv.com/channel/20616/logo_256_1707397583.png" ,TRT Çocuk
 https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="TRT DİYANET ÇOCUK.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/TRT_Diyanet_%C3%87ocuk_logo.svg/1200px-TRT_Diyanet_%C3%87ocuk_logo.svg.png" ,TRT Diyanet Çocuk
 https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
