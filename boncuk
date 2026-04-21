@@ -86,8 +86,6 @@ https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trtspor
 #EXTINF:-1 group-title="SPOR" tvg-id="TRT SPOR.tr" tvg-logo="https://cdn.technettv.com/channel/20770/logo_256_1699963394.png" ,TRT Spor
 https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor&ppid=f59d8f7730dca3788c0d28e9c48eb087
 #EXTINF:-1 group-title="SPOR" tvg-id="A SPOR.tr" tvg-logo="https://cdn.technettv.com/channel/33860/logo_256.png" ,A Spor
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/aspor
-#EXTINF:-1 group-title="SPOR" tvg-id="A SPOR.tr" tvg-logo="https://cdn.technettv.com/channel/33860/logo_256.png" ,A Spor
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_1080p.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="HT SPOR HD.tr" tvg-logo="https://cdn.technettv.com/channel/33545/logo_256.jpg" ,HT Sports
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/htsports
