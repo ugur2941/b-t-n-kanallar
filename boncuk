@@ -145,8 +145,6 @@ http://145.239.37.125:20458/develi/develi/playlist.m3u8
 http://ip252.ozelip.com:1935/ekonomiktv/ekonomiktv/chunklist.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="TJKTv.tr" tvg-logo="https://cdn.technettv.com/channel/20826/logo_256_1699966834.png" ,TJK TV
 http://tjktv.ercdn.net/tjktv.m3u8
-#EXTINF:-1 group-title="SPOR" tvg-id="TJKTv2.tr" tvg-logo="https://cdn.technettv.com/channel/20826/logo_256_1699966834.png" ,TJK TV 2
-https://tjktv-live.tjk.org/tjktv2/tjktv2_1080p.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="TraceSports.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/TraceSSLogo.png/1200px-TraceSSLogo.png" ,Trace Sports
 https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="MÜZİK" tvg-id="TRT MÜZİK.tr" tvg-logo="https://cdn.technettv.com/channel/20630/logo_256_1699961878.png" ,TRT Müzik
@@ -155,8 +153,6 @@ https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 https://listen.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
 #EXTINF:-1 group-title="MÜZİK" tvg-id="TÜRKÇE SLOW.tr" tvg-logo="https://cdn.technettv.com/channel/33818/logo_256.png" ,Power Türk Slow
 https://listen.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TYT TÜRK.tr" tvg-logo="https://cdn.technettv.com/channel/34049/logo_256.jpg" ,TYT Türk
-https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
 #EXTINF:-1 group-title="MÜZİK" tvg-id="BLUES.tr" tvg-logo="https://cdn.technettv.com/channel/33797/logo_256.png" ,Power Dance
 https://listen.powerapp.com.tr/dance/dance.smil/playlist.m3u8
 #EXTINF:-1 group-title="MÜZİK" tvg-id="TÜRKÇE POP.tr" tvg-logo="https://cdn.technettv.com/channel/33804/logo_256.png" ,Power TapTaze
@@ -181,12 +177,8 @@ https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlists.m3u8
 https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TLC.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/0de9fa25-120c-4b52-b460-e078531f6988.png" ,TLC
 https://dogus.daioncdn.net/tlc/tlc.m3u8?ce=3&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TLC.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/0de9fa25-120c-4b52-b460-e078531f6988.png" ,TLC (alternatif)
-https://trn03.tulix.tv/gt-tlc-tv/index.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="DMAX.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/6a63a310-1f7d-4d5c-b377-1e497f5b3610.png" ,DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7
-#EXTINF:-1 group-title="ULUSAL" tvg-id="DMAX.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/6a63a310-1f7d-4d5c-b377-1e497f5b3610.png" ,DMAX (Alternatif)
-https://yakala.atakann.workers.dev/?url=https://www.dmax.com.tr/canli-izle&ext=m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="A2.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/fee44d61-2476-40ae-89eb-f51a7428789d.png" ,A2
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_720p.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png" ,Tarih TV
@@ -256,8 +248,6 @@ https://live.artidijitalmedya.com/artidijital_lifetv/lifetv/playlist.m3u8
 #EXTINF:-1 group-title="EĞLENCE" tvg-id="SilkwayTV.tr" tvg-logo="https://yt3.googleusercontent.com/xEMqPQPeJLVBW-BHG7Q9beE08mnHT5o653SjgEDOz0YEPG6JP0InmJGUZHQbOxbVUE-c7wHx=s900-c-k-c0x00ffffff-no-rj" ,Silk Way
 https://github.com/ipstreet312/freeiptv/raw/refs/heads/master/ressources/tur/silkway.m3u8
 #EXTINF:-1 group-title="EĞLENCE" tvg-id="KON TV.tr" tvg-logo="https://cdn.technettv.com/channel/21050/logo_256_1700562396.png" ,Kon TV
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/kontv
-#EXTINF:-1 group-title="EĞLENCE" tvg-id="KON TV.tr" tvg-logo="https://cdn.technettv.com/channel/21050/logo_256_1700562396.png" ,Kon TV
 https://yayin1.canlitv.fun/canlitv/kontv.stream/playlist.m3u8?hash=1123e1b8d18b9990c5a01bb00b660213
 #EXTINF:-1 group-title="SİNEMA" tvg-id="TV4.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfzAxOJwToKIF44orEOnWwlkK7ASq5zLq1TQ&s" ,TV4
 https://stream-extractor.koprulu2.workers.dev/?url=https://www.parsatv.com/m/name=TV4&ext=m3u8
@@ -273,8 +263,6 @@ http://75.119.144.48/KUZEYMAXHD_STREAM/index.m3u8
 https://135962.global.ssl.fastly.net/5ff366a512987e2c0a3dabfe/live_14378e1002eb11ef9cb025207067897a/playlist.m3u8
 #EXTINF:-1 group-title="SİNEMA" tvg-id="TRTNostalji.tr" tvg-logo="https://www.trt.net.tr/logos/our-logos/corporate/trt.png" ,TRT Nostalji
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/dizi-tv/playlist/0.m3u8
-#EXTINF:-1 group-title="SİNEMA" tvg-id="90’ LAR.tr" tvg-logo="https://r.resimlink.com/bmLaf9Kdne.png" ,TV 90
-https://tv.ismailturret.workers.dev/euro90tvglobal.m3u8
 #EXTINF:-1 group-title="SİNEMA" tvg-id="SabanTV.tr" tvg-logo="https://image.winudf.com/v2/image1/c2FiYW4udHZfaWNvbl8xNjAzODczNDgxXzAxMw/icon.png?w=280&fakeurl=1" ,Şaban TV
 http://87.121.104.29:145/kemalsunal/stream.m3u8
 #EXTINF:-1 group-title="SİNEMA" tvg-id="DenizSinema.tr" tvg-logo="https://i.imgur.com/Mm8hdfx.png" ,Deniz SİNEMA
