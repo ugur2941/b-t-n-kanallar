@@ -2,6 +2,7 @@
 #EXT-X-REFERER:https://taraftarium24.xyz/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://taraftarium1051.xyz
+#EXTVLCOPT:http-origin=https://taraftarium1051.xyz
 #EXTVLCOPT:http-referrer=https://vavoo.to
 #EXTINF:-1 tvg-name="BeIN Sports 1" group-title="BeinSports",BeIN Sports 1
 https://andro.2385437.xyz/checklist/receptestt.m3u8
