@@ -77,7 +77,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web&ppid=f59d8f7730dca3788c0
 https://live.sportstv.com.tr/hls/low/sportstv.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="TRT SPOR YILDIZ.tr" tvg-logo="https://www.trtspor.com.tr/images/logo.png" ,TRT Spor Yıldız
 https://tv-trtspor2.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 group-title="SPOR" tvg-id="TRT SPOR YILDIZ.tr" tvg-logo="http://ginikoturkish.com/channels/logo/trt-spor-yildiz-epg-.png" ,(TRT Spor)
+#EXTINF:-1 group-title="SPOR" tvg-id="TRT SPOR YILDIZ.tr" tvg-logo="https://iftm.tmgrup.com.tr/2025/08/27/trt-spor-canli-izle-trt-spor-nasil-izlenir-2025-trt-spor-frekans-bilgileri-ve-yayin-akisi-1756278542294.png" ,(TRT Spor)
 https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor
 #EXTINF:-1 group-title="SPOR" tvg-id="EKOL SPORTS.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/c4ca1fe1-e4ef-496a-9e97-b41a55910e43.png" ,Ekol Sport
 https://ekoltv-live.ercdn.net/ekolsport/ekolsport_1080p.m3u8?autoplay=1
