@@ -69,7 +69,7 @@ https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Haber61.tr" tvg-logo="https://cdn.technettv.com/channel/29520/logo_256_1733832303.jpg" ,Haber 61
 https://cdn1-haber61tv.yayin.com.tr/haber61tv/haber61tv/playlist.m3u8
-#EXTINF:-1 group-title="SPOR" tvg-id="A SPOR.tr" tvg-logo="https://cdn.technettv.com/channel/33860/logo_256.png" ,A Spor
+#EXTINF:-1 group-title="SPOR" tvg-id="A SPOR.tr" tvg-logo="https://cdn.technettv.com/channel/33860/logo_256.png" ,z-A Spor
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_1080p.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="HT SPOR HD.tr" tvg-logo="https://cdn.technettv.com/channel/33545/logo_256.jpg" ,HT Sports
 https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web&ppid=f59d8f7730dca3788c0d28e9c48eb087
