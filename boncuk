@@ -1,9 +1,9 @@
 #EXTM3U
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 1.tr" tvg-logo="https://cdn.technettv.com/channel/19958/logo_256_1699961525.png" ,A-TRT 1 (Alternatif)
+#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 1.tr" tvg-logo="https://cdn.technettv.com/channel/19958/logo_256_1699961525.png" ,(TRT 1 (Alternatif)
 https://trt.daioncdn.net/trt-1/master.m3u8?app=clean
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 1.tr" tvg-logo="https://cdn.technettv.com/channel/19958/logo_256_1699961525.png" ,A-TRT 1 (Alternatif 3)
+#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 1.tr" tvg-logo="https://cdn.technettv.com/channel/19958/logo_256_1699961525.png" ,(TRT 1 (Alternatif 3)
 https://trt.daioncdn.net/trt-1/master_1080p.m3u8?&sid=7lt9umlk1uqx&app=ed3904e8-737b-4a5e-856a-1b0d7a0a94e2&ce=2
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 2.tr" tvg-logo="https://cdn.technettv.com/channel/20315/logo_256_1699961575.png" ,A-TRT 2
+#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT 2.tr" tvg-logo="https://cdn.technettv.com/channel/20315/logo_256_1699961575.png" ,(TRT 2
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="SHOW TV.tr" tvg-logo="https://cdn.technettv.com/channel/29716/logo_256_1734935547.jpg" ,Show TV
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
@@ -15,7 +15,7 @@ https://stream-extractor.koprulu2.workers.dev/?url=https://www.parsatv.com/m/nam
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal D.tr" tvg-logo="https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/euro-d-buyuk.png" ,Euro D
 https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
-#EXTINF:-1 group-title="ULUSAL" tvg-id="ATV.tr" tvg-logo="https://cdn.technettv.com/channel/33825/logo_256.png" ,(ATV
+#EXTINF:-1 group-title="ULUSAL" tvg-id="ATV.tr" tvg-logo="https://cdn.technettv.com/channel/33825/logo_256.png" ,ATV
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TV8.tr" tvg-logo="https://cdn.technettv.com/channel/33790/logo_256.png" ,TV8 (Alternatif)
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=7uwoyq6usvp2&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=2
