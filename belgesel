@@ -3,7 +3,7 @@
 #EXTVLCOPT:http-referrer=https://vavoo.to
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png" ,Tarih TV
 https://www.kool.to/play/3856957052/index.m3u8
-#EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/BBC_Earth.svg/1280px-BBC_Earth.svg.png" ,BBC earth
+#EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXOrjX8auopIAAKFRHx1Y-KLi8Ync-CWUfw&s" ,BBC earth
 https://kool.to/play/2228496856/index.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/History%20Logo%20on%20Black%20BG.PNG" ,History
 https://kool.to/play/3480468962/index.m3u8
