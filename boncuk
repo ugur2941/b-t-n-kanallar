@@ -52,9 +52,7 @@ https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/ekoturk
 #EXTINF:-1 group-title="HABER" tvg-id="Ekoturk.tr" tvg-logo="https://cdn.technettv.com/channel/33986/logo_256.jpg" ,Ekoturk
 https://trn03.tulix.tv/gt-ekoturk/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="HALK TV.tr" tvg-logo="https://cdn.technettv.com/channel/22975/logo_256_1707397382.png" ,Halk TV
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/halktv
-#EXTINF:-1 group-title="HABER" tvg-id="HALK TV.tr" tvg-logo="https://cdn.technettv.com/channel/22975/logo_256_1707397382.png" ,Halk TV
-https://yakala.atakann.workers.dev/?url=https://halktv.com.tr/canli-yayin&ext=m3u8
+https://halktv.daioncdn.net/halktv/halktv_720p.m3u8?sid=8e7awibp82n0&app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 #EXTINF:-1 group-title="HABER" tvg-id="Szc Tv.tr" tvg-logo="https://cdn.technettv.com/channel/20805/logo_256_1699966647.png" ,Szc Tv
 https://www.kool.to/play/960578312/index.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="BLOOMBERG HT.tr" tvg-logo="https://cdn.technettv.com/channel/20322/logo_256_1699957451.png" ,Bloomberg HT
