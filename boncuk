@@ -27,8 +27,6 @@ https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="TRT HABER.tr" tvg-logo="https://cdn.technettv.com/channel/20623/logo_256_1699961936.png" ,TRT Haber
 https://yakala.atakann.workers.dev/?url=https://www.trthaber.com/canli-yayin-izle.html&ext=m3u8
-#EXTINF:-1 group-title="HABER" tvg-id="HABER GLOBAL.tr" tvg-logo="https://i.haberglobal.com/storage/files/images/2022/01/11/mikrofon-logo-1-1-QENs.png" ,Haber Global
-https://stream-extractor.koprulu2.workers.dev/?url=https://www.ensonhaber.com/canli-tv/haberglobal_canliyayin&ext=m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Haber Turk.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/0/03/Haberturk.com_logo.jpg" ,Haber Turk
 https://stream-extractor.koprulu2.workers.dev/?url=https://m.haberturk.com/canliyayin&ext=m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="ÜLKE TV.tr" tvg-logo="https://images.seeklogo.com/logo-png/26/2/ulke-tv-logo-png_seeklogo-260903.png" , Ülke TV
@@ -38,11 +36,9 @@ https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber_720p.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="NTV.tr" tvg-logo="https://cdn.technettv.com/channel/20546/logo_256_1707397575.png" ,NTV (ALT)
 https://dogus.daioncdn.net/ntv/ntv_720p.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="CNN Turk.tr" tvg-logo="https://cdn.technettv.com/channel/22961/logo_256_1707397512.png" ,CNN Turk
-https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=uGTzZ0ZF8-O4sqgG1fYy2g&e=1778203553
+https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/track_4_1000/playlist.m3u8?&live=true&app=com.cnnturk&st=gw17NIfy0axqit8yhNIisQ&e=1778279722
 #EXTINF:-1 group-title="HABER" tvg-id="TVNET.tr" tvg-logo="https://yt3.ggpht.com/WJm8IMexX9Atd0eOkmHFXagUieCC43mZO1B-TQAhBYm8iR4H5do0Go_kYWz_g-bSYxx6yXZPycI" ,TV NET
 https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
-#EXTINF:-1 group-title="HABER" tvg-id="Ekoturk.tr" tvg-logo="https://cdn.technettv.com/channel/33986/logo_256.jpg" ,Ekoturk
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/ekoturk
 #EXTINF:-1 group-title="HABER" tvg-id="Ekoturk.tr" tvg-logo="https://cdn.technettv.com/channel/33986/logo_256.jpg" ,Ekoturk
 https://trn03.tulix.tv/gt-ekoturk/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="HALK TV.tr" tvg-logo="https://cdn.technettv.com/channel/22975/logo_256_1707397382.png" ,Halk TV
