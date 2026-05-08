@@ -28,7 +28,7 @@ https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="TRT HABER.tr" tvg-logo="https://cdn.technettv.com/channel/20623/logo_256_1699961936.png" ,TRT Haber
 https://yakala.atakann.workers.dev/?url=https://www.trthaber.com/canli-yayin-izle.html&ext=m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Haber Turk.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/0/03/Haberturk.com_logo.jpg" ,Haber Turk
-https://stream-extractor.koprulu2.workers.dev/?url=https://m.haberturk.com/canliyayin&ext=m3u8
+https://www.kool.to/play/2999246297/index.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="ÜLKE TV.tr" tvg-logo="https://images.seeklogo.com/logo-png/26/2/ulke-tv-logo-png_seeklogo-260903.png" , Ülke TV
 https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="TGRT HABER.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" ,TGRT HABER
@@ -40,7 +40,7 @@ https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/track_4_1000/playlist.m3u8?&live=t
 #EXTINF:-1 group-title="HABER" tvg-id="TVNET.tr" tvg-logo="https://yt3.ggpht.com/WJm8IMexX9Atd0eOkmHFXagUieCC43mZO1B-TQAhBYm8iR4H5do0Go_kYWz_g-bSYxx6yXZPycI" ,TV NET
 https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Ekoturk.tr" tvg-logo="https://cdn.technettv.com/channel/33986/logo_256.jpg" ,Ekoturk
-https://trn03.tulix.tv/gt-ekoturk/tracks-v1a1/mono.m3u8
+https://www.kool.to/play/2999246297/index.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="HALK TV.tr" tvg-logo="https://cdn.technettv.com/channel/22975/logo_256_1707397382.png" ,Halk TV
 https://halktv.daioncdn.net/halktv/halktv_720p.m3u8?sid=8e7awibp82n0&app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 #EXTINF:-1 group-title="HABER" tvg-id="Szc Tv.tr" tvg-logo="https://cdn.technettv.com/channel/20805/logo_256_1699966647.png" ,Szc Tv
