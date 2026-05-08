@@ -9,8 +9,6 @@ https://tv-trt2.medya.trt.com.tr/master.m3u8
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="STAR TV.tr" tvg-logo="https://cdn.technettv.com/channel/20567/logo_256_1699960596.png" ,STAR TV 
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8c0avobi0j06&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
-#EXTINF:-1 group-title="ULUSAL" tvg-id="Euro Star.tr" tvg-logo="https://www.eurostartv.com.tr/img/eurostar-logo.png" ,Euro Star
-https://stream-extractor.koprulu2.workers.dev/?url=https://www.parsatv.com/m/name=Euro-Star&ext=m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal D.tr" tvg-logo="https://cdn.technettv.com/channel/20483/logo_256_1707397616.png" ,Kanal D
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal D.tr" tvg-logo="https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/euro-d-buyuk.png" ,Euro D
@@ -22,15 +20,11 @@ https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=7uwoyq6usvp2&app=7ddc255a-ef47-
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TV 8,5.tr" tvg-logo="https://cdn.technettv.com/channel/33958/logo_256.png" ,TV8.5
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_480p.m3u8?&sid=7tra76g4cefx&app=bf58ab52-4865-4c81-b223-26b41009801e&ce=3
 #EXTINF:-1 group-title="ULUSAL" tvg-id="NOW.tr" tvg-logo="https://cdn.technettv.com/channel/33783/logo_256.png" ,NOW (ALT)
-https://yakala.atakann.workers.dev/?url=https://www.nowtv.com.tr/canli-yayin&ext=m3u8
-#EXTINF:-1 group-title="ULUSAL" tvg-id="ShowTurk.tr" tvg-logo="https://cdn.technettv.com/channel/20560/logo_256.png" ,Show Turk
-https://yakala.atakann.workers.dev/?url=https://www.showtv.com.tr/canli-yayin&ext=m3u8
+https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8?st=8hzz8SOyjTo7DHdfANH7xg&e=1778281373
 #EXTINF:-1 group-title="ULUSAL" tvg-id="KANAL 7.tr" tvg-logo="https://cdn.technettv.com/channel/29485/logo_256_1733831753.png" ,Kanal 7 (ALT)
 https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal7Avrupa.tr" tvg-logo="https://cdn.technettv.com/channel/29723/logo_256_1734935765.png" ,Kanal 7 Avrupa
 https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
-#EXTINF:-1 group-title="HABER" tvg-id="TRT HABER.tr" tvg-logo="https://cdn.technettv.com/channel/20623/logo_256_1699961936.png" ,TRT Haber
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trthaber
 #EXTINF:-1 group-title="HABER" tvg-id="TRT HABER.tr" tvg-logo="https://cdn.technettv.com/channel/20623/logo_256_1699961936.png" ,TRT Haber
 https://yakala.atakann.workers.dev/?url=https://www.trthaber.com/canli-yayin-izle.html&ext=m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="HABER GLOBAL.tr" tvg-logo="https://i.haberglobal.com/storage/files/images/2022/01/11/mikrofon-logo-1-1-QENs.png" ,Haber Global
@@ -87,8 +81,6 @@ https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trtmuzik
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/powerakustik
 #EXTINF:-1 group-title="MÜZİK" tvg-id="TÜRKÇE SLOW.tr" tvg-logo="https://cdn.technettv.com/channel/33818/logo_256.png" ,Power Türk Slow
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/powerturkslow
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TYT TÜRK.tr" tvg-logo="https://cdn.technettv.com/channel/34049/logo_256.jpg" ,TYT Türk
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/tytturk
 #EXTINF:-1 group-title="MÜZİK" tvg-id="BLUES.tr" tvg-logo="https://cdn.technettv.com/channel/33797/logo_256.png" ,Power Dance
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/powerdance
 #EXTINF:-1 group-title="MÜZİK" tvg-id="TÜRKÇE POP.tr" tvg-logo="https://cdn.technettv.com/channel/33804/logo_256.png" ,Power TapTaze
@@ -221,14 +213,8 @@ https://tv-trtturk.medya.trt.com.tr/master.m3u8
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="teve2.tr" tvg-logo="https://cdn.technettv.com/channel/22968/logo_256_1707397507.png" ,teve2
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/teve2/teve2.m3u8
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT KURDİ.tr" tvg-logo="https://cdn.technettv.com/channel/29506/logo_256_1733832080.jpg" ,TRT Kurdi
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trtkurdi
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TRT AVAZ.tr" tvg-logo="https://cdn.technettv.com/channel/29499/logo_256_1733831989.jpg" ,TRT Avaz
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trtavaz
-#EXTINF:-1 group-title="ULUSAL" tvg-id="TRT TÜRK.tr" tvg-logo="https://cdn.technettv.com/channel/29492/logo_256_1733831875.jpg" ,TRT Türk
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trtturk
-#EXTINF:-1 group-title="ULUSAL" tvg-id="Teve2.tr" tvg-logo="https://cdn.technettv.com/channel/22968/logo_256_1707397507.png" ,Teve 2
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/teve2
 #EXTINF:-1 group-title="EĞLENCE" tvg-id="LIFETV.tr" tvg-logo="https://cdn.technettv.com/channel/19412/logo_256_1699950927.png" ,LIFE TV
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/lifetv
 #EXTINF:-1 group-title="EĞLENCE" tvg-id="LIFETV.tr" tvg-logo="https://cdn.technettv.com/channel/19412/logo_256_1699950927.png" ,LIFE TV
