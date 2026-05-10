@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5b/BeIN_MOVIES_logosu.jpg" group-title="Genel| Türkçe",Bein Movies Premiere
+#EXTINF:-1 tvg-logo="https://images.seeklogo.com/logo-png/36/1/bein-movies-logo-png_seeklogo-367816.png" group-title="Genel| Türkçe",Bein Movies Premiere
 #EXTVLCOPT:http-user-agent=googleusercontent
 #EXTVLCOPT:http-referrer=https://twitter.com/
 https://kool.to/play/942987224/index.m3u8
