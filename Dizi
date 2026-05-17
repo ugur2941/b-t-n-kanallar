@@ -7,3 +7,7 @@ https://eu1.tabii.com/apigateway/pbr/v1/media/648257/648256.m3u8
 #EXTVLCOPT:http-referrer=https://www.ddizi.im
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 https://eu1.tabii.com/apigateway/pbr/v1/media/648251/648250.m3u8
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/krfhcjm.jpg" group-title="Diziim - Güller ve Günahlar ", Güller ve Günahlar 29.Bölüm
+#EXTVLCOPT:http-referrer=https://www.ddizi.im
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+https://video.twimg.com/amplify_video/2055757061401526272/pl/CBVaK_xFWqcxi980.m3u8?tag=27
