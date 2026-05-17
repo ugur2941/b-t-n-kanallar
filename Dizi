@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.cdnhipter.xyz/images/tv/poster/1350/1980/80/b47b8eeu8oo78oua1162b07a5.jpg?v=3.645" group-title="Diziim - Gönül Dağı", Gönül Dağı
+#EXTINF:-1 tvg-logo="https://i.hizliresim.com/122o614.jpg" group-title="Diziim - Gönül Dağı", Gönül Dağı
 #EXTVLCOPT:http-referrer=https://www.ddizi.im
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 https://eu1.tabii.com/apigateway/pbr/v1/media/648257/648256.m3u8
