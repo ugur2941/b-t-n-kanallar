@@ -39,8 +39,6 @@ https://dogus.daioncdn.net/ntv/ntv_720p.m3u8
 https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=OhMY_9WEqybEDH0JjswxzA&e=1779734010
 #EXTINF:-1 group-title="HABER" tvg-id="HALK TV.tr" tvg-logo="https://cdn.technettv.com/channel/22975/logo_256_1707397382.png" ,Halk TV
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
-#EXTINF:-1 group-title="HABER" tvg-id="Szc Tv.tr" tvg-logo="https://cdn.technettv.com/channel/20805/logo_256_1699966647.png" ,Szc Tv
-http://iptv.darktv.eu:80/Cigdem/c3WPPeRm/147433
 #EXTINF:-1 group-title="HABER" tvg-id="BLOOMBERG HT.tr" tvg-logo="https://cdn.technettv.com/channel/20322/logo_256_1699957451.png" ,Bloomberg HT
 https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="CNBC-E.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/CNBC-e-Logo.png" ,CNBC-E
@@ -77,8 +75,6 @@ https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/powerdance
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/powertaptaze
 #EXTINF:-1 group-title="MÜZİK" tvg-id="NUMBER1 TÜRK.tr" tvg-logo="https://cdn.technettv.com/channel/33769/logo_256.png" ,NR1 Turk
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/nr1turk
-#EXTINF:-1 group-title="HABER" tvg-id="TV 100.tr" tvg-logo="https://cdn.technettv.com/channel/22926/logo_256_1707397437.png" ,TV 100
-https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/tv100
 #EXTINF:-1 group-title="SİNEMA" tvg-id="SuperTurk.tr" tvg-logo="https://cdn.technettv.com/channel/33972/logo_256.png" ,SuperTurk
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/superturk
 #EXTINF:-1 group-title="MÜZİK" tvg-id="MusicAzerbaycan.tr" tvg-logo="https://cdn.technettv.com/channel/32194/logo_256.jpg" ,Music Azerbaycan
