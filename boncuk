@@ -26,7 +26,7 @@ https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal7Avrupa.tr" tvg-logo="https://cdn.technettv.com/channel/29723/logo_256_1734935765.png" ,Kanal 7 Avrupa
 https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="TRT HABER.tr" tvg-logo="https://cdn.technettv.com/channel/20623/logo_256_1699961936.png" ,TRT Haber
-https://yakala.atakann.workers.dev/?url=https://www.trthaber.com/canli-yayin-izle.html&ext=m3u8
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Haber Turk.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/0/03/Haberturk.com_logo.jpg" ,Haber Turk
 https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8eamtet7q9wq&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3
 #EXTINF:-1 group-title="HABER" tvg-id="ÜLKE TV.tr" tvg-logo="https://images.seeklogo.com/logo-png/26/2/ulke-tv-logo-png_seeklogo-260903.png" , Ülke TV
@@ -37,8 +37,6 @@ https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber_720p.m3u8
 https://dogus.daioncdn.net/ntv/ntv_720p.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="CNN Turk.tr" tvg-logo="https://cdn.technettv.com/channel/22961/logo_256_1707397512.png" ,CNN Turk
 https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=OhMY_9WEqybEDH0JjswxzA&e=1779734010
-#EXTINF:-1 group-title="HABER" tvg-id="TVNET.tr" tvg-logo="https://yt3.ggpht.com/WJm8IMexX9Atd0eOkmHFXagUieCC43mZO1B-TQAhBYm8iR4H5do0Go_kYWz_g-bSYxx6yXZPycI" ,TV NET
-https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="HALK TV.tr" tvg-logo="https://cdn.technettv.com/channel/22975/logo_256_1707397382.png" ,Halk TV
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Szc Tv.tr" tvg-logo="https://cdn.technettv.com/channel/20805/logo_256_1699966647.png" ,Szc Tv
@@ -255,8 +253,6 @@ https://turkmedya-live.ercdn.net/tv360/tv360_1080p.m3u8
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/alanya
 #EXTINF:-1 group-title="YEREL" tvg-id="Kanal19.tr" tvg-logo="https://cdn.technettv.com/channel/14316/logo_256_1707397568.png" ,Kanal 19
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/kanal19
-#EXTINF:-1 group-title="HABER" tvg-id="EKOL TV.tr" tvg-logo="https://cdn.technettv.com/channel/20378/logo_256_1699952837.png" ,Ekol TV
-http://sunx101.xyz:80/live/35aliozden/1908ozden/342954.ts
 #EXTINF:-1 group-title="YEREL" tvg-id="CayTV.tr" tvg-logo="https://cdn.technettv.com/channel/12615/logo_256_1683875146.png" ,Çay TV
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/caytv
 #EXTINF:-1 group-title="YEREL" tvg-id="TokatSuper.tr" tvg-logo="https://cdn.technettv.com/channel/14323/logo_256_1699951596.png" ,Tokat Super TV
