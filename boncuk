@@ -59,8 +59,6 @@ https://tv-trtspor2.medya.trt.com.tr/master_720.m3u8
 https://trt.daioncdn.net/trtspor/master.m3u8?app=web&platform=trtspor
 #EXTINF:-1 group-title="SPOR" tvg-id="EKOL SPORTS.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/c4ca1fe1-e4ef-496a-9e97-b41a55910e43.png" ,Ekol Sport
 https://ekoltv-live.ercdn.net/ekolsport/ekolsport_1080p.m3u8?autoplay=1
-#EXTINF:-1 group-title="SPOR" tvg-id="Sıfır TV.tr" tvg-logo="https://foto.haberler.com/haber/2025/09/21/sifir-tv-canli-izleme-linki-var-mi-sifir-tv-19072148_8126_amp.jpg" ,Sıfır TV
-https://ahr7chck.rocketcdn.com/sifirtv.stream/chunklist.m3u8
 #EXTINF:-1 group-title="MÜZİK" tvg-id="TRT MÜZİK.tr" tvg-logo="https://cdn.technettv.com/channel/20630/logo_256_1699961878.png" ,TRT Müzik
 https://boncuktvv.doymuyorsan-buyugu-var.workers.dev/trtmuzik
 #EXTINF:-1 group-title="MÜZİK" tvg-id="AKUSTİK.tr" tvg-logo="https://cdn.technettv.com/channel/33811/logo_256.png" ,Power Akustik
@@ -107,8 +105,6 @@ http://145.239.37.125:20458/marstv/marstv/playlist.m3u8
 http://145.239.37.125:20458/develi/develi/playlist.m3u8
 #EXTINF:-1 group-title="SİNEMA" tvg-id="EkonomikTV.tr" tvg-logo="" ,EKONOMİK TV
 http://ip252.ozelip.com:1935/ekonomiktv/ekonomiktv/chunklist.m3u8
-#EXTINF:-1 group-title="SPOR" tvg-id="TJKTv.tr" tvg-logo="https://cdn.technettv.com/channel/20826/logo_256_1699966834.png" ,TJK TV
-http://tjktv.ercdn.net/tjktv.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="TraceSports.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/TraceSSLogo.png/1200px-TraceSSLogo.png" ,Trace Sports
 https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="MÜZİK" tvg-id="TRT MÜZİK.tr" tvg-logo="https://cdn.technettv.com/channel/20630/logo_256_1699961878.png" ,TRT Müzik
