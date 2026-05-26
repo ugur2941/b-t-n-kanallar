@@ -35,8 +35,6 @@ https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
 https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber_720p.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="NTV.tr" tvg-logo="https://cdn.technettv.com/channel/20546/logo_256_1707397575.png" ,NTV (ALT)
 https://dogus.daioncdn.net/ntv/ntv_720p.m3u8
-#EXTINF:-1 group-title="HABER" tvg-id="CNN Turk.tr" tvg-logo="https://cdn.technettv.com/channel/22961/logo_256_1707397512.png" ,CNN Turk
-https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=IHM7ub0aXb54qu6O4ScF3w&e=1779746365
 #EXTINF:-1 group-title="HABER" tvg-id="HALK TV.tr" tvg-logo="https://cdn.technettv.com/channel/22975/logo_256_1707397382.png" ,Halk TV
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="BLOOMBERG HT.tr" tvg-logo="https://cdn.technettv.com/channel/20322/logo_256_1699957451.png" ,Bloomberg HT
