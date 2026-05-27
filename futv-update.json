@@ -1,9 +1,8 @@
 {
-  "latestVersionCode": 15,
-  "minSupportedVersionCode": 14,
+  "latestVersionCode": 20,
+  "minSupportedVersionCode": 19,
   "title": "Güncelleme hazır",
-  "message": "Yeni sürüm yayında. En iyi deneyim için uygulamayı güncellemen Gereklidir.",
+  "message": "Yeni sürüm yayında. En iyi deneyim için uygulamayı güncellemen önerilir.",
   "forceTitle": "Güncelleme gerekli",
   "forceMessage": "Bu sürüm artık desteklenmiyor. Devam etmek için uygulamayı güncellemen gerekiyor.",
   "storeUrl": "market://details?id=com.futv.pro"
-}
