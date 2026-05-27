@@ -7,23 +7,23 @@
 
 #EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1 
 https://andro.2385437.xyz/checklist/receptestt.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports 1-A" group-title="BeinSports",BeIN Sports 1-A
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1-A.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1-A
 https://kool.to/play/2729088606/index.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports 1-B" group-title="BeinSports",BeIN Sports 1-B
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1-B.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1-B
 https://tj4.d72577a9dd0ec68.cfd/taraftarium/mono.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports 1-C" group-title="BeinSports",BeIN Sports 1-C
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1-C.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1-C
 https://kool.to/play/662179620/index.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports 2" group-title="BeinSports",BeIN Sports 2
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sport 2.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 2
 https://andro.2385437.xyz/checklist/androstreamlivebs2.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports 3" group-title="BeinSports",BeIN Sports 3
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 3.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 3
 https://andro.2385437.xyz/checklist/androstreamlivebs3.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports 4" group-title="BeinSports",BeIN Sports 4
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 4.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 4
 https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports 5" group-title="BeinSports",BeIN Sports 5
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 5.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 5
 https://andro.2385437.xyz/checklist/androstreamlivebs5.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports Max 1" group-title="BeinSports",BeIN Sports Max 1
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports Max-1.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports Max-1
 https://andro.2385437.xyz/checklist/androstreamlivebsm1.m3u8
-#EXTINF:-1 tvg-name="BeIN Sports Max 2" group-title="BeinSports",BeIN Sports Max 2
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports Max-2.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports Max-2
 https://andro.2385437.xyz/checklist/androstreamlivebsm2.m3u8
 #EXTINF:-1 tvg-name="Cbc Sport" group-title="Ulusal ve Diğer Kanallar",Cbc Sport
 https://andro.2385437.xyz/checklist/androstreamlivecbcs.m3u8
