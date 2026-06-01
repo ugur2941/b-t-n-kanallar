@@ -1,8 +1,8 @@
 {
-  "latestVersionCode": 17,
-  "minSupportedVersionCode": 16,
-  "title": "Güncelleme hazır",
-  "message": "Yeni sürüm yayında. En iyi deneyim için uygulamayı güncellemen önerilir.",
-  "forceTitle": "Güncelleme gerekli",
-  "forceMessage": "Bu sürüm artık desteklenmiyor. Devam etmek için uygulamayı güncellemen gerekiyor.",
-  "storeUrl": "market://details?id=com.futv.pro"
+  "latestVersionCode": 25,
+  "latestVersionName": "1.0.12",
+  "force": true,
+  "title": "Güncelleme gerekli",
+  "message": "Devam etmek için uygulamayı güncelleyin.",
+  "url": "https://play.google.com/store/apps/details?id=com.futv.pro"
+}
