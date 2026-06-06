@@ -1,8 +1,24 @@
 {
   "streams": [
     {
+      "source": "https://kool.to/play/3856957052/index.m3u8",
+      "url": "https://calisan-link-1/index.m3u8",
+      "headers": {
+        "User-Agent": "libmpv",
+        "Accept": "*/*"
+      }
+    },
+    {
       "source": "https://kool.to/play/2228496856/index.m3u8",
-      "url": "https://calisan-yeni-link.example.com/live/index.m3u8",
+      "url": "https://calisan-link-2/index.m3u8",
+      "headers": {
+        "User-Agent": "libmpv",
+        "Accept": "*/*"
+      }
+    },
+    {
+      "source": "https://vavoo.to/play/3578706863/index.m3u8",
+      "url": "https://calisan-link-3/index.m3u8",
       "headers": {
         "User-Agent": "libmpv",
         "Accept": "*/*"
