@@ -1,8 +1,8 @@
 {
   "streams": [
     {
-      "source": "https://vavoo.to/play/499485497/index.m3u8",
-      "url": "https://td3wb1bchdvsahp.ngolpdkyoctjcddxshli469r.org/sunshine/tisXFJ8dN9Drz4Z2DU9V5U_fxJ-98N2hyEY4_qyS4nAY1Gr6KtaRVFUqQ_BCr32_zhgttAuC17c6Q6q2uEeWUuisDjFMbs1cJbj9cBxn4olOslUNBoqaI3pKhNauHN2QA2mWOn6cjD8ogCSRXYJrQ5MxT7-ani7b5bjGNmbcXoYPAKR7RuLt_UkXtwm3UJqlJ0y2MLzGjwNdvLmuP-f_cA/hls/index.m3u8",
+      "source": "https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10",
+      "url": "https://silent-lake-5dff.ugur2941.workers.dev/?url=https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10",
       "headers": {
         "User-Agent": "libmpv",
         "Accept": "*/*"
