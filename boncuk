@@ -9,6 +9,8 @@ https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8c0avobi0j06&app=a20ac41
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal D.tr" tvg-logo="https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/euro-d-buyuk.png" ,Euro D
 https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
+#EXTINF:-1 group-title="ULUSAL" tvg-id="Now Tv.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzeswylV2HHekCcNOAXDxMOhDzAsB76BEVUg&s" ,Now Tv
+https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="ATV.tr" tvg-logo="https://cdn.technettv.com/channel/33825/logo_256.png" ,z-ATV
 https://gunestv2.oktay2617.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F1332310706d6138ade7950
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TV8.tr" tvg-logo="https://cdn.technettv.com/channel/33790/logo_256.png" ,TV8
