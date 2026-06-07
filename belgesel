@@ -5,7 +5,7 @@
 #EXTVLCOPT:http-accept=*/*
 
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png" ,Tarih TV
-https://gunestv2.oktay2617.workers.dev/?url=https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
+https://silent-lake-5dff.ugur2941.workers.dev/?url=https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://www.creativeboom.com/upload/articles/8f/8f6cd51ec38e4f9ccab6a7350ba42d4ca9c429da_1280.png" ,BBC earth
 https://gunestv2.oktay2617.workers.dev/?url=https://vavoo.to/vavoo-iptv/play/248683004445aaa732371b
 #EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/History%20Logo%20on%20Black%20BG.PNG" ,History
