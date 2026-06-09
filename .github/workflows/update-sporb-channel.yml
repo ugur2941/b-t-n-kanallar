@@ -1,0 +1,54 @@
+name: Update SporB Generated Channel
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-sporb-channel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          repository: ugur2941/tr
+          path: tr-source
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Update BeIN Sports 1 in sporb
+        run: |
+          python tr-source/goals.py \
+            --output sporb \
+            --channel-name "BeIN Sports 1" \
+            --group "SporB"
+
+      - name: Commit updated playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sporb
+          if git diff --cached --quiet; then
+            echo "No changes detected"
+            exit 0
+          fi
+          git commit -m "Update BeIN Sports 1 stream"
+          git push
