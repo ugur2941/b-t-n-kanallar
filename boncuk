@@ -48,7 +48,7 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_1080p.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="HT Spor.tr" tvg-logo="https://www.htspor.com/images/manifest/social-share-logo.png" ,Ht Spor
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=8hqpuxm84z3d&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 group-title="SPOR" tvg-id="Trt Spor.tr" tvg-logo="https://img.piri.net/mnresize/720/-/piri/upload/3/2025/4/29/4520f283-tv8ia0wkv0an5e9s38tzse.jpeg" ,Trt Spor
-https://vavoo.to/play/601788690/index.m3u8
+https://trt.daioncdn.net/trtspor/master_1080p.m3u8?&sid=7990pkt0m3yd&app=71ff325a-50b6-48f4-8a67-3daa89386c24&ce=2
 #EXTINF:-1 group-title="SPOR" tvg-id="EKOL SPORTS.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/c4ca1fe1-e4ef-496a-9e97-b41a55910e43.png" ,Ekol Sport
 https://ekoltv-live.ercdn.net/ekolsport/ekolsport_1080p.m3u8?autoplay=1
 #EXTINF:-1 group-title="SPOR" tvg-id="EUROSPORT 1.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqHjTTijESc5oPLBXlxRomchrae2ZQkBn0jg&s" ,EUROSPORT 1
