@@ -21,7 +21,7 @@ https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_480p.m3u8?&sid=7tra76g4cefx&app=bf58a
 https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="TRT HABER.tr" tvg-logo="https://cdn.technettv.com/channel/20623/logo_256_1699961936.png" ,TRT Haber
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 group-title="HABER" tvg-id="Haber Turk.tr" tvg-logo="https://images.seeklogo.com/logo-png/30/1/haberturk-tv-ve-gazete-logo-png_seeklogo-307034.png" ,Haber Turk
+#EXTINF:-1 group-title="HABER" tvg-id="Haber Turk.tr" tvg-logo="https://www.canlitv.me/poster/haberturkcanli-hd-izle.png" ,Haber Turk
 https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8eamtet7q9wq&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3
 #EXTINF:-1 group-title="HABER" tvg-id="ÜLKE TV.tr" tvg-logo="https://www.canlitv.me/poster/ulke-tv.png" , Ülke TV
 https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
