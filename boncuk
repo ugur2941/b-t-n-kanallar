@@ -165,7 +165,7 @@ https://trn03.tulix.tv/gt-yabantv/tracks-v1a1/mono.m3u8?token=0631e8753bcdf25bb2
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="TRT ÇOCUK.tr" tvg-logo="https://cdn.technettv.com/channel/20616/logo_256_1707397583.png" ,TRT Çocuk
 https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 group-title="ÇOCUK" tvg-id="TRT DİYANET ÇOCUK.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/TRT_Diyanet_%C3%87ocuk_logo.svg/1200px-TRT_Diyanet_%C3%87ocuk_logo.svg.png" ,TRT Diyanet Çocuk
+#EXTINF:-1 group-title="ÇOCUK" tvg-id="TRT DİYANET ÇOCUK.tr" tvg-logo="https://www.canlitv.me/poster/trt-diyanet-cocuk.png" ,TRT Diyanet Çocuk
 https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="MİNİKA GO.tr" tvg-logo="https://cdn.technettv.com/channel/33776/logo_256.png" ,Minika GO
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
