@@ -173,7 +173,7 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="DISNEY JUNIOR.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/disneyjr.png" ,Disney Junior
 https://saran-live.ercdn.net/disneyjunior/index.m3u8
-#EXTINF:-1 group-title="ÇOCUK" tvg-id="BABYTV.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/bc/BabyTV_logo.png" ,Baby TV
+#EXTINF:-1 group-title="ÇOCUK" tvg-id="BABYTV.tr" tvg-logo="https://e7.pngegg.com/pngimages/730/198/png-clipart-babytv-enchanted-babyfirsttv-television-logo-television-child.png" ,Baby TV
 https://saran-live.ercdn.net/babytv/index.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TRT KURDİ.tr" tvg-logo="https://cdn.technettv.com/channel/29506/logo_256_1733832080.jpg" ,TRT Kurdi
 https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
