@@ -169,7 +169,7 @@ https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="MİNİKA GO.tr" tvg-logo="https://cdn.technettv.com/channel/33776/logo_256.png" ,Minika GO
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
-#EXTINF:-1 group-title="ÇOCUK" tvg-id="MİNİKA ÇOCUK.tr" tvg-logo="http://ginikoturkish.com/channels/logo/minika-cocuk.png" ,Minika Cocuk
+#EXTINF:-1 group-title="ÇOCUK" tvg-id="MİNİKA ÇOCUK.tr" tvg-logo="https://www.canlitv.me/poster/minika-cocuk.png" ,Minika Cocuk
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="DISNEY JUNIOR.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/disneyjr.png" ,Disney Junior
 https://saran-live.ercdn.net/disneyjunior/index.m3u8
