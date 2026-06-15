@@ -23,7 +23,7 @@ https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Haber Turk.tr" tvg-logo="https://images.seeklogo.com/logo-png/30/1/haberturk-tv-ve-gazete-logo-png_seeklogo-307034.png" ,Haber Turk
 https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8eamtet7q9wq&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3
-#EXTINF:-1 group-title="HABER" tvg-id="ÜLKE TV.tr" tvg-logo="https://images.seeklogo.com/logo-png/26/2/ulke-tv-logo-png_seeklogo-260903.png" , Ülke TV
+#EXTINF:-1 group-title="HABER" tvg-id="ÜLKE TV.tr" tvg-logo="https://e7.pngegg.com/pngimages/25/656/png-clipart-ulke-tv-television-channel-high-definition-television-others-television-angle.png" , Ülke TV
 https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="TGRT HABER.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" ,TGRT HABER
 https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber_720p.m3u8
