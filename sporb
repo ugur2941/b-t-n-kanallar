@@ -75,25 +75,25 @@ https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8
 https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
 #EXTINF:-1 tvg-name="Sports Tv" group-title="Ulusal ve Diğer Kanallar",Sports Tv
 https://andro.2385437.xyz/checklist/androstreamlivesptstv.m3u8
-#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4BpwNhxsIdkhuEOVMs3UaaafbHpZDWgHNjPUeuoTlQ&s=10" ,Tabii Spor
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor
 https://andro.2385437.xyz/checklist/androstreamlivetb.m3u8
-#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor Alternatif.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4BpwNhxsIdkhuEOVMs3UaaafbHpZDWgHNjPUeuoTlQ&s=10" ,Tabii Spor Alternatif
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor Alternatif.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor Alternatif
 https://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-name="Tabi Spor 1" group-title="Tabii",Tabi Spor 1
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 1.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 1
 https://andro.2385437.xyz/checklist/androstreamlivetb1.m3u8
-#EXTINF:-1 tvg-name="Tabi Spor 2" group-title="Tabii",Tabi Spor 2
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 2.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 2
 https://andro.2385437.xyz/checklist/androstreamlivetb2.m3u8
-#EXTINF:-1 tvg-name="Tabi Spor 3" group-title="Tabii",Tabi Spor 3
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 3.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 3
 https://andro.2385437.xyz/checklist/androstreamlivetb3.m3u8
-#EXTINF:-1 tvg-name="Tabi Spor 4" group-title="Tabii",Tabi Spor 4
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 4.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 4
 https://andro.2385437.xyz/checklist/androstreamlivetb4.m3u8
-#EXTINF:-1 tvg-name="Tabi Spor 5" group-title="Tabii",Tabi Spor 5
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor.tr 5" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 5
 https://andro.2385437.xyz/checklist/androstreamlivetb5.m3u8
-#EXTINF:-1 tvg-name="Tabi Spor 6" group-title="Tabii",Tabi Spor 6
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 6.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 6
 https://andro.2385437.xyz/checklist/androstreamlivetb6.m3u8
-#EXTINF:-1 tvg-name="Tabi Spor 7" group-title="Tabii",Tabi Spor 7
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 7.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 7
 https://andro.2385437.xyz/checklist/androstreamlivetb7.m3u8
-#EXTINF:-1 tvg-name="Tabi Spor 8" group-title="Tabii",Tabi Spor 8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 8.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 8
 https://andro.2385437.xyz/checklist/androstreamlivetb8.m3u8
 #EXTINF:-1 tvg-name="Tivibu Spor" group-title="Tivibu",Tivibu Spor
 https://andro.2385437.xyz/checklist/androstreamlivets.m3u8
