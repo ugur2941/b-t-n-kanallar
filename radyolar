@@ -17,6 +17,15 @@
 	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/joy.png", 
 	"url": "https://25703.live.streamtheworld.com/JOY_FM128AAC.aac"
   },
+{
+	"country": "Radio",
+	"id": "Türkü Radyo ",
+	"category": "J",
+	"name": "Türkü Radyo ",
+	"p": 13,
+	"logo": "https://i.hizliresim.com/1arhmkl.png", 
+	"url": "http://51.255.235.165:25041/stream?type=http&nocache=8"
+  },
   {
 	"country": "Radio",
 	"id": "Radyo 45'lik ",
