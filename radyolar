@@ -114,7 +114,7 @@
 	"name": "Metro Fm",
 	"p": 57,
 	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/metrofm.png",
-	"url": "https://25583.live.streamtheworld.com/METRO_FM128AAC.aac"
+	"url": "https://25583.live.streamtheworld.com/METRO_FM128AAC"
   },
   {	
 	"country":"Radio",
@@ -168,7 +168,7 @@
 	"name": "POP 90",
 	"p": 63,
 	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/pop90.png",
-	"url": "https://25653.live.streamtheworld.com/POP90128AAC.aac"
+	"url": "https://25653.live.streamtheworld.com/POP90128AAC"
   },
   {	
 	"country":"Radio",
@@ -213,7 +213,7 @@
 	"name": "BABYJOY",
 	"p": 68,
 	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/babyjoy.png",
-	"url": "https://22733.live.streamtheworld.com/SC009_SO1AAC.aac"
+	"url": "https://22733.live.streamtheworld.com/SC009_SO1AAC"
   },
   {	
 	"country":"Radio",
@@ -285,7 +285,7 @@
 	"name": "SÜPER FM",
 	"p": 78,
 	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/superfm.png",
-	"url": "https://28553.live.streamtheworld.com/SUPER_FM128AAC.aac"
+	"url": "https://28553.live.streamtheworld.com/SUPER_FM128AAC"
   },
   {	
 	"country":"Radio",
