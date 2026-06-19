@@ -251,6 +251,15 @@
 	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_ODTÜ_logo.png",
 	"url": "https://stream3.radyoodtu.com.tr:8000/easy"
   },
+{	
+	"country":"Radio",
+	"id": "Avrasya Türk",
+	"category": "A",
+	"name": "Avrasya Türk",
+	"p": 74,
+	"logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-avrasya-turk.jpg",
+	"url": "https://sslyayin.netyayin.net:10909/;/;stream.mp3"
+  },
   {	
 	"country":"Radio",
 	"id": "Radyo Odtu KARIŞIKKASET",
