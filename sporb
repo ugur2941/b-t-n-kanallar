@@ -13,6 +13,7 @@
 
 #EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports Haber.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports Haber 
 https://netspor.tecostream.xyz/bsh.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1
 https://2i4.d72577a9dd0ec71.cfd/taraftarium/mono.m3u8
 #EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1-A.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1-A
 https://vavoo.to/play/3840475653/index.m3u8
