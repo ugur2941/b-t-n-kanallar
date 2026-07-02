@@ -42,7 +42,7 @@ https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="ilketv.tr" tvg-logo="https://ilketv.com.tr/wp-content/uploads/2024/06/logo.png" ,İlke TV
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv
-https://silent-lake-5dff.ugur2941.workers.dev/?url=https://vavoo.to/vavoo-iptv/play/2036794972b992547192b9
+https://vavoo.to/vavoo-iptv/play/960578312ee36cc17c5d2
 #EXTINF:-1 group-title="HABER" tvg-id="Haber61.tr" tvg-logo="https://cdn.technettv.com/channel/29520/logo_256_1733832303.jpg" ,Haber 61
 https://cdn1-haber61tv.yayin.com.tr/haber61tv/haber61tv/playlist.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="A SPOR.tr" tvg-logo="https://cdn.technettv.com/channel/33860/logo_256.png" ,z-A Spor
