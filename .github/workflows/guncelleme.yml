@@ -1,5 +1,5 @@
 name: Vavoo M3U Otomatik Guncelleme
-# ... (Ayar yapılandırması)
+
 on:
   schedule:
     - cron: '0 */6 * * *'
@@ -7,19 +7,31 @@ on:
 
 jobs:
   build:
-    # ... (İş akışı adımları)
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
     - name: Kodlari Cek
       uses: actions/checkout@v4
-    # ... (Python kurulumu)
+      with:
+        # Robotun bağımsız modda kalmasını önleyip doğrudan ana dala kilitliyoruz
+        ref: main
+
+     Tarayıcı hatası almamak için Python sürümünü sabitliyoruz
+    - name: Python Kur
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
     - name: Scripti Calistir
       run: python vavoo_guncelle.py
-    # ... (Değişikliklerin yüklenmesi)
-    - name: Degisiklikleri Otomatik Yukle
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "Otomatik Vavoo M3U Guncellendi"
-        file_pattern: "belgesel"
+
+    # HATA VERMESİ İMKANSIZ OLAN ORİJİNAL YÜKLEME ADIMI
+    - name: Degisiklikleri Sunucuya Yukle
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add belgesel
+        # İçerik değişmediyse bile hata kodu üretmeden (|| exit 0) görevi başarıyla bitirir
+        git commit -m "Otomatik Vavoo M3U Guncellendi" || exit 0
+        git push origin main
