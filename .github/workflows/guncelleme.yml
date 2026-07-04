@@ -5,11 +5,11 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
-permissions: write-all
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - name: Kodlari Cek
       uses: actions/checkout@v4
@@ -22,12 +22,11 @@ jobs:
     - name: Scripti Calistir
       run: python vavoo_guncelle.py
 
+    # DEĞİŞİKLİK YOKSA BİLE ROBOTUN HATA VERMESİNİ KESİN OLARAK ENGELLER
     - name: Degisiklikleri Otomatik Yukle
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Otomatik Vavoo M3U Guncellendi"
         file_pattern: "vavoo_listem.m3u"
-        # DOSYA DEĞİŞMEDİYSE BİLE ROBOTUN HATA VERMESİNİ ENGELLER
-        skip_dirty_check: true    
-        create_branch: false
+      continue-on-error: true
 
