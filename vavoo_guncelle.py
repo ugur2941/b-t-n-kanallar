@@ -1,43 +1,61 @@
-import datetime
+import urllib.request
+import json
+import ssl
 
-# Sizin listenizdeki tüm orijinal belgesel kanalları ve bilgileri
-kanallar = [
-    {"adi": "Tarih TV", "id": "3856957052050da882aa10", "logo": "https://dsmart.com.tr", "tvg_id": "TARİH TV.tr"},
-    {"adi": "BBC earth", "id": "22284968562a623d1b95b4", "logo": "https://creativeboom.com", "tvg_id": "BBC EARTH.tr"},
-    {"adi": "History", "id": "1335130209de4b92f31496", "logo": "https://dsmart.com.tr", "tvg_id": "VIASAT HISTORY.tr"},
-    {"adi": "Discovery", "id": "6957057788f10364acdac", "logo": "https://kablowebtv.com", "tvg_id": "DISCOVERY CHANNEL.tr"},
-    {"adi": "Discovery ID", "id": "20954040600611bde9e160", "logo": "https://kablowebtv.com", "tvg_id": "ID.tr"},
-    {"adi": "Nat Geo Wild", "id": "1324166169d75d5197aa7", "logo": "https://kablowebtv.com", "tvg_id": "NATIONAL GEOGRAPHIC WILD.tr"},
-    {"adi": "Nat Geo", "id": "1960546091bcaf052d3800", "logo": "https://kablowebtv.com", "tvg_id": "NATIONAL GEOGRAPHIC.tr"},
-    {"adi": "Love nature", "id": "259380083927b83aced3e1", "logo": "https://lovenature.com", "tvg_id": "Love nature"},
-    {"adi": "Agro Tv", "id": "163358782054d9002fa0b0", "logo": "https://gstatic.com", "tvg_id": "Agro Tv"}
-]
+# SSL sertifika hatalarını göz ardı etmek için (Gerekirse)
+ssl_context = ssl._create_unverified_context()
 
-m3u_icerik = "#EXTM3U\n"
-# Git'in boş içerik hatasını önlemek ve dosyanın taze kalmasını sağlamak için zaman damgası ekliyoruz
-m3u_icerik += f"# Son Guncelleme Zamani: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-m3u_icerik += "#EXT-X-USER-AGENT:VAVOO/2.6\n"
-m3u_icerik += "#EXT-X-REFERER:https://vavoo.to/\n"
-m3u_icerik += "#EXT-X-ORIGIN:https://vavoo.to\n"
+def get_vavoo_channels():
+    # 1. Vavoo API'sinden güncel kanal listesini JSON formatında çekiyoruz
+    api_url = "https://www.vavoo.to/vavoo/channels"
+    req = urllib.request.Request(api_url, headers={'User-Agent': 'VAVOO/2.6'})
+    
+    try:
+        with urllib.request.urlopen(req, context=ssl_context) as response:
+            channels = json.loads(response.read().decode('utf-8'))
+            return channels
+    except Exception as e:
+        print(f"Vavoo API'sine bağlanılamadı: {e}")
+        return []
 
-# Kanalları tam istediğiniz biçimde (vavoo.to/play/KANAL_ID/index.m3u8) otomatik olarak oluşturuyoruz
-for kanal in kanallar:
-    m3u_icerik += f'#EXTINF:-1 group-title="BELGESEL" tvg-id="{kanal["tvg_id"]}" tvg-logo="{kanal["logo"]}" ,{kanal["adi"]}\n'
-    m3u_icerik += f"https://vavoo.to/play/{kanal['id']}/index.m3u8\n"
+def main():
+    channels = get_vavoo_channels()
+    if not channels:
+        print("Kanal listesi boş döndü veya alınamadı.")
+        return
 
-# Listenizin altındaki Vavoo harici normal sabit linkleriniz
-m3u_icerik += '#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://twimg.com" ,TRT GENÇ\n'
-m3u_icerik += 'https://trt.com.tr\n'
+    output_lines = ["#EXTM3U\n"]
+    
+    # Filtrelemek istediğiniz kategoriler veya anahtar kelimeler
+    # Türkiye kanalları için genellikle grup adı veya ülke kodu kontrol edilir
+    filtreler = ["belgesel", "documentary", "nat geo", "discovery", "history"]
 
-m3u_icerik += '#EXTINF:-1 group-title="BELGESEL" tvg-id="YabanTV.tr" tvg-logo="https://gstatic.com" ,Yaban TV\n'
-m3u_icerik += 'https://tulix.tv\n'
+    for channel in channels:
+        # Vavoo API çıktısında genellikle 'id', 'name', 'group', 'country' gibi alanlar bulunur
+        channel_id = channel.get("id")
+        name = channel.get("name", "Bilinmeyen Kanal")
+        group = channel.get("group", "Genel")
+        country = channel.get("country", "").lower()
 
-m3u_icerik += '#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT BELGESEL.tr" tvg-logo="https://technettv.com" ,TRT Belgesel\n'
-m3u_icerik += 'https://trt.com.tr\n'
+        # Sadece Türkiye kanalları veya belirli belgesel kelimelerini içeren kanalları süzüyoruz
+        is_turkish = (country == "turkey" or country == "tr")
+        is_documentary = any(f in name.lower() or f in group.lower() for f in filtreler)
 
-# Çıktıyı doğrudan uygulamanızın bağlı olduğu "belgesel" dosyasına yazıyoruz
-with open("./belgesel", "w", encoding="utf-8") as f:
-    f.write(m3u_icerik)
+        if is_turkish or is_documentary:
+            # İstediğiniz link formatını oluşturuyoruz:
+            # Örnek: https://vavoo.to/vavoo-iptv/play/KanalID
+            stream_url = f"https://vavoo.to/vavoo-iptv/play/{channel_id}"
+            
+            # M3U Formatına dönüştürme
+            output_lines.append(f'#EXTINF:-1 tvg-id="{channel_id}" group-title="{group.capitalize()}",{name}\n')
+            output_lines.append(f"{stream_url}\n")
 
-print("Tüm liste tam istediğiniz play/KANAL_ID/index.m3u8 formatıyla başarıyla güncellendi!")
+    # Sonuçları 'belgesel' dosyasına kaydet
+    with open("belgesel", "w", encoding="utf-8") as f:
+        f.writelines(output_lines)
+        
+    print(f"Güncelleme tamamlandı! 'belgesel' dosyasına {len(output_lines) // 2} kanal yazıldı.")
+
+if __name__ == "__main__":
+    main()
 
