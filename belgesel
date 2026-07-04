@@ -3,100 +3,27 @@
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Kertenkele) Chrome/134.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://vavoo.to/
 #EXT-X-ORIGIN:https://vavoo.to/
-
-#EXTINF:-1 group-title="Turkey",4K TR: DMAX HD .b
-https://vavoo.to/vavoo-iptv/play/869937351ec185ded43b6
-#EXTINF:-1 group-title="Turkey",4K TR: NATIONAL GEOGRAPHIC HD .b
-https://vavoo.to/vavoo-iptv/play/10783553250ea885deefe4
-#EXTINF:-1 group-title="Turkey",4K TR: NATIONAL GEOGRAPHIC WILD HD .b
-https://vavoo.to/vavoo-iptv/play/1324166169d75d5197aa7
-#EXTINF:-1 group-title="Turkey",4K TR: TRT BELGESEL HD .b
-https://vavoo.to/vavoo-iptv/play/786973656b665fa8beb18
-#EXTINF:-1 group-title="Turkey",4K TR: VIASAT EXPLORE .b
-https://vavoo.to/vavoo-iptv/play/1451950581e94c106d97f3
-#EXTINF:-1 group-title="Turkey",4K TR: VIASAT HISTORY HD .b
-https://vavoo.to/vavoo-iptv/play/1335130209de4b92f31496
-#EXTINF:-1 group-title="Turkey",ANIMAL PLANET HD .b
-https://vavoo.to/vavoo-iptv/play/3913298991ebe0634b3649
-#EXTINF:-1 group-title="Turkey",DISCOVERY CHANNEL .s
-https://vavoo.to/vavoo-iptv/play/3079995901347079e2f045
-#EXTINF:-1 group-title="Turkey",DISCOVERY CHANNEL HD+ .b
-https://vavoo.to/vavoo-iptv/play/6957057788f10364acdac
-#EXTINF:-1 group-title="Turkey",DISCOVERY ID .b
-https://vavoo.to/vavoo-iptv/play/20954040600611bde9e160
-#EXTINF:-1 group-title="Turkey",DISCOVERY ID .s
-https://vavoo.to/vavoo-iptv/play/972730032fe506471c990
-#EXTINF:-1 group-title="Turkey",DISCOVERY IDX HD .b
-https://vavoo.to/vavoo-iptv/play/9700986623c97a7651f69
-#EXTINF:-1 group-title="Turkey",DISCOVERY SCIENCE .s
-https://vavoo.to/vavoo-iptv/play/369885232360b4a1528ab4
-#EXTINF:-1 group-title="Turkey",DISCOVERY SCIENCE HD+ .b
-https://vavoo.to/vavoo-iptv/play/2818684271ea7ddc0e09ff
-#EXTINF:-1 group-title="Turkey",DISCOVERY WORLD .c
-https://vavoo.to/vavoo-iptv/play/3624002307d3a1f474d7ce
-#EXTINF:-1 group-title="Turkey",DMAX .c
-https://vavoo.to/vavoo-iptv/play/315721043612919a3e4725
-#EXTINF:-1 group-title="Turkey",DMAX .s
-https://vavoo.to/vavoo-iptv/play/3239529951d63b20c43f8b
-#EXTINF:-1 group-title="Turkey",DMAX HD .b
-https://vavoo.to/vavoo-iptv/play/1595495667292319e147ce
-#EXTINF:-1 group-title="Turkey",DMAX HEVC .b
-https://vavoo.to/vavoo-iptv/play/3928493138c10993284095
-#EXTINF:-1 group-title="Turkey",HISTORY CHANNEL .s
-https://vavoo.to/vavoo-iptv/play/24153315684694fb309dba
-#EXTINF:-1 group-title="Turkey",HISTORY HD .b
-https://vavoo.to/vavoo-iptv/play/420748756258a17d4693fc
-#EXTINF:-1 group-title="Turkey",INVESTIGATION DISCOVERY .c
-https://vavoo.to/vavoo-iptv/play/1372455233dfff5072538c
-#EXTINF:-1 group-title="Turkey",NAT GEO .c
-https://vavoo.to/vavoo-iptv/play/184566063009c2eced111a
-#EXTINF:-1 group-title="Turkey",NAT GEO .s
-https://vavoo.to/vavoo-iptv/play/1960546091bcaf052d3800
-#EXTINF:-1 group-title="Turkey",NAT GEO WILD .c
-https://vavoo.to/vavoo-iptv/play/332065496847e1d2ff5743
-#EXTINF:-1 group-title="Turkey",NAT GEO WILD .s
-https://vavoo.to/vavoo-iptv/play/1999823186f9934d6d684a
-#EXTINF:-1 group-title="Turkey",NAT GEO WILD HD .b
-https://vavoo.to/vavoo-iptv/play/1519237116daf8e783a22b
-#EXTINF:-1 group-title="Turkey",NAT GEO WILD HD+ .b
-https://vavoo.to/vavoo-iptv/play/124345657e7d701408114
-#EXTINF:-1 group-title="Turkey",NATIONAL GEOGRAPHIC HD+ .b
-https://vavoo.to/vavoo-iptv/play/1514492628e6d09b31660c
-#EXTINF:-1 group-title="Turkey",SCIENCE & VICE .s
-https://vavoo.to/vavoo-iptv/play/4188119721d54405415c0f
-#EXTINF:-1 group-title="Turkey",TGRT BELGESEL .b
-https://vavoo.to/vavoo-iptv/play/3925938631130980bfec69
-#EXTINF:-1 group-title="Turkey",TGRT BELGESEL .c
-https://vavoo.to/vavoo-iptv/play/2753787815ca92c106e311
-#EXTINF:-1 group-title="Turkey",TGRT BELGESEL .s
-https://vavoo.to/vavoo-iptv/play/1743993546eff3fc244a74
-#EXTINF:-1 group-title="Turkey",TLC .c
-https://vavoo.to/vavoo-iptv/play/17668406603d2e9e4942ac
-#EXTINF:-1 group-title="Turkey",TLC .s
-https://vavoo.to/vavoo-iptv/play/951448076791f1a254e7c
-#EXTINF:-1 group-title="Turkey",TLC TV .b
-https://vavoo.to/vavoo-iptv/play/328164178659cf433d3442
-#EXTINF:-1 group-title="Turkey",TRT BELGESEL .c
-https://vavoo.to/vavoo-iptv/play/59975740553631f8c458f
-#EXTINF:-1 group-title="Turkey",TRT BELGESEL .s
-https://vavoo.to/vavoo-iptv/play/2439012215c6e5b64828da
-#EXTINF:-1 group-title="Turkey",TRT BELGESEL HD+ .b
-https://vavoo.to/vavoo-iptv/play/2661394868c382749f3f0e
-#EXTINF:-1 group-title="Turkey",TRT BELGESEL HEVC .b
-https://vavoo.to/vavoo-iptv/play/33409970269ccb83ea274e
-#EXTINF:-1 group-title="Turkey",TRT BELGESEL RAW .b
-https://vavoo.to/vavoo-iptv/play/8368266978a2a0a7326d3
-#EXTINF:-1 group-title="Turkey",VIASAT EXPLORE .b
-https://vavoo.to/vavoo-iptv/play/118325844000b303729ade
-#EXTINF:-1 group-title="Turkey",VIASAT EXPLORE .c
-https://vavoo.to/vavoo-iptv/play/10982410761d6faced1faa
-#EXTINF:-1 group-title="Turkey",VIASAT EXPLORE .s
-https://vavoo.to/vavoo-iptv/play/17854799144cbb1c340ac1
-#EXTINF:-1 group-title="Turkey",VIASAT HISTORY .c
-https://vavoo.to/vavoo-iptv/play/1900945213599b64fe115b
-#EXTINF:-1 group-title="Turkey",VIASAT HISTORY .s
-https://vavoo.to/vavoo-iptv/play/1515686371746ee6b20938
-#EXTINF:-1 group-title="Turkey",VIASAT HISTORY HD+ .b
-https://vavoo.to/vavoo-iptv/play/348046896213b84ce9a729
-#EXTINF:-1 group-title="Turkey",VIASAT HISTORY HEVC .b
-https://vavoo.to/vavoo-iptv/play/1165670263945583e36e19
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png" ,Tarih TV
+https://vavoo.to3856957052050da882aa10.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://www.creativeboom.com/upload/articles/8f/8f6cd51ec38e4f9ccab6a7350ba42d4ca9c429da_1280.png" ,BBC earth
+https://vavoo.to22284968562a623d1b95b4.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/History%20Logo%20on%20Black%20BG.PNG" ,History
+https://vavoo.to1335130209de4b92f31496.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png" ,Discovery
+https://vavoo.to6957057788f10364acdac.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="ID.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/539be808-86e7-4ed2-aa0b-130dbc1ac450.png" ,Discovery ID
+https://vavoo.to20954040600611bde9e160.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="NATIONAL GEOGRAPHIC WILD.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/4cc38817-6eb0-4f26-ac2b-cb5baa3b68ba.png" ,Nat Geo Wild
+https://vavoo.to1324166169d75d5197aa7.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="NATIONAL GEOGRAPHIC.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/38a2e51a-9f7f-4915-aa88-f78190f59411.png" ,Nat Geo
+https://vavoo.to1960546091bcaf052d3800.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="Love nature" tvg-logo="https://lovenature.com/wp-content/uploads/2020/08/love-nature-logo_peacock.png" ,Love nature
+https://vavoo.to259380083927b83aced3e1.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="Agro Tv" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwcj38tD2WBf6XQWRDtP56BqKxp0huHjYDDzXwy0bzvhGxit9ImXwVjE&s=10" ,Agro Tv
+https://vavoo.to163358782054d9002fa0b0.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://pbs.twimg.com/profile_images/2009963534021459968/JwBVdge0_400x400.jpg" ,TRT GENÇ
+https://tv-trtgenc.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="BELGESEL" tvg-id="YabanTV.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2EalQKrrB5JxrjDcEMHl-IXVYvYyv3Kqng&s" ,Yaban TV
+https://trn03.tulix.tv/gt-yabantv/tracks-v1a1/mono.m3u8?token=0631e8753bcdf25bb2a5015db22ec082
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT BELGESEL.tr" tvg-logo="https://cdn.technettv.com/channel/20609/logo_256_1699961655.png" ,TRT Belgesel
+https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
