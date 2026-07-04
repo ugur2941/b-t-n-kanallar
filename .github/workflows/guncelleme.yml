@@ -1,5 +1,5 @@
 name: Vavoo M3U Otomatik Guncelleme
-
+# ... (Ayar yapılandırması)
 on:
   schedule:
     - cron: '0 */6 * * *'
@@ -7,24 +7,19 @@ on:
 
 jobs:
   build:
+    # ... (İş akışı adımları)
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
     - name: Kodlari Cek
       uses: actions/checkout@v4
-
-    - name: Python Kur
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
-
+    # ... (Python kurulumu)
     - name: Scripti Calistir
       run: python vavoo_guncelle.py
-
-    -     - name: Degisiklikleri Otomatik Yukle
+    # ... (Değişikliklerin yüklenmesi)
+    - name: Degisiklikleri Otomatik Yukle
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Otomatik Vavoo M3U Guncellendi"
         file_pattern: "belgesel"
-
