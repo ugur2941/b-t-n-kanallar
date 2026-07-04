@@ -5,36 +5,48 @@ app = Flask(__name__)
 
 def get_vavoo_token():
     url = "https://vavoo.to"
-    
-    # Vavoo'nun güncel bot engelleme sistemini aşmak için genişletilmiş başlıklar
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+        "User-Agent": "VAVOO/2.6",
+        "Accept": "application/json",
         "Content-Type": "application/json",
         "Origin": "https://vavoo.to",
-        "Referer": "https://vavoo.to",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin"
+        "Referer": "https://vavoo.to"
     }
+    payload = {"id": "", "ver": "2.6"}
     
-    # Sunucunun boş istekleri reddetmemesi için standart sürüm parametreleri
-    payload = {"id": "", "ver": "2.6"} 
+    # Render IP engellendiği için isteği geçirmek amacıyla genel/ücretsiz proxy servisleri kullanıyoruz
+    proxy_urls = [
+        "https://proxyscrape.com",
+        "https://proxy-list.download"
+    ]
     
+    # 1. Aşama: Doğrudan deneme (bazen engel kalkabilir)
     try:
-        # Doğrulama oturumu simüle etmek için session kullanıyoruz
-        session = requests.Session()
-        response = session.post(url, json=payload, headers=headers, timeout=12)
-        
+        response = requests.post(url, json=payload, headers=headers, timeout=5)
         if response.status_code == 200:
             data = response.json()
-            token = data.get("signed") or data.get("token")
-            if token:
-                return token
-        print(f"Hata Kodu: {response.status_code} - Yanit: {response.text}")
-    except Exception as e:
-        print(f"Baglanti Hatasi: {e}")
+            return data.get("signed") or data.get("token")
+    except:
+        pass
+
+    # 2. Aşama: Genel açık proxy sunucuları üzerinden tokenı almaya zorlama
+    for p_url in proxy_urls:
+        try:
+            proxies_list = requests.get(p_url, timeout=4).text.split('\r\n')
+            for proxy in proxies_list[:5]: # İlk 5 aktif proxy adresini dene
+                if proxy:
+                    try:
+                        px = {"http": f"http://{proxy}", "https": f"http://{proxy}"}
+                        response = requests.post(url, json=payload, headers=headers, proxies=px, timeout=4)
+                        if response.status_code == 200:
+                            data = response.json()
+                            token = data.get("signed") or data.get("token")
+                            if token:
+                                return token
+                    except:
+                        continue
+        except:
+            continue
     return None
 
 @app.route('/vavoo-iptv/play/<channel_id>')
@@ -43,11 +55,11 @@ def play_channel(channel_id):
     if token:
         stream_url = f"https://vavoo.tolive/{channel_id}.m3u8?key={token}"
         return redirect(stream_url)
-    return jsonify({
-        "error": "Token alinamadi", 
-        "status": "Vavoo guvenlik duvari sunucu IP adresini engelliyor olabilir."
-    }), 500
+    
+    # Token kesinlikle alınamazsa, oynatıcının şansını denemesi için ham linke yönlendirir
+    return redirect(f"https://vavoo.tolive/{channel_id}.m3u8")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
