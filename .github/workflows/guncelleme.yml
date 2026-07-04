@@ -22,8 +22,9 @@ jobs:
     - name: Scripti Calistir
       run: python vavoo_guncelle.py
 
-    - name: Degisiklikleri Otomatik Yukle
+    -     - name: Degisiklikleri Otomatik Yukle
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Otomatik Vavoo M3U Guncellendi"
-        file_pattern: "vavoo_listem.m3u"
+        file_pattern: "belgesel"
+
