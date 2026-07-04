@@ -53,11 +53,11 @@ def get_vavoo_token():
 def play_channel(channel_id):
     token = get_vavoo_token()
     if token:
-        stream_url = f"https://vavoo.tolive/{channel_id}.m3u8?key={token}"
+        stream_url = f"https://vavoo.to/live/{channel_id}.m3u8?key={token}"
         return redirect(stream_url)
     
     # Token kesinlikle alınamazsa, oynatıcının şansını denemesi için ham linke yönlendirir
-    return redirect(f"https://vavoo.tolive/{channel_id}.m3u8")
+    return redirect(f"https://vavoo.to/live/{channel_id}.m3u8")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
