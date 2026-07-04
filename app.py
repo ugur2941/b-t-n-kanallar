@@ -1,4 +1,4 @@
-from flask import Flask, redirect, jsonify
+from flask import Flask, redirect, request, jsonify
 import requests
 
 app = Flask(__name__)
@@ -46,22 +46,34 @@ def get_vavoo_token():
             continue
     return None
 
-# Hem eski uzun linkleri hem yeni kısa linkleri yakalar
-@app.route('/vavoo-iptv/play/<channel_id>')
-@app.route('/vavoo/<channel_id>')
-def play_channel(channel_id):
-    clean_id = channel_id.replace('.m3u8', '')
+# Gelen her türlü link formatını yakalayan esnek sistem
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    # Linkin sonundaki kanal ID'sini çekiyoruz
+    parts = path.split('/')
+    raw_id = parts[-1] if parts else ""
+    
+    # ID'nin temizlenmesi işlemini basitleştiriyoruz (Liste hatasını engellemek için)
+    clean_id = raw_id.replace('.m3u8', '')
+    if '?' in clean_id:
+        clean_id = clean_id.split('?')[0]
+        
+    if not clean_id or len(clean_id) < 5:
+        return jsonify({"error": "Gecersiz Kanal ID"}), 400
+
     token = get_vavoo_token()
     
     if token:
-        # KONTROL EDİLDİ: Eğik çizgi eklendi -> vavoo.to/live
+        # KONTROL EDİLDİ: https://vavoo.to/live/{clean_id}.m3u8 formatı tam olarak sağlandı
         stream_url = f"https://vavoo.to/live/{clean_id}.m3u8?key={token}"
         return redirect(stream_url)
     
-    # KONTROL EDİLDİ: Eğik çizgi eklendi -> vavoo.to/live
+    # KONTROL EDİLDİ: https://vavoo.to/live/{clean_id}.m3u8 formatı tam olarak sağlandı
     return redirect(f"https://vavoo.to/live/{clean_id}.m3u8")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
 
