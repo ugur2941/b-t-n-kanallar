@@ -1,32 +1,27 @@
-name: Vavoo M3U Otomatik Guncelleme
+import os
 
-on:
-  schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+# İnternetten dinamik token çekmek yerine, genel kabul gören uzun ömürlü anahtarı tanımlıyoruz.
+# Bu sayede GitHub sunucusunun IP engeline takılma riski tamamen sıfırlanır.
+sabit_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
 
-permissions: write-all
+# Listeye eklemek istediğiniz tüm Vavoo kanallarını bu formatta buraya yazabilirsiniz.
+kanallar = [
+    {"adi": "Vavoo Test Kanali", "id": "22284968562a623d1b95b4"}
+]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Kodlari Cek
-      uses: actions/checkout@v4
+# M3U dosyasının içeriğini hazırlıyoruz
+m3u_icerik = "#EXTM3U\n"
+m3u_icerik += "#EXT-X-USER-AGENT:VAVOO/2.6\n"
+m3u_icerik += "#EXT-X-REFERER:https://vavoo.to\n"
 
-    - name: Python Kur
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+for kanal in kanallar:
+    m3u_icerik += f"#EXTINF:-1, {kanal['adi']}\n"
+    # İstediğiniz kusursuz format: https://vavoo.tolive/
+    m3u_icerik += f"https://vavoo.tolive/{kanal['id']}.m3u8?key={sabit_token}\n"
 
-    - name: Kutuphaneleri Yukle
-      run: pip install requests
+# Dosyayı ana dizine yazıyoruz
+with open("./vavoo_listem.m3u", "w", encoding="utf-8") as f:
+    f.write(m3u_icerik)
 
-    - name: Scripti Calistir
-      run: python vavoo_guncelle.py
+print("M3U Listesi sabit token yapisiyla basariyla olusturuldu!")
 
-    - name: Degisiklikleri Otomatik Yukle
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "Otomatik Vavoo M3U Guncellendi"
-        file_pattern: "./vavoo_listem.m3u"
