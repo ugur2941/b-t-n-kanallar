@@ -1,30 +1,25 @@
 #EXTM3U
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referer=https://vavoo.to/
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://vavoo.to/
-#EXT-X-ORIGIN:https://vavoo.to
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png" ,Tarih TV
-https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
+https://tv1.arectv30.sbs/live/tarihtv.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://www.creativeboom.com/upload/articles/8f/8f6cd51ec38e4f9ccab6a7350ba42d4ca9c429da_1280.png" ,BBC earth
-https://vavoo.to/vavoo-iptv/play/22284968562a623d1b95b4
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/History%20Logo%20on%20Black%20BG.PNG" ,History
-https://vavoo.to/vavoo-iptv/play/1335130209de4b92f31496
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png" ,Discovery
-https://vavoo.to/vavoo-iptv/play/3079995901347079e2f045
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="ID.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/539be808-86e7-4ed2-aa0b-130dbc1ac450.png" ,Discovery ID
-https://vavoo.to/vavoo-iptv/play/20954040600611bde9e160
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="NATIONAL GEOGRAPHIC WILD.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/4cc38817-6eb0-4f26-ac2b-cb5baa3b68ba.png" ,Nat Geo Wild
-https://vavoo.to/vavoo-iptv/play/1324166169d75d5197aa7
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="NATIONAL GEOGRAPHIC.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/38a2e51a-9f7f-4915-aa88-f78190f59411.png" ,Nat Geo
-https://vavoo.to/vavoo-iptv/play/10783553250ea885deefe4
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="Love nature" tvg-logo="https://lovenature.com/wp-content/uploads/2020/08/love-nature-logo_peacock.png" ,Love nature
-https://vavoo.to/vavoo-iptv/play/3578706863eeeea821418e
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="Agro Tv" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwcj38tD2WBf6XQWRDtP56BqKxp0huHjYDDzXwy0bzvhGxit9ImXwVjE&s=10" ,Agro Tv
-https://vavoo.to/vavoo-iptv/play/163358782054d9002fa0b0
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://pbs.twimg.com/profile_images/2009963534021459968/JwBVdge0_400x400.jpg" ,TRT GENÇ
-https://tv-trtgenc.medya.trt.com.tr/master.m3u8
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="YabanTV.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2EalQKrrB5JxrjDcEMHl-IXVYvYyv3Kqng&s" ,Yaban TV
-https://vavoo.to/vavoo-iptv/play/178850393550c13d869fbf
+# Kaynak havuzlarda şu an aktif link bulunamadı
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TRT BELGESEL.tr" tvg-logo="https://cdn.technettv.com/channel/20609/logo_256_1699961655.png" ,TRT Belgesel
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
