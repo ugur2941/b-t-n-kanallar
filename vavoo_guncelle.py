@@ -2,7 +2,7 @@ import urllib.request
 import re
 
 # Güncel Vavoo M3U kaynak adresi
-SOURCE_URL = "https://raw.githubusercontent.com/GeceKod/vivii/refs/heads/main/vavoo_full.m3u"
+SOURCE_URL = "https://raw.githubusercontent.com/GeceKod/vivii/refs/heads/main/vavoo_Turkey.m3u"
 
 def main():
     print("M3U kaynak listesi indiriliyor...")
