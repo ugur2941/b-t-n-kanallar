@@ -5,6 +5,8 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,3 +27,7 @@ jobs:
       with:
         commit_message: "Otomatik Vavoo M3U Guncellendi"
         file_pattern: "vavoo_listem.m3u"
+        # DOSYA DEĞİŞMEDİYSE BİLE ROBOTUN HATA VERMESİNİ ENGELLER
+        skip_dirty_check: true    
+        create_branch: false
+
