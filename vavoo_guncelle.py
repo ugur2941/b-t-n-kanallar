@@ -1,12 +1,18 @@
 import urllib.request
 import re
 
-# Kanalların çekileceği ana kaynak M3U adresi
-SOURCE_URL = "https://raw.githubusercontent.com/fokus-ocas/ip/main/vavoo.m3u"
+# Doğrudan Vavoo kanallarını içeren güncel topluluk M3U adresi
+SOURCE_URL = "https://raw.githubusercontent.com/GeceKod/vivii/refs/heads/main/vavoo_full.m3u"
 
 def main():
     print("Güncel kaynak M3U listesi indiriliyor...")
-    req = urllib.request.Request(SOURCE_URL, headers={'User-Agent': 'Mozilla/5.0'})
+    
+    # Engellenmemek için tarayıcı gibi davranıyoruz
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': '*/*'
+    }
+    req = urllib.request.Request(SOURCE_URL, headers=headers)
     
     try:
         with urllib.request.urlopen(req) as response:
@@ -18,8 +24,8 @@ def main():
     lines = content.splitlines()
     output_lines = ["#EXTM3U\n"]
     
-    # Türkiye (Turkey) veya Belgesel içeren kanalları filtrelemek için kelimeler
-    filtreler = ["turkey", "türkiye", "belgesel", "documentary", "nat geo", "discovery", "history"]
+    # Sadece Türkiye (Turkey) kanallarını yakalamak için (İsterseniz belgesel vb. ekleyebilirsiniz)
+    filtreler = ["turkey", "türkiye", "group-title=\"tr\"", "group-title=\"turkey\""]
     
     eklenen_kanal_sayisi = 0
     i = 0
@@ -29,17 +35,21 @@ def main():
             if i + 1 < len(lines):
                 next_line = lines[i+1].strip()
                 
-                # Kanal isminde veya grup başlığında filtre kelimelerimiz var mı?
+                # Kanal bilgisinde Türkiye veya TR ifadesi geçiyor mu?
                 if any(f in line.lower() for f in filtreler):
                     
-                    # Regex ile link içindeki 20-40 karakter arası benzersiz ID'yi yakalıyoruz
-                    # Örn: .../play/3856957052050da882aa10/index.m3u8 içindeki ID'yi ayıklar
-                    match = re.search(r'(?:play/|/)([a-zA-Z0-9]{15,45})', next_line)
+                    # Linkin içindeki 20-45 karakter arası karmaşık ID kodunu buluyoruz
+                    # Bu regex hem /play/ID/index.m3u8 hem de /play/ID formatlarını yakalar
+                    match = re.search(r'play/([a-zA-Z0-9]+)', next_line)
+                    
+                    # Eğer yukarıdaki yakalayamazsa, linkteki son eğik çizgiden sonrasını veya nokta öncesini dene
+                    if not match:
+                        match = re.search(r'/([a-zA-Z0-9]{20,45})(?:\.|/|$)', next_line)
                     
                     if match:
                         kanal_id = match.group(1)
                         
-                        # İSTEDİĞİNİZ ÖZEL FORMAT:
+                        # TAM OLARAK İSTEDİĞİNİZ BİÇİM:
                         yeni_link = f"https://vavoo.to/vavoo-iptv/play/{kanal_id}"
                         
                         output_lines.append(line + "\n")
@@ -50,11 +60,11 @@ def main():
                 continue
         i += 1
 
-    # Çıktıyı doğrudan 'belgesel' dosyasına kaydediyoruz
+    # Çıktıyı deponuzdaki 'belgesel' dosyasına yazıyoruz
     with open("belgesel", "w", encoding="utf-8") as f:
         f.writelines(output_lines)
         
-    print(f"İşlem başarıyla tamamlandı! '{eklenen_kanal_sayisi}' adet kanal istediğiniz formatta 'belgesel' dosyasına yazıldı.")
+    print(f"İşlem tamamlandı! '{eklenen_kanal_sayisi}' adet Türkiye kanalı dönüştürülerek yazıldı.")
 
 if __name__ == "__main__":
     main()
