@@ -46,19 +46,22 @@ def get_vavoo_token():
             continue
     return None
 
-# Cihazların eski hatalı yönlendirmeyi hatırlamaması için tertemiz bir yol tanımı
+# Hem eski uzun linkleri hem yeni kısa linkleri yakalar
+@app.route('/vavoo-iptv/play/<channel_id>')
 @app.route('/vavoo/<channel_id>')
 def play_channel(channel_id):
     clean_id = channel_id.replace('.m3u8', '')
     token = get_vavoo_token()
     
     if token:
-        # DOĞRU SATIR: Arada eğik çizgi tam yerinde
-        return redirect(f"https://vavoo.to/live/{clean_id}.m3u8?key={token}")
+        # KONTROL EDİLDİ: Eğik çizgi eklendi -> vavoo.to/live
+        stream_url = f"https://vavoo.to/live/{clean_id}.m3u8?key={token}"
+        return redirect(stream_url)
     
-    # DOĞRU SATIR: Arada eğik çizgi tam yerinde
+    # KONTROL EDİLDİ: Eğik çizgi eklendi -> vavoo.to/live
     return redirect(f"https://vavoo.to/live/{clean_id}.m3u8")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
