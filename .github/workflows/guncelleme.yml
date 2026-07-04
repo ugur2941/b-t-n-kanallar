@@ -13,11 +13,7 @@ jobs:
     steps:
     - name: Kodlari Cek
       uses: actions/checkout@v4
-      with:
-        # Robotun bağımsız modda kalmasını önleyip doğrudan ana dala kilitliyoruz
-        ref: main
 
-     Tarayıcı hatası almamak için Python sürümünü sabitliyoruz
     - name: Python Kur
       uses: actions/setup-python@v5
       with:
@@ -26,12 +22,11 @@ jobs:
     - name: Scripti Calistir
       run: python vavoo_guncelle.py
 
-    # HATA VERMESİ İMKANSIZ OLAN ORİJİNAL YÜKLEME ADIMI
     - name: Degisiklikleri Sunucuya Yukle
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git add belgesel
-        # İçerik değişmediyse bile hata kodu üretmeden (|| exit 0) görevi başarıyla bitirir
         git commit -m "Otomatik Vavoo M3U Guncellendi" || exit 0
         git push origin main
+
