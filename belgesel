@@ -3,7 +3,7 @@
 #EXT-X-USER-AGENT:VAVOO/2.6
 #EXT-X-REFERER:https://vavoo.to
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://dsmart.com.tr" ,Tarih TV
-https://vavoo.to/play/300113394/index.m3u8
+https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://creativeboom.com" ,BBC earth
 https://vavoo.tolive/22284968562a623d1b95b4.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
 #EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY.tr" tvg-logo="https://dsmart.com.tr" ,History
