@@ -1,36 +1,38 @@
-name: Vavoo M3U Otomatik Guncelleme
+import requests
+import json
 
-on:
-  schedule:
-    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
-  workflow_dispatch: # Elle tetiklemek için
+def get_vavoo_token():
+    url = "https://vavoo.to"
+    headers = {
+        "User-Agent": "VAVOO/2.6", 
+        "Content-Type": "application/json"
+    }
+    try:
+        response = requests.post(url, json={"id": "", "ver": "2.6"}, headers=headers, timeout=10)
+        if response.status_code == 200:
+            return response.json().get("signed") or response.json().get("token")
+    except:
+        return None
 
-permissions: write-all
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    # Node 24 uyumlu v4 sürümüne güncellendi
-    - name: Kodlari Cek
-      uses: actions/checkout@v4
-
-    # Node 24 uyumlu v5 sürümüne güncellendi
-    - name: Python Kur
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
-
-    - name: Kutuphaneleri Yukle
-      run: pip install requests
-
-    - name: Scripti Calistir
-      run: python vavoo_guncelle.py
-
-    # Node 24 uyumlu v5 sürümüne güncellendi ve dosya yolu kesinleştirildi
-    - name: Degisiklikleri Otomatik Yukle
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "Otomatik Vavoo M3U Guncellendi"
-        file_pattern: "./vavoo_listem.m3u"
+token = get_vavoo_token()
+if token:
+    # Listeye eklemek istediğiniz tüm Vavoo kanallarını bu formatta buraya yazabilirsiniz.
+    # Örnek olarak test ettiğiniz kanal ID'sini ekledim.
+    kanallar = [
+        {"adi": "Vavoo Test Kanali", "id": "22284968562a623d1b95b4"}
+    ]
+    
+    # M3U dosyasının başlığını açıyoruz
+    m3u_icerik = "#EXTM3U\n"
+    for kanal in kanallar:
+        m3u_icerik += f"#EXTINF:-1, {kanal['adi']}\n"
+        # Tam olarak istediğiniz kusursuz format: https://vavoo.to
+        m3u_icerik += f"https://vavoo.to{kanal['id']}.m3u8?key={token}\n"
+        
+    # Dosyanın tam olarak ana dizine (root) yazılmasını kesinleştiriyoruz
+    with open("./vavoo_listem.m3u", "w", encoding="utf-8") as f:
+        f.write(m3u_icerik)
+    print("M3U Listesi taze token ile basariyla guncellendi!")
+else:
+    print("Vavoo sunucularindan token alinamadigi icin liste guncellenemedi.")
 
