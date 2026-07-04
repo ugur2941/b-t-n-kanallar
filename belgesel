@@ -1,1 +1,28 @@
 #EXTM3U
+# Guncelleme: 2026-07-04 17:54:54
+#EXT-X-USER-AGENT:VAVOO/2.6
+#EXT-X-REFERER:https://vavoo.to
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://dsmart.com.tr" ,Tarih TV
+https://vavoo.tolive/3856957052050da882aa10.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://creativeboom.com" ,BBC earth
+https://vavoo.tolive/22284968562a623d1b95b4.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY.tr" tvg-logo="https://dsmart.com.tr" ,History
+https://vavoo.tolive/1335130209de4b92f31496.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://kablowebtv.com" ,Discovery
+https://vavoo.tolive/6957057788f10364acdac.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="ID.tr" tvg-logo="https://kablowebtv.com" ,Discovery ID
+https://vavoo.tolive/20954040600611bde9e160.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="NATIONAL GEOGRAPHIC WILD.tr" tvg-logo="https://kablowebtv.com" ,Nat Geo Wild
+https://vavoo.tolive/1324166169d75d5197aa7.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="NATIONAL GEOGRAPHIC.tr" tvg-logo="https://kablowebtv.com" ,Nat Geo
+https://vavoo.tolive/1960546091bcaf052d3800.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="Love nature" tvg-logo="https://lovenature.com" ,Love nature
+https://vavoo.tolive/259380083927b83aced3e1.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="Agro Tv" tvg-logo="https://gstatic.com" ,Agro Tv
+https://vavoo.tolive/163358782054d9002fa0b0.m3u8?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://twimg.com" ,TRT GENÇ
+https://trt.com.tr
+#EXTINF:-1 group-title="BELGESEL" tvg-id="YabanTV.tr" tvg-logo="https://gstatic.com" ,Yaban TV
+https://tulix.tv
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT BELGESEL.tr" tvg-logo="https://technettv.com" ,TRT Belgesel
+https://trt.com.tr
