@@ -26,6 +26,6 @@ if token:
         # Sizin istediğiniz kusursuz format: https://vavoo.to
         m3u_icerik += f"https://vavoo.to{kanal['id']}.m3u8?key={token}\n"
         
-    with open("vavoo_listem.m3u", "w", encoding="utf-8") as f:
+    with open./("vavoo_listem.m3u", "w", encoding="utf-8") as f:
         f.write(m3u_icerik)
     print("M3U Listesi taze token ile basariyla guncellendi!")
