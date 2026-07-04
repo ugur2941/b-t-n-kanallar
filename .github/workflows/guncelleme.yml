@@ -1,0 +1,32 @@
+name: Vavoo M3U Otomatik Guncelleme
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik calisir
+  workflow_dispatch: # İsterseniz elle tetikleyebilirsiniz
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Kodlari Cek
+      uses: actions/checkout@v3
+
+    - name: Python Kur
+      uses: actions/setup-python@v4
+      with:
+        python-node: '3.10'
+
+    - name: Kutuphaneleri Yukle
+      run: pip install requests
+
+    - name: Scripti Calistir
+      run: python vavoo_guncelle.py
+
+    - name: Degisiklikleri Kaydet ve Depoya Yukle
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add vavoo_listem.m3u
+        git commit -m "Otomatik Vavoo M3U Guncellendi" || exit 0
+        git push
