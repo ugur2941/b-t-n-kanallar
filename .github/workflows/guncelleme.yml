@@ -2,7 +2,7 @@ name: Vavoo M3U Otomatik Guncelleme
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik calisir
+    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
   workflow_dispatch: # Elle tetiklemek için
 
 permissions: write-all
@@ -11,13 +11,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    # Node 24 uyumlu v4 sürümüne güncellendi
     - name: Kodlari Cek
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
+    # Node 24 uyumlu v5 sürümüne güncellendi
     - name: Python Kur
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.11'
 
     - name: Kutuphaneleri Yukle
       run: pip install requests
@@ -25,10 +27,10 @@ jobs:
     - name: Scripti Calistir
       run: python vavoo_guncelle.py
 
-    # 128 HATASINI ÇÖZEN ÖZEL DEPLOY ADIMI (GİT PUSH YERİNE)
+    # Node 24 uyumlu v5 sürümüne güncellendi ve dosya yolu kesinleştirildi
     - name: Degisiklikleri Otomatik Yukle
-      uses: stefanzweifel/git-auto-commit-action@v4
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Otomatik Vavoo M3U Guncellendi"
-        file_pattern: "vavoo_listem.m3u"
+        file_pattern: "./vavoo_listem.m3u"
 
