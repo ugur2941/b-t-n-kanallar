@@ -5,6 +5,9 @@ on:
     - cron: '0 */6 * * *' # Her 6 saatte bir otomatik calisir
   workflow_dispatch: # İsterseniz elle tetikleyebilirsiniz
 
+# ROBOTA YAZMA YETKİSİ VEREN EKSİK KISIM (128 HATASINI ÇÖZER)
+permissions: write-all
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,7 +18,7 @@ jobs:
     - name: Python Kur
       uses: actions/setup-python@v4
       with:
-        python-node: '3.10'
+        python-version: '3.10' # Bir önceki uyarıyı düzeltmek için düzeltildi
 
     - name: Kutuphaneleri Yukle
       run: pip install requests
@@ -30,3 +33,4 @@ jobs:
         git add vavoo_listem.m3u
         git commit -m "Otomatik Vavoo M3U Guncellendi" || exit 0
         git push
+
