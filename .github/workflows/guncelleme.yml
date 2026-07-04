@@ -22,11 +22,14 @@ jobs:
     - name: Scripti Calistir
       run: python vavoo_guncelle.py
 
-    # DEĞİŞİKLİK YOKSA BİLE ROBOTUN HATA VERMESİNİ KESİN OLARAK ENGELLER
-    - name: Degisiklikleri Otomatik Yukle
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "Otomatik Vavoo M3U Guncellendi"
-        file_pattern: "vavoo_listem.m3u"
-      continue-on-error: true
+    # HARCİ EKLENTİ YERİNE SAF GİT KOMUTLARIYLA HATA ALMADAN YÜKLEME ADIMI
+    - name: Degisiklikleri Sunucuya Yukle
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add vavoo_listem.m3u
+        # Eğer dosya değişmediyse hata vermeden (|| exit 0 diyerek) süreci başarıyla kapatır
+        git commit -m "Otomatik Vavoo M3U Guncellendi" || exit 0
+        git push
+
 
