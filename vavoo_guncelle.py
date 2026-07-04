@@ -1,42 +1,71 @@
-import datetime
+from flask import Flask, redirect, request, jsonify
+import requests
 
-# Sizin listenizdeki tüm orijinal belgesel kanalları ve bilgileri
-kanallar = [
-    {"adi": "Tarih TV", "id": "3856957052050da882aa10", "logo": "https://dsmart.com.tr", "tvg_id": "TARİH TV.tr"},
-    {"adi": "BBC earth", "id": "22284968562a623d1b95b4", "logo": "https://creativeboom.com", "tvg_id": "BBC EARTH.tr"},
-    {"adi": "History", "id": "1335130209de4b92f31496", "logo": "https://dsmart.com.tr", "tvg_id": "VIASAT HISTORY.tr"},
-    {"adi": "Discovery", "id": "6957057788f10364acdac", "logo": "https://kablowebtv.com", "tvg_id": "DISCOVERY CHANNEL.tr"},
-    {"adi": "Discovery ID", "id": "20954040600611bde9e160", "logo": "https://kablowebtv.com", "tvg_id": "ID.tr"},
-    {"adi": "Nat Geo Wild", "id": "1324166169d75d5197aa7", "logo": "https://kablowebtv.com", "tvg_id": "NATIONAL GEOGRAPHIC WILD.tr"},
-    {"adi": "Nat Geo", "id": "1960546091bcaf052d3800", "logo": "https://kablowebtv.com", "tvg_id": "NATIONAL GEOGRAPHIC.tr"},
-    {"adi": "Love nature", "id": "259380083927b83aced3e1", "logo": "https://lovenature.com", "tvg_id": "Love nature"},
-    {"adi": "Agro Tv", "id": "163358782054d9002fa0b0", "logo": "https://gstatic.com", "tvg_id": "Agro Tv"}
-]
+app = Flask(__name__)
 
-m3u_icerik = "#EXTM3U\n"
-# Git'in boş içerik hatası vermesini önlemek için dinamik zaman damgası ekliyoruz
-m3u_icerik += f"# Son Guncelleme Zamanı: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-m3u_icerik += "#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\n"
-m3u_icerik += "#EXT-X-REFERER:https://vavoo.to/\n"
-m3u_icerik += "#EXT-X-ORIGIN:https://vavoo.to\n"
+def get_vavoo_token():
+    url = "https://vavoo.to"
+    headers = {
+        "User-Agent": "VAVOO/2.6",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://vavoo.to",
+        "Referer": "https://vavoo.to"
+    }
+    payload = {"id": "", "ver": "2.6"}
+    
+    proxy_urls = [
+        "https://proxyscrape.com",
+        "https://proxy-list.download"
+    ]
+    
+    try:
+        response = requests.post(url, json=payload, headers=headers, timeout=5)
+        if response.status_code == 200:
+            data = response.json()
+            return data.get("signed") or data.get("token")
+    except:
+        pass
 
-# Kanalları tam istediğiniz biçimde (vavoo.to/vavoo-iptv/play/) otomatik olarak oluşturuyoruz
-for kanal in kanallar:
-    m3u_icerik += f'#EXTINF:-1 group-title="BELGESEL" tvg-id="{kanal["tvg_id"]}" tvg-logo="{kanal["logo"]}" ,{kanal["adi"]}\n'
-    m3u_icerik += f"https://vavoo.to/vavoo-iptv/play/{kanal['id']}\n"
+    for p_url in proxy_urls:
+        try:
+            proxies_list = requests.get(p_url, timeout=4).text.split('\r\n')
+            for proxy in proxies_list[:5]:
+                if proxy:
+                    try:
+                        px = {"http": f"http://{proxy}", "https": f"http://{proxy}"}
+                        response = requests.post(url, json=payload, headers=headers, proxies=px, timeout=4)
+                        if response.status_code == 200:
+                            data = response.json()
+                            token = data.get("signed") or data.get("token")
+                            if token:
+                                return token
+                    except:
+                        continue
+        except:
+            continue
+    return None
 
-# Listenizin altındaki Vavoo harici normal sabit linkleriniz
-m3u_icerik += '#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://twimg.com" ,TRT GENÇ\n'
-m3u_icerik += 'https://trt.com.tr\n'
+# CATCH-ALL: Gelen her türlü uzun, kısa veya hatalı uzantılı isteği 404 VERMEDEN yakalar!
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    # Linkin sonundaki o uzun kanal ID'sini (hash) cımbızla çekiyoruz
+    parts = path.split('/')
+    raw_id = parts[-1] if parts else ""
+    clean_id = raw_id.replace('.m3u8', '').split('?')[0]
+    
+    if not clean_id or len(clean_id) < 10:
+        return jsonify({"error": "Gecersiz veya Eksik Kanal ID"}), 400
 
-m3u_icerik += '#EXTINF:-1 group-title="BELGESEL" tvg-id="YabanTV.tr" tvg-logo="https://gstatic.com" ,Yaban TV\n'
-m3u_icerik += 'https://tulix.tv\n'
+    token = get_vavoo_token()
+    
+    if token:
+        # Doğru eğik çizgili ve taze şifreli resmi video akış linki (vavoo.to/live/)
+        return redirect(f"https://vavoo.tolive/{clean_id}.m3u8?key={token}")
+    
+    # Şifre alınamazsa bile oynatıcının şansını denemesi için ham linke fırlatır
+    return redirect(f"https://vavoo.tolive/{clean_id}.m3u8")
 
-m3u_icerik += '#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT BELGESEL.tr" tvg-logo="https://technettv.com" ,TRT Belgesel\n'
-m3u_icerik += 'https://trt.com.tr\n'
-
-# Çıktıyı doğrudan uygulamanızın bağlı olduğu "belgesel" dosyasına yazıyoruz
-with open("./belgesel", "w", encoding="utf-8") as f:
-    f.write(m3u_icerik)
-
-print("Tüm liste tam istediğiniz vavoo-iptv/play formatıyla başarıyla güncellendi!")
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
