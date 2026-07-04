@@ -1,11 +1,11 @@
 import urllib.request
 import re
 
-# Vavoo verilerini anlık çözen ve güncelleyen açık kaynak havuz listesi
+# Kanalların çekileceği ana kaynak M3U adresi
 SOURCE_URL = "https://raw.githubusercontent.com/fokus-ocas/ip/main/vavoo.m3u"
 
 def main():
-    print("Güncel kaynak listesi indiriliyor...")
+    print("Güncel kaynak M3U listesi indiriliyor...")
     req = urllib.request.Request(SOURCE_URL, headers={'User-Agent': 'Mozilla/5.0'})
     
     try:
@@ -18,42 +18,43 @@ def main():
     lines = content.splitlines()
     output_lines = ["#EXTM3U\n"]
     
-    # Türkiye (Turkey) veya Belgesel içeren kanalları yakalamak için filtreler
-    # Eğer sadece Türkiye kanallarını istiyorsanız listeyi ona göre düzenleyebilirsiniz
-    filtreler = ["turkey", "türkiye", "belgesel", "documentary", "nat geo", "discovery"]
+    # Türkiye (Turkey) veya Belgesel içeren kanalları filtrelemek için kelimeler
+    filtreler = ["turkey", "türkiye", "belgesel", "documentary", "nat geo", "discovery", "history"]
     
+    eklenen_kanal_sayisi = 0
     i = 0
     while i < len(lines):
         line = lines[i].strip()
         if line.startswith("#EXTINF"):
-            # Bir sonraki satırın yayın linki olduğunu doğrula
             if i + 1 < len(lines):
                 next_line = lines[i+1].strip()
                 
-                # Kanal bilgisinde filtre kelimelerimiz geçiyor mu kontrol et
+                # Kanal isminde veya grup başlığında filtre kelimelerimiz var mı?
                 if any(f in line.lower() for f in filtreler):
                     
-                    # Orijinal link içinden sadece kanalın ID/Key kısmını regex ile ayıklıyoruz
-                    # Örn: .../play/123456abcdef veya .../123456abcdef.ts içindeki benzersiz kodu alır
-                    match = re.search(r'(?:play/|/)([a-zA-Z0-9]{15,40})', next_line)
+                    # Regex ile link içindeki 20-40 karakter arası benzersiz ID'yi yakalıyoruz
+                    # Örn: .../play/3856957052050da882aa10/index.m3u8 içindeki ID'yi ayıklar
+                    match = re.search(r'(?:play/|/)([a-zA-Z0-9]{15,45})', next_line)
                     
                     if match:
                         kanal_id = match.group(1)
-                        # İstediğiniz temiz formatı oluşturuyoruz
+                        
+                        # İSTEDİĞİNİZ ÖZEL FORMAT:
                         yeni_link = f"https://vavoo.to/vavoo-iptv/play/{kanal_id}"
                         
                         output_lines.append(line + "\n")
                         output_lines.append(yeni_link + "\n")
+                        eklenen_kanal_sayisi += 1
                         
                 i += 2
                 continue
         i += 1
 
-    # Çıktıyı 'belgesel' dosyasına yazıyoruz
+    # Çıktıyı doğrudan 'belgesel' dosyasına kaydediyoruz
     with open("belgesel", "w", encoding="utf-8") as f:
         f.writelines(output_lines)
         
-    print(f"İşlem tamam! Toplam {len(output_lines) // 2} adet Türkiye/Belgesel kanalı eklendi.")
+    print(f"İşlem başarıyla tamamlandı! '{eklenen_kanal_sayisi}' adet kanal istediğiniz formatta 'belgesel' dosyasına yazıldı.")
 
 if __name__ == "__main__":
     main()
