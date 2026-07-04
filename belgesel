@@ -18,6 +18,8 @@ https://vavoo.to/vavoo-iptv/play/1324166169d75d5197aa7
 https://vavoo.to/vavoo-iptv/play/1960546091bcaf052d3800
 #EXTINF:-1 group-title="BELGESEL" tvg-id="Love nature" tvg-logo="https://lovenature.com/wp-content/uploads/2020/08/love-nature-logo_peacock.png" ,Love nature
 https://vavoo.to/vavoo-iptv/play/259380083927b83aced3e1
+#EXTINF:-1 group-title="BELGESEL" tvg-id="Agro Tv" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwcj38tD2WBf6XQWRDtP56BqKxp0huHjYDDzXwy0bzvhGxit9ImXwVjE&s=10" ,Agro Tv
+https://vavoo.to/vavoo-iptv/play/163358782054d9002fa0b0
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://pbs.twimg.com/profile_images/2009963534021459968/JwBVdge0_400x400.jpg" ,TRT GENÇ
 https://tv-trtgenc.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="YabanTV.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2EalQKrrB5JxrjDcEMHl-IXVYvYyv3Kqng&s" ,Yaban TV
