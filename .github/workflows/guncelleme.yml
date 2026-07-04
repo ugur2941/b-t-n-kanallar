@@ -1,32 +1,37 @@
-name: Vavoo M3U Otomatik Guncelleme
+name: Vavoo IPTV Otomatik Guncelleme
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    # Her gün gece 00:00'da otomatik çalışır (UTC zaman dilimine göre)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # İstediğiniz zaman GitHub panelinden elle başlatabilmeniz için
 
 jobs:
-  build:
+  vavoo-update-job:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
-    - name: Kodlari Cek
+    - name: Depoyu Klonla (Checkout)
       uses: actions/checkout@v4
 
-    - name: Python Kur
+    - name: Python Kurulumu
       uses: actions/setup-python@v5
       with:
-        python-version: '3.11'
+        python-version: '3.x'
 
-    - name: Scripti Calistir
+    - name: Bağımlılıkları Kur (Gerekliyse)
+      run: |
+        python -m pip install --upgrade pip
+        # Eğer betiğinizde requests, requests_html gibi kütüphaneler varsa alt satırdaki simgeyi (#) kaldırıp ekleyebilirsiniz:
+        # pip install requests
+
+    - name: Vavoo Betigini Calistir
       run: python vavoo_guncelle.py
 
-    - name: Degisiklikleri Sunucuya Yukle
+    - name: Degisiklikleri Kaydet ve Push Et
       run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git add belgesel
-        git commit -m "Otomatik Vavoo M3U Guncellendi" || exit 0
-        git push origin main
-
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add .
+        # Eğer değişiklik yoksa hata vermemesi için kontrol ekliyoruz
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Vavoo kanalları otomatik güncellendi" && git push)
