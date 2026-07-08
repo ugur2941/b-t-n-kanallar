@@ -4,9 +4,9 @@
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://vavoo.to/
 #EXT-X-ORIGIN:https://vavoo.to
-#EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png" http-user-agent="Vavoo/2.6" ,Tarih TV
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png"  ,Tarih TV
 https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
-#EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://www.creativeboom.com/upload/articles/8f/8f6cd51ec38e4f9ccab6a7350ba42d4ca9c429da_1280.png" http-user-agent="Vavoo/2.6" ,BBC earth
+#EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://www.creativeboom.com/upload/articles/8f/8f6cd51ec38e4f9ccab6a7350ba42d4ca9c429da_1280.png"  ,BBC earth
 https://vavoo.to/watch?live=2618455562938e9a0e0faf
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH b.tr" tvg-logo="https://www.creativeboom.com/upload/articles/8f/8f6cd51ec38e4f9ccab6a7350ba42d4ca9c429da_1280.png"  ,BBC earth b
 https://kool.to/kool-iptv/play/22284968562a623d1b95b4
@@ -14,7 +14,7 @@ https://kool.to/kool-iptv/play/22284968562a623d1b95b4
 https://vavoo.to/vavoo-iptv/play/420748756258a17d4693fc
 #EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY b.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/History%20Logo%20on%20Black%20BG.PNG" ,History b
 https://kool.to/kool-iptv/play/1335130209de4b92f31496
-#EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png" http-user-agent="Vavoo/2.6" ,Discovery
+#EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png"  ,Discovery
 https://vavoo.to/vavoo-iptv/play/6957057788f10364acdac
 #EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL B.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png"  ,Discovery B
 https://vavoo.to/vavoo-iptv/play/3624002307d3a1f474d7ce
@@ -30,7 +30,7 @@ https://vavoo.to/vavoo-iptv/play/3578706863eeeea821418e
 https://vavoo.to/vavoo-iptv/play/3309481234d6bfa8dd5880
 #EXTINF:-1 group-title="BELGESEL" tvg-id="Agro Tv" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwcj38tD2WBf6XQWRDtP56BqKxp0huHjYDDzXwy0bzvhGxit9ImXwVjE&s=10" ,Agro Tv
 https://vavoo.to/vavoo-iptv/play/163358782054d9002fa0b0
-#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://pbs.twimg.com/profile_images/2009963534021459968/JwBVdge0_400x400.jpg" http-user-agent="Vavoo/2.6" ,TRT GENÇ
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TRT GENÇ.tr" tvg-logo="https://pbs.twimg.com/profile_images/2009963534021459968/JwBVdge0_400x400.jpg" ,TRT GENÇ
 https://tv-trtgenc.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="YabanTV.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2EalQKrrB5JxrjDcEMHl-IXVYvYyv3Kqng&s"  ,Yaban TV
 https://vavoo.to/vavoo-iptv/play/178850393550c13d869fbf
