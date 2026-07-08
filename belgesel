@@ -14,7 +14,7 @@ https://kool.to/kool-iptv/play/22284968562a623d1b95b4
 https://vavoo.to/vavoo-iptv/play/420748756258a17d4693fc
 #EXTINF:-1 group-title="BELGESEL" tvg-id="VIASAT HISTORY b.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/History%20Logo%20on%20Black%20BG.PNG" ,History b
 https://kool.to/kool-iptv/play/1335130209de4b92f31496
-#EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png"  ,Discovery
+#EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png" http-user-agent="Vavoo/2.6" ,Discovery
 https://vavoo.to/vavoo-iptv/play/6957057788f10364acdac
 #EXTINF:-1 group-title="BELGESEL" tvg-id="DISCOVERY CHANNEL B.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aaac1290-6d58-4036-b106-a7026a4c1bfc.png"  ,Discovery B
 https://vavoo.to/vavoo-iptv/play/3624002307d3a1f474d7ce
