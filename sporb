@@ -6,20 +6,6 @@
 #EXT-X-REFERER:https://taraftarium1078.xyz
 #EXT-X-ORIGIN:https://taraftarium1078.xyz
 https://2i4.d72577a9dd0ec71.cfd/taraftarium/mono.m3u8
-
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://vavoo.to
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://vavoo.to
-#EXT-X-ORIGIN:https://vavoo.to
-
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://tvjustin.com
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Kertenkele) Chrome/134.0.0.0 Safari/537.36
-#EXT-X-REFERER: https://tvjustin.com
-#EXT-X-ORIGIN:https://tvjustin.com
-
-
 #EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports Haber.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports Haber
 https://netspor.tecostream.xyz/bsh.m3u8
 #EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1-A.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1-A
