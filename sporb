@@ -1,8 +1,129 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="BeIN Sports 1" group-title="SporB",BeIN Sports 1
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://taraftarium1078.xyz
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://taraftarium1078.xyz
 #EXT-X-ORIGIN:https://taraftarium1078.xyz
 https://2i4.d72577a9dd0ec71.cfd/taraftarium/mono.m3u8
+
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://vavoo.to
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://vavoo.to
+#EXT-X-ORIGIN:https://vavoo.to
+
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://tvjustin.com
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Kertenkele) Chrome/134.0.0.0 Safari/537.36
+#EXT-X-REFERER: https://tvjustin.com
+#EXT-X-ORIGIN:https://tvjustin.com
+
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1
+https://2i4.d72577a9dd0ec71.cfd/taraftarium/mono.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports Haber.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports Haber
+https://netspor.tecostream.xyz/bsh.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1-A.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1-A
+https://vavoo.to/vavoo-iptv/play/5934938605e361d7e0ff0
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1-B.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1-B
+https://andro.2385437.xyz/checklist/androstreamlivebs1.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 1-C.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 1-C
+https://vavoo.to/vavoo-iptv/play/38404756531618c87fcc66
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 2.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 2
+https://andro.2385437.xyz/checklist/androstreamlivebs2.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 3.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 3
+https://andro.2385437.xyz/checklist/androstreamlivebs3.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 4.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 4
+https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports 5.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports 5
+https://andro.2385437.xyz/checklist/androstreamlivebs5.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports Max-1.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports Max-1
+https://andro.2385437.xyz/checklist/androstreamlivebsm1.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="BeIN Sports Max-2.tr" tvg-logo="https://i.hizliresim.com/kia35w2.png" ,BeIN Sports Max-2
+https://andro.2385437.xyz/checklist/androstreamlivebsm2.m3u8
+#EXTINF:-1 tvg-name="Cbc Sport" group-title="Ulusal ve Diğer Kanallar",Cbc Sport
+https://andro.2385437.xyz/checklist/androstreamlivecbcs.m3u8
+#EXTINF:-1 tvg-name="Euro Sport 1" group-title="EuroSport",Euro Sport 1
+https://andro.2385437.xyz/checklist/androstreamlivees1.m3u8
+#EXTINF:-1 tvg-name="Euro Sport 2" group-title="EuroSport",Euro Sport 2
+https://andro.2385437.xyz/checklist/androstreamlivees2.m3u8
+#EXTINF:-1 tvg-name="Exxen Sports 1" group-title="Exxen",Exxen Sports 1
+https://andro.2385437.xyz/checklist/androstreamliveexn1.m3u8
+#EXTINF:-1 tvg-name="Exxen Sports 2" group-title="Exxen",Exxen Sports 2
+https://andro.2385437.xyz/checklist/androstreamliveexn2.m3u8
+#EXTINF:-1 tvg-name="Exxen Sports 3" group-title="Exxen",Exxen Sports 3
+https://andro.2385437.xyz/checklist/androstreamliveexn3.m3u8
+#EXTINF:-1 tvg-name="Exxen Sports 4" group-title="Exxen",Exxen Sports 4
+https://andro.2385437.xyz/checklist/androstreamliveexn4.m3u8
+#EXTINF:-1 tvg-name="Exxen Sports 5" group-title="Exxen",Exxen Sports 5
+https://andro.2385437.xyz/checklist/androstreamliveexn5.m3u8
+#EXTINF:-1 tvg-name="Exxen Sports 6" group-title="Exxen",Exxen Sports 6
+https://andro.2385437.xyz/checklist/androstreamliveexn6.m3u8
+#EXTINF:-1 tvg-name="Exxen Sports 7" group-title="Exxen",Exxen Sports 7
+https://andro.2385437.xyz/checklist/androstreamliveexn7.m3u8
+#EXTINF:-1 tvg-name="Exxen Sports 8" group-title="Exxen",Exxen Sports 8
+https://andro.2385437.xyz/checklist/androstreamliveexn8.m3u8
+#EXTINF:-1 tvg-name="Exxen Tv" group-title="Exxen",Exxen Tv
+https://andro.2385437.xyz/checklist/androstreamliveexn.m3u8
+#EXTINF:-1 tvg-name="Fb Tv" group-title="Ulusal ve Diğer Kanallar",Fb Tv
+https://andro.2385437.xyz/checklist/androstreamlivefb.m3u8
+#EXTINF:-1 tvg-name="Gs Tv" group-title="Ulusal ve Diğer Kanallar",Gs Tv
+https://andro.2385437.xyz/checklist/androstreamlivegs.m3u8
+#EXTINF:-1 tvg-name="Ht Spor" group-title="Ulusal ve Diğer Kanallar",Ht Spor
+https://andro.2385437.xyz/checklist/androstreamliveht.m3u8
+#EXTINF:-1 tvg-name="Nba Tv" group-title="NBA",Nba Tv
+https://andro.2385437.xyz/checklist/androstreamlivenba.m3u8
+#EXTINF:-1 tvg-name="S Sport" group-title="S Sports",S Sport
+https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
+#EXTINF:-1 tvg-name="S Sport 2" group-title="S Sports",S Sport 2
+https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
+#EXTINF:-1 tvg-name="S Sport Plus" group-title="S Sports",S Sport Plus
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
+#EXTINF:-1 tvg-name="Smart Spor 1" group-title="Smart Spor",Smart Spor 1
+https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8
+#EXTINF:-1 tvg-name="Smart Spor 2" group-title="Smart Spor",Smart Spor 2
+https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
+#EXTINF:-1 tvg-name="Sports Tv" group-title="Ulusal ve Diğer Kanallar",Sports Tv
+https://andro.2385437.xyz/checklist/androstreamlivesptstv.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor
+https://andro.2385437.xyz/checklist/androstreamlivetb.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor Alternatif.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor Alternatif
+https://kl9mr2vxw7nq5py1sh4tj3gb6.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 1.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 1
+https://andro.2385437.xyz/checklist/androstreamlivetb1.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 2.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 2
+https://andro.2385437.xyz/checklist/androstreamlivetb2.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 3.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 3
+https://andro.2385437.xyz/checklist/androstreamlivetb3.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 4.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 4
+https://andro.2385437.xyz/checklist/androstreamlivetb4.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor.tr 5" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 5
+https://andro.2385437.xyz/checklist/androstreamlivetb5.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 6.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 6
+https://andro.2385437.xyz/checklist/androstreamlivetb6.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 7.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 7
+https://andro.2385437.xyz/checklist/androstreamlivetb7.m3u8
+#EXTINF:-1 group-title="SporB" tvg-id="Tabii Spor 8.tr" tvg-logo="https://i.hizliresim.com/qxn7rxs.png" ,Tabii Spor 8
+https://andro.2385437.xyz/checklist/androstreamlivetb8.m3u8
+#EXTINF:-1 tvg-name="Tivibu Spor" group-title="Tivibu",Tivibu Spor
+https://andro.2385437.xyz/checklist/androstreamlivets.m3u8
+#EXTINF:-1 tvg-name="Tivibu Spor 1" group-title="Tivibu",Tivibu Spor 1
+https://andro.2385437.xyz/checklist/androstreamlivets1.m3u8
+#EXTINF:-1 tvg-name="Tivibu Spor 2" group-title="Tivibu",Tivibu Spor 2
+https://andro.2385437.xyz/checklist/androstreamlivets2.m3u8
+#EXTINF:-1 tvg-name="Tivibu Spor 3" group-title="Tivibu",Tivibu Spor 3
+https://andro.2385437.xyz/checklist/androstreamlivets3.m3u8
+#EXTINF:-1 tvg-name="Tivibu Spor 4" group-title="Tivibu",Tivibu Spor 4
+https://andro.2385437.xyz/checklist/androstreamlivets4.m3u8
+#EXTINF:-1 tvg-name="Tjk Tv" group-title="Ulusal ve Diğer Kanallar",Tjk Tv
+https://andro.2385437.xyz/checklist/androstreamlivetjk.m3u8
+#EXTINF:-1 tvg-name="Trt 1" group-title="Ulusal ve Diğer Kanallar",Trt 1
+https://andro.2385437.xyz/checklist/androstreamlivetrt1.m3u8
+#EXTINF:-1 tvg-name="Trt Spor" group-title="Ulusal ve Diğer Kanallar",Trt Spor
+https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
+#EXTINF:-1 tvg-name="Trt Spor Yıldız" group-title="Ulusal ve Diğer Kanallar",Trt Spor Yıldız
+https://andro.2385437.xyz/checklist/androstreamlivetrtsy.m3u8
+#EXTINF:-1 tvg-name="Tv8" group-title="Ulusal ve Diğer Kanallar",Tv8
+https://andro.2385437.xyz/checklist/androstreamlivetv8.m3u8
+#EXTINF:-1 tvg-name="Tv8,5" group-title="Ulusal ve Diğer Kanallar",Tv8,5
+https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
