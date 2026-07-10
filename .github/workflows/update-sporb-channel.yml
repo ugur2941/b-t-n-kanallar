@@ -1,7 +1,7 @@
 name: Update SporB Generated Channel
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Actions sekmesinden manuel çalıştırma butonu ekler
   schedule:
     - cron: "17 */4 * * *"
 
@@ -22,6 +22,8 @@ jobs:
         with:
           repository: ugur2941/tr
           path: tr-source
+          # Eğer tr deposu gizliyse (private) alttaki satırı aktif etmen gerekir:
+          # token: ${{ secrets.YOUR_GITHUB_TOKEN }} 
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,12 +36,13 @@ jobs:
           pip install playwright
           python -m playwright install --with-deps chromium
 
+      # Logları daha iyi görmek ve script hata verirse yakalamak için
       - name: Update BeIN Sports 1 in sporb
         run: |
-          python tr-source/goals.py \
-            --output sporb \
-            --channel-name "BeIN Sports 1" \
-            --group "SporB"
+          echo "Script baslatiliyor..."
+          python tr-source/goals.py --output sporb --channel-name "BeIN Sports 1" --group "SporB"
+          echo "Script tamamlandi, olusan dosya kontrol ediliyor:"
+          ls -la sporb || echo "sporb dosyasi veya klasoru bulunamadi!"
 
       - name: Commit updated playlist
         run: |
@@ -47,7 +50,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add sporb
           if git diff --cached --quiet; then
-            echo "No changes detected"
+            echo "Değişiklik tespit edilmedi. Script veri çekememiş veya linkler aynı kalmış olabilir."
             exit 0
           fi
           git commit -m "Update BeIN Sports 1 stream"
