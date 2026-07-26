@@ -159,6 +159,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
         try:
             await page.goto(target_page_url, timeout=15000, wait_until="domcontentloaded")
+            # Oyuncunun tamamen yüklenip canlı yayına bağlanması için bekleme süresi
             print("M3U8 paketleri dinleniyor (8 sn)...\n")
             await asyncio.sleep(8)
         except Exception as e:
@@ -168,7 +169,13 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
     if captured_urls:
         final_link = captured_urls[-1]
-        print(f"[CANLI YAYIN LİNKİ YAKALANDI] -> {final_link}\n")
+        
+        # Eğer yakalanan adreste pasif/eski 'taraftarium' yolu varsa otomatik 'patron' yoluna dönüştürür
+        if "/taraftarium/" in final_link.lower():
+            print("[OTOMATİK DÜZELTME] Pasif 'taraftarium' yolu tespit edildi. Aktif 'patron' yoluna çevriliyor...")
+            final_link = re.sub(r"/taraftarium/", "/patron/", final_link, flags=re.IGNORECASE)
+
+        print(f"[ÇALIŞAN CANLI YAYIN LİNKİ] -> {final_link}\n")
         return final_link
     
     return None
