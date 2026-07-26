@@ -14,7 +14,7 @@ DEFAULT_CHANNEL_ID = "taraftarium"
 DEFAULT_CHANNEL_NAME = "BeIN Sports 1"
 DEFAULT_GROUP = "BeinSports"
 DEFAULT_OUTPUT = "sporb"
-DEFAULT_LOGO = "https://upload.wikimedia.org/wikipedia/commons/e/e8/BeIN_Sports_1_logo.png"
+DEFAULT_LOGO = "https://resmim.net/cdn/2026/07/22/ETtrXH.png"
 
 # --- GITHUB HEDEF DEPO AYARLARI ---
 GITHUB_REPO_OWNER = "ugur2941"
@@ -159,7 +159,6 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
         try:
             await page.goto(target_page_url, timeout=15000, wait_until="domcontentloaded")
-            # Oyuncunun tamamen yüklenip canlı yayına bağlanması için bekleme süresi
             print("M3U8 paketleri dinleniyor (8 sn)...\n")
             await asyncio.sleep(8)
         except Exception as e:
@@ -170,7 +169,6 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
     if captured_urls:
         final_link = captured_urls[-1]
         
-        # Eğer yakalanan adreste pasif/eski 'taraftarium' yolu varsa otomatik 'patron' yoluna dönüştürür
         if "/taraftarium/" in final_link.lower():
             print("[OTOMATİK DÜZELTME] Pasif 'taraftarium' yolu tespit edildi. Aktif 'patron' yoluna çevriliyor...")
             final_link = re.sub(r"/taraftarium/", "/patron/", final_link, flags=re.IGNORECASE)
