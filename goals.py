@@ -9,6 +9,12 @@ import urllib.error
 import urllib.request
 from playwright.async_api import async_playwright
 
+# Anti-bot yakalanmasını engellemek için stealth kütüphanesi
+try:
+    from playwright_stealth import stealth_async
+except ImportError:
+    stealth_async = None
+
 # --- VARSAYILAN YAPILANDIRMA ---
 DEFAULT_CHANNEL_ID = "taraftarium"
 DEFAULT_CHANNEL_NAME = "BeIN Sports 1"
@@ -24,7 +30,7 @@ GITHUB_BRANCH = "main"
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
 WHITESPACE_REGEX = re.compile(r"\s+")
@@ -108,22 +114,25 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
 
 async def find_working_domain(start=1000, end=1600):
     print("Calisan domain araniyor...\n")
-    
-    priority_domains = [
-        "https://taraftarium24.ch"
-    ]
+    priority_domains = ["https://taraftarium24.ch"]
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             headless=True,
-            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-setuid-sandbox"
+            ]
         )
         context = await browser.new_context(user_agent=USER_AGENT)
 
         for p_domain in priority_domains:
             page = await context.new_page()
+            if stealth_async:
+                await stealth_async(page)
             try:
-                res = await page.goto(p_domain, timeout=5000, wait_until="commit")
+                res = await page.goto(p_domain, timeout=8000, wait_until="domcontentloaded")
                 if res and res.status < 400:
                     print(f"Öncelikli yayın domaini aktif: {p_domain}")
                     await browser.close()
@@ -136,10 +145,11 @@ async def find_working_domain(start=1000, end=1600):
         for num in range(start, end):
             test_url = f"https://taraftarium{num}.xyz"
             page = await context.new_page()
+            if stealth_async:
+                await stealth_async(page)
             try:
-                response = await page.goto(test_url, timeout=4000, wait_until="commit")
+                response = await page.goto(test_url, timeout=4000, wait_until="domcontentloaded")
                 final_url = page.url
-                
                 if response and response.status < 400:
                     print(f"Deniyor -> taraftarium{num}.xyz redirect -> {final_url}")
                     await browser.close()
@@ -148,7 +158,7 @@ async def find_working_domain(start=1000, end=1600):
                 pass
             finally:
                 await page.close()
-                
+
         await browser.close()
     return None
 
@@ -158,6 +168,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         f"{domain_url}/channel.html?id={channel_id}",
         f"{domain_url}/player.html?id={channel_id}",
         f"{domain_url}/stream.html?id={channel_id}",
+        f"{domain_url}/embed.html?id={channel_id}",
         f"{domain_url}/"
     ]
 
@@ -177,67 +188,55 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         )
         context = await browser.new_context(
             user_agent=USER_AGENT,
-            viewport={"width": 1280, "height": 720},
+            viewport={"width": 1366, "height": 768},
             ignore_https_errors=True
         )
 
-        # Bot algılama bypass için navigator.webdriver gizle
-        await context.add_init_script("""
-            Object.defineProperty(navigator, 'webdriver', {
-                get: () => undefined
-            });
-        """)
-
         def check_and_add_url(url, source_label="AĞ"):
-            if ("mono" in url.lower() or ".cfd" in url.lower() or ".m3u8" in url.lower()) and "ads" not in url.lower():
+            if (
+                ".m3u8" in url.lower()
+                or ".cfd" in url.lower()
+                or "mono" in url.lower()
+                or "/patron/" in url.lower()
+            ) and "ads" not in url.lower():
                 if url not in captured_urls:
                     print(f"[{source_label} YAKALANDI] -> {url}")
                     captured_urls.append(url)
 
-        def handle_request(request):
-            check_and_add_url(request.url, "REQUEST")
-
-        def handle_response(response):
-            check_and_add_url(response.url, "RESPONSE")
-
-        context.on("request", handle_request)
-        context.on("response", handle_response)
+        context.on("request", lambda req: check_and_add_url(req.url, "REQUEST"))
+        context.on("response", lambda res: check_and_add_url(res.url, "RESPONSE"))
 
         for target_page_url in urls_to_try:
             print(f"\nKanal sayfasina baglaniliyor: {target_page_url}")
             page = await context.new_page()
+            if stealth_async:
+                await stealth_async(page)
 
             try:
-                await page.goto(target_page_url, timeout=15000, wait_until="networkidle")
-                await asyncio.sleep(3)
+                await page.goto(target_page_url, timeout=20000, wait_until="domcontentloaded")
+                await asyncio.sleep(4)
 
-                # Ekran ortasına ve oynatıcı düğmelerine tıklama simülasyonu
                 try:
-                    await page.mouse.click(640, 360)
+                    await page.mouse.move(680, 380)
+                    await page.mouse.click(680, 380)
                     await page.keyboard.press("Space")
                     await asyncio.sleep(3)
                 except Exception:
                     pass
 
-                # Sayfa içindeki tüm iframe'lerin içeriğini tara
                 for frame in page.frames:
                     try:
-                        frame_content = await frame.content()
-                        found = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', frame_content)
+                        f_content = await frame.content()
+                        found = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', f_content)
                         for link in found:
-                            if "ads" not in link.lower() and link not in captured_urls:
-                                print(f"[IFRAME KODUNDA YAKALANDI] -> {link}")
-                                captured_urls.append(link)
+                            check_and_add_url(link, "IFRAME")
                     except Exception:
                         pass
 
-                # Sayfa ana kaynağında arama yap
                 content = await page.content()
                 found_m3u8 = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', content)
                 for link in found_m3u8:
-                    if "ads" not in link.lower() and link not in captured_urls:
-                        print(f"[SAYFA KODUNDA YAKALANDI] -> {link}")
-                        captured_urls.append(link)
+                    check_and_add_url(link, "HTML")
 
             except Exception as e:
                 print(f"Sayfa yukleme uyarisi: {e}")
@@ -250,11 +249,9 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         await browser.close()
 
     if captured_urls:
-        # .cfd veya mono.m3u8 içeren bağlantıları önceliklendir
         cfd_links = [u for u in captured_urls if ".cfd" in u or "mono.m3u8" in u]
         final_link = cfd_links[-1] if cfd_links else captured_urls[-1]
 
-        # Eğer yakalanan link tam .m3u8 uzantısı içermiyorsa düzenle
         if not final_link.endswith(".m3u8") and "/patron/" in final_link:
             final_link = final_link.rstrip("/") + "/mono.m3u8"
 
@@ -272,9 +269,8 @@ def push_to_github(github_token, stream_url, domain, channel_name, group_name, l
     }
 
     api_url = f"https://api.github.com/repos/{GITHUB_REPO_OWNER}/{GITHUB_REPO_NAME}/contents/{GITHUB_FILE_PATH}"
-
     print(f"{GITHUB_REPO_OWNER}/{GITHUB_REPO_NAME} deposundan mevcut {GITHUB_FILE_PATH} dosyası çekiliyor...")
-    
+
     req = urllib.request.Request(f"{api_url}?ref={GITHUB_BRANCH}", headers=headers)
     sha = None
     existing_content = ""
@@ -313,11 +309,11 @@ def push_to_github(github_token, stream_url, domain, channel_name, group_name, l
         payload["sha"] = sha
 
     print(f"{GITHUB_REPO_NAME} deposuna yeni commit gönderiliyor...")
-    
+
     put_req = urllib.request.Request(
-        api_url, 
-        data=json.dumps(payload).encode("utf-8"), 
-        headers=headers, 
+        api_url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers=headers,
         method="PUT"
     )
 
