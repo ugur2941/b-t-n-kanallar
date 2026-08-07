@@ -14,7 +14,6 @@ try:
 except ImportError:
     stealth_async = None
 
-# --- VARSAYILAN YAPILANDIRMA ---
 DEFAULT_CHANNEL_ID = "taraftarium"
 DEFAULT_CHANNEL_NAME = "BeIN Sports 1"
 DEFAULT_GROUP = "BeinSports"
@@ -22,7 +21,6 @@ DEFAULT_OUTPUT = "sporb"
 DEFAULT_LOGO = "https://resmim.net/cdn/2026/07/22/ETtrXH.png"
 DEFAULT_BASE_DOMAIN = "https://taraftarium24.ch"
 
-# --- GITHUB HEDEF DEPO AYARLARI ---
 GITHUB_REPO_OWNER = "ugur2941"
 GITHUB_REPO_NAME = "b-t-n-kanallar"
 GITHUB_FILE_PATH = "sporb"
@@ -199,11 +197,9 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 return
             url_lower = url.lower()
 
-            # İstenmeyen reklam/analiz domainleri filtrele
             if any(x in url_lower for x in ["google", "analytics", "doubleclick", "ads", "facebook", "jads", "pop", "css", "png", "jpg", "svg", "woff"]):
                 return
 
-            # Canlı yayın regex desenleri (.cfd, .m3u8, patron, mono vs.)
             if (
                 ".m3u8" in url_lower
                 or ".cfd" in url_lower
@@ -216,11 +212,8 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                     print(f"[{source_label} YAKALANDI] -> {url}")
                     captured_urls.append(url)
 
-        # HTTP/HTTPS İsteklerini Dinle
         context.on("request", lambda req: check_and_add_url(req.url, "REQUEST"))
         context.on("response", lambda res: check_and_add_url(res.url, "RESPONSE"))
-
-        # WebSocket Bağlantılarını Dinle
         context.on("websocket", lambda ws: check_and_add_url(ws.url, "WEBSOCKET"))
 
         for target_page_url in urls_to_try:
@@ -237,7 +230,6 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
                 await asyncio.sleep(3)
 
-                # Oynatıcıyı Tetiklemek için Tıklama Simülasyonu
                 try:
                     selectors = ["video", "iframe", "#player", ".play-btn", "div[class*='player']", "body"]
                     for sel in selectors:
@@ -253,14 +245,12 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
                 await asyncio.sleep(2)
 
-                # Tüm Frame ve DOM Kaynaklarını Derinlemesine Tara
                 for frame in page.frames:
                     try:
                         f_url = frame.url
                         check_and_add_url(f_url, "FRAME_URL")
                         f_content = await frame.content()
 
-                        # M3U8 ve CDN Regex Desenleri
                         patterns = [
                             r'https?://[^\s\'"]+?\.(?:cfd|m3u8)[^\s\'"]*',
                             r'https?://[^\s\'"]+?/patron/[^\s\'"]*',
@@ -277,7 +267,6 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                     except Exception:
                         pass
 
-                # Ana Sayfa DOM İçeriğini Tara
                 content = await page.content()
                 found_m3u8 = re.findall(r'https?://[^\s\'"]+?\.(?:cfd|m3u8)[^\s\'"]*', content)
                 for link in found_m3u8:
@@ -294,14 +283,12 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         await browser.close()
 
     if captured_urls:
-        # CDN & Akış önceliklendirmesi
         priority_links = [
             u for u in captured_urls 
             if ".cfd" in u or "/patron/" in u or "mono.m3u8" in u or ".m3u8" in u
         ]
         final_link = priority_links[-1] if priority_links else captured_urls[-1]
 
-        # Eksik uzantı düzeltmesi
         if "/patron/" in final_link and not final_link.endswith(".m3u8"):
             if not final_link.endswith("/"):
                 final_link += "/"
