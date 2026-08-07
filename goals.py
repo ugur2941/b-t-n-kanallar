@@ -20,6 +20,7 @@ DEFAULT_CHANNEL_NAME = "BeIN Sports 1"
 DEFAULT_GROUP = "BeinSports"
 DEFAULT_OUTPUT = "sporb"
 DEFAULT_LOGO = "https://resmim.net/cdn/2026/07/22/ETtrXH.png"
+DEFAULT_BASE_DOMAIN = "https://taraftarium24.ch"
 
 # --- GITHUB HEDEF DEPO AYARLARI ---
 GITHUB_REPO_OWNER = "ugur2941"
@@ -43,8 +44,8 @@ def parse_args():
     parser.add_argument("--logo", default=DEFAULT_LOGO, help="Kanal Logosu URL")
     parser.add_argument("--output", default=DEFAULT_OUTPUT, help="Çıktı Dosya Adı")
     parser.add_argument("--github-token", default=os.getenv("GITHUB_TOKEN", ""), help="GitHub Personal Access Token")
-    parser.add_argument("--start-domain", type=int, default=1000, help="Başlangıç Domain No")
-    parser.add_argument("--end-domain", type=int, default=1600, help="Bitiş Domain No")
+    parser.add_argument("--start-domain", type=int, default=1070, help="Başlangıç Domain No")
+    parser.add_argument("--end-domain", type=int, default=1150, help="Bitiş Domain No")
     return parser.parse_args()
 
 
@@ -111,7 +112,7 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
     return "\n".join(output_lines) + "\n"
 
 
-async def find_working_domain(start=1000, end=1600):
+async def find_working_domain(start=1070, end=1150):
     print("Calisan domain araniyor...\n")
 
     async with async_playwright() as p:
@@ -134,7 +135,7 @@ async def find_working_domain(start=1000, end=1600):
             if stealth_async:
                 await stealth_async(page)
             try:
-                response = await page.goto(test_url, timeout=4000, wait_until="domcontentloaded")
+                response = await page.goto(test_url, timeout=3000, wait_until="domcontentloaded")
                 final_url = page.url
                 if response and response.status < 400:
                     print(f"Aktif Domain Bulundu -> taraftarium{num}.xyz -> {final_url}")
@@ -145,10 +146,9 @@ async def find_working_domain(start=1000, end=1600):
             finally:
                 await page.close()
 
-        fallback = "https://taraftarium24.ch"
-        print(f"Yedek domain kullanılıyor: {fallback}")
+        print(f"Yedek sabit domain kullanılıyor: {DEFAULT_BASE_DOMAIN}")
         await browser.close()
-        return fallback
+        return DEFAULT_BASE_DOMAIN
 
 
 async def extract_m3u8(domain_url, channel_id="taraftarium"):
@@ -196,13 +196,10 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         def check_and_add_url(url, source_label="AĞ"):
             url_lower = url.lower()
             if (
-                ".m3u8" in url_lower
-                or ".cfd" in url_lower
-                or "mono" in url_lower
+                ".cfd" in url_lower
+                or "mono.m3u8" in url_lower
                 or "/patron/" in url_lower
-                or "/hls/" in url_lower
-                or "/live/" in url_lower
-                or "stream" in url_lower
+                or ".m3u8" in url_lower
             ) and not any(x in url_lower for x in ["google", "analytics", "doubleclick", "ads", "facebook", "jads", "pop", "css", "js", "png", "jpg"]):
                 if url not in captured_urls and url.startswith("http"):
                     print(f"[{source_label} YAKALANDI] -> {url}")
@@ -218,20 +215,15 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 await stealth_async(page)
 
             try:
-                # Cloudflare engelini aşmak için önce boş bekleme, sonra sayfa yükleme
                 await page.goto(target_page_url, timeout=25000, wait_until="commit")
-                await asyncio.sleep(6)
+                await asyncio.sleep(5)
 
-                # Ekran üzerinde otomatik tıklama (reklam ve oynatıcı bariyerini aşmak için)
                 try:
                     await page.mouse.click(960, 540)
-                    await asyncio.sleep(2)
-                    await page.mouse.click(500, 300)
                     await asyncio.sleep(2)
                 except Exception:
                     pass
 
-                # Frameler içindeki gizli ağ trafiğini ve kaynakları tara
                 for frame in page.frames:
                     try:
                         f_url = frame.url
@@ -243,7 +235,6 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                     except Exception:
                         pass
 
-                # Ana sayfa HTML kaynak kontrolü
                 content = await page.content()
                 found_m3u8 = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', content)
                 for link in found_m3u8:
@@ -260,9 +251,9 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         await browser.close()
 
     if captured_urls:
-        # Öncelikli M3U8 akış URL'ini belirle
-        cfd_links = [u for u in captured_urls if ".cfd" in u or "mono.m3u8" in u or ".m3u8" in u]
-        final_link = cfd_links[-1] if cfd_links else captured_urls[-1]
+        # Öncelikli sıralama: CFD / patron linkleri > Diğer m3u8 linkleri
+        priority_links = [u for u in captured_urls if ".cfd" in u or "/patron/" in u or "mono.m3u8" in u]
+        final_link = priority_links[-1] if priority_links else captured_urls[-1]
 
         if not final_link.endswith(".m3u8") and "/patron/" in final_link:
             final_link = final_link.rstrip("/") + "/mono.m3u8"
