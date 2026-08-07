@@ -108,10 +108,32 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
 
 async def find_working_domain(start=1000, end=1600):
     print("Calisan domain araniyor...\n")
+    
+    # Doğrudan bilinen aktif yayın servis adresleri
+    priority_domains = [
+        "https://taraftarium.patron.live",
+        "https://patron.live"
+    ]
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(user_agent=USER_AGENT)
-        
+
+        # Önce bilinen yayın sunucularını dene
+        for p_domain in priority_domains:
+            page = await context.new_page()
+            try:
+                res = await page.goto(p_domain, timeout=3000, wait_until="commit")
+                if res and res.status < 400:
+                    print(f"Öncelikli yayın domaini aktif: {p_domain}")
+                    await browser.close()
+                    return p_domain
+            except Exception:
+                pass
+            finally:
+                await page.close()
+
+        # Bulunamazsa yönlendirme numaralarını tara
         for num in range(start, end):
             test_url = f"https://taraftarium{num}.xyz"
             page = await context.new_page()
@@ -120,12 +142,7 @@ async def find_working_domain(start=1000, end=1600):
                 final_url = page.url
                 
                 if response and response.status < 400:
-                    if final_url != test_url and not final_url.endswith("/"):
-                        print(f"Deniyor -> taraftarium{num}.xyz redirect -> {final_url.split('/')[-1]}")
-                    else:
-                        print(f"Deniyor -> taraftarium{num}.xyz [BAŞARILI]")
-                    
-                    print("Yonlendirilen domain kabul edildi.")
+                    print(f"Deniyor -> taraftarium{num}.xyz redirect -> {final_url}")
                     await browser.close()
                     return final_url.rstrip("/")
             except Exception:
@@ -140,8 +157,9 @@ async def find_working_domain(start=1000, end=1600):
 async def extract_m3u8(domain_url, channel_id="taraftarium"):
     urls_to_try = [
         f"{domain_url}/channel.html?id={channel_id}",
-        f"{domain_url}/channel.html?id=1",
-        f"{domain_url}/"
+        f"{domain_url}/",
+        f"https://taraftarium.patron.live/channel.html?id={channel_id}",
+        f"https://patron.live/channel.html?id={channel_id}"
     ]
 
     captured_urls = []
@@ -162,41 +180,27 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
             def handle_request(request):
                 url = request.url
-                if ".m3u8" in url.lower() and "ads" not in url.lower():
-                    print(f"[AĞDA YAKALANDI] -> {url}")
-                    captured_urls.append(url)
+                if (".m3u8" in url.lower() or "/patron/" in url.lower()) and "ads" not in url.lower():
+                    if ".m3u8" in url.lower():
+                        print(f"[AĞDA YAKALANDI] -> {url}")
+                        captured_urls.append(url)
 
             page.on("request", handle_request)
 
             try:
-                await page.goto(target_page_url, timeout=15000, wait_until="domcontentloaded")
+                await page.goto(target_page_url, timeout=12000, wait_until="domcontentloaded")
                 await asyncio.sleep(3)
 
-                # 1. Iframe adreslerini tara
-                iframes = page.frames
-                iframe_urls = [f.url for f in iframes if f.url and f.url != "about:blank"]
-                
-                for iframe_url in iframe_urls:
-                    if "player" in iframe_url.lower() or "stream" in iframe_url.lower() or "channel" in iframe_url.lower():
-                        print(f"[IFRAME TESPİT EDİLDİ] -> {iframe_url}")
-                        try:
-                            iframe_page = await context.new_page()
-                            iframe_page.on("request", handle_request)
-                            await iframe_page.goto(iframe_url, timeout=10000, wait_until="domcontentloaded")
-                            await asyncio.sleep(4)
-                            await iframe_page.close()
-                        except Exception:
-                            pass
-
-                # 2. Sayfadaki tıklama alanlarını tetikle
+                # Oyuncu tespiti için tıklama yap
                 try:
                     await page.mouse.click(640, 360)
-                    await asyncio.sleep(3)
+                    await asyncio.sleep(2)
                 except Exception:
                     pass
 
-                # 3. Sayfa kaynak kodunda HTML/JS içerisindeki m3u8 adreslerini ara
                 content = await page.content()
+                
+                # Regex ile m3u8 veya patron akış bağlantılarını bul
                 found_m3u8 = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', content)
                 for link in found_m3u8:
                     if "ads" not in link.lower() and link not in captured_urls:
@@ -216,6 +220,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
     if captured_urls:
         final_link = captured_urls[-1]
         
+        # Taraftarium pasif yolunu aktif patron yoluna çevir
         if "/taraftarium/" in final_link.lower():
             print("[OTOMATİK DÜZELTME] Pasif 'taraftarium' yolu tespit edildi. Aktif 'patron' yoluna çevriliyor...")
             final_link = re.sub(r"/taraftarium/", "/patron/", final_link, flags=re.IGNORECASE)
@@ -223,7 +228,10 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         print(f"\n[ÇALIŞAN CANLI YAYIN LİNKİ YAKALANDI] -> {final_link}\n")
         return final_link
     
-    return None
+    # Eğer doğrudan dinlemede m3u8 yakalanamadıysa aktif bilinen dinamik kalıba fallback uygula
+    fallback_link = f"{domain_url}/patron/index.m3u8"
+    print(f"\n[YEDEK MEKANİZMA] Ağ paketlerinde m3u8 bulunamadı, oluşturulan yayın adresi: {fallback_link}\n")
+    return fallback_link
 
 
 def push_to_github(github_token, stream_url, domain, channel_name, group_name, logo_url):
