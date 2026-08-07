@@ -24,7 +24,7 @@ GITHUB_BRANCH = "main"
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 )
 
 WHITESPACE_REGEX = re.compile(r"\s+")
@@ -114,7 +114,10 @@ async def find_working_domain(start=1000, end=1600):
     ]
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        browser = await p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
+        )
         context = await browser.new_context(user_agent=USER_AGENT)
 
         for p_domain in priority_domains:
@@ -155,7 +158,6 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         f"{domain_url}/channel.html?id={channel_id}",
         f"{domain_url}/player.html?id={channel_id}",
         f"{domain_url}/stream.html?id={channel_id}",
-        f"{domain_url}/embed.html?id={channel_id}",
         f"{domain_url}/"
     ]
 
@@ -169,21 +171,36 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 "--disable-setuid-sandbox",
                 "--disable-web-security",
                 "--disable-features=IsolateOrigins,site-per-process",
+                "--disable-blink-features=AutomationControlled",
                 "--autoplay-policy=no-user-gesture-required"
             ]
         )
         context = await browser.new_context(
             user_agent=USER_AGENT,
-            viewport={"width": 1280, "height": 720}
+            viewport={"width": 1280, "height": 720},
+            ignore_https_errors=True
         )
 
-        def handle_response(response):
-            url = response.url
-            if (".m3u8" in url.lower() or "mono" in url.lower() or ".cfd" in url.lower()) and "ads" not in url.lower():
-                if ".m3u8" in url.lower() and url not in captured_urls:
-                    print(f"[DERİN AĞDA YAKALANDI] -> {url}")
+        # Bot algılama bypass için navigator.webdriver gizle
+        await context.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            });
+        """)
+
+        def check_and_add_url(url, source_label="AĞ"):
+            if ("mono" in url.lower() or ".cfd" in url.lower() or ".m3u8" in url.lower()) and "ads" not in url.lower():
+                if url not in captured_urls:
+                    print(f"[{source_label} YAKALANDI] -> {url}")
                     captured_urls.append(url)
 
+        def handle_request(request):
+            check_and_add_url(request.url, "REQUEST")
+
+        def handle_response(response):
+            check_and_add_url(response.url, "RESPONSE")
+
+        context.on("request", handle_request)
         context.on("response", handle_response)
 
         for target_page_url in urls_to_try:
@@ -191,10 +208,10 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
             page = await context.new_page()
 
             try:
-                await page.goto(target_page_url, timeout=12000, wait_until="domcontentloaded")
+                await page.goto(target_page_url, timeout=15000, wait_until="networkidle")
                 await asyncio.sleep(3)
 
-                # Oyuncu üzerindeki tıklama/başlatma simülasyonu
+                # Ekran ortasına ve oynatıcı düğmelerine tıklama simülasyonu
                 try:
                     await page.mouse.click(640, 360)
                     await page.keyboard.press("Space")
@@ -202,38 +219,24 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 except Exception:
                     pass
 
-                # Iframe'leri tara ve oyuncu linklerine git
-                frames = page.frames
-                for frame in frames:
+                # Sayfa içindeki tüm iframe'lerin içeriğini tara
+                for frame in page.frames:
                     try:
-                        frame_url = frame.url
-                        if frame_url and frame_url != "about:blank" and frame_url != target_page_url:
-                            if any(k in frame_url.lower() for k in ["player", "stream", "channel", "embed", "patron", "cfd"]):
-                                print(f"[IFRAME TESPİT EDİLDİ] -> {frame_url}")
-                                iframe_page = await context.new_page()
-                                await iframe_page.goto(frame_url, timeout=8000, wait_until="domcontentloaded")
-                                await asyncio.sleep(3)
-                                try:
-                                    await iframe_page.mouse.click(640, 360)
-                                except Exception:
-                                    pass
-                                
-                                iframe_content = await iframe_page.content()
-                                found = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', iframe_content)
-                                for link in found:
-                                    if "ads" not in link.lower() and link not in captured_urls:
-                                        print(f"[IFRAME İÇİNDE YAKALANDI] -> {link}")
-                                        captured_urls.append(link)
-                                await iframe_page.close()
+                        frame_content = await frame.content()
+                        found = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', frame_content)
+                        for link in found:
+                            if "ads" not in link.lower() and link not in captured_urls:
+                                print(f"[IFRAME KODUNDA YAKALANDI] -> {link}")
+                                captured_urls.append(link)
                     except Exception:
                         pass
 
-                # Sayfa kaynağında cfd/m3u8 adreslerini ara
+                # Sayfa ana kaynağında arama yap
                 content = await page.content()
-                found_m3u8 = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', content)
+                found_m3u8 = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', content)
                 for link in found_m3u8:
                     if "ads" not in link.lower() and link not in captured_urls:
-                        print(f"[KAYNAK KODDA YAKALANDI] -> {link}")
+                        print(f"[SAYFA KODUNDA YAKALANDI] -> {link}")
                         captured_urls.append(link)
 
             except Exception as e:
@@ -247,8 +250,13 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         await browser.close()
 
     if captured_urls:
+        # .cfd veya mono.m3u8 içeren bağlantıları önceliklendir
         cfd_links = [u for u in captured_urls if ".cfd" in u or "mono.m3u8" in u]
         final_link = cfd_links[-1] if cfd_links else captured_urls[-1]
+
+        # Eğer yakalanan link tam .m3u8 uzantısı içermiyorsa düzenle
+        if not final_link.endswith(".m3u8") and "/patron/" in final_link:
+            final_link = final_link.rstrip("/") + "/mono.m3u8"
 
         print(f"\n[ÇALIŞAN CANLI YAYIN LİNKİ YAKALANDI] -> {final_link}\n")
         return final_link
