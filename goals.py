@@ -29,7 +29,7 @@ GITHUB_BRANCH = "main"
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 )
 
 WHITESPACE_REGEX = re.compile(r"\s+")
@@ -65,9 +65,9 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
     new_channel_block = [
         f'#EXTINF:-1 tvg-name="{channel_name}" tvg-logo="{logo_url}" group-title="{group}",{channel_name}',
         f'#EXTVLCOPT:http-user-agent={USER_AGENT}',
-        f'#EXTVLCOPT:http-referrer={domain}',
+        f'#EXTVLCOPT:http-referrer={domain}/',
         f'#EXT-X-USER-AGENT:{USER_AGENT}',
-        f'#EXT-X-REFERER:{domain}',
+        f'#EXT-X-REFERER:{domain}/',
         f'#EXT-X-ORIGIN:{domain}',
         stream_url
     ]
@@ -113,7 +113,6 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
 
 async def find_working_domain(start=1000, end=1600):
     print("Calisan domain araniyor...\n")
-    priority_domains = ["https://taraftarium24.ch"]
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(
@@ -124,22 +123,10 @@ async def find_working_domain(start=1000, end=1600):
                 "--disable-setuid-sandbox"
             ]
         )
-        context = await browser.new_context(user_agent=USER_AGENT)
-
-        for p_domain in priority_domains:
-            page = await context.new_page()
-            if stealth_async:
-                await stealth_async(page)
-            try:
-                res = await page.goto(p_domain, timeout=8000, wait_until="domcontentloaded")
-                if res and res.status < 400:
-                    print(f"Öncelikli yayın domaini aktif: {p_domain}")
-                    await browser.close()
-                    return p_domain
-            except Exception:
-                pass
-            finally:
-                await page.close()
+        context = await browser.new_context(
+            user_agent=USER_AGENT,
+            extra_http_headers={"Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"}
+        )
 
         for num in range(start, end):
             test_url = f"https://taraftarium{num}.xyz"
@@ -147,10 +134,10 @@ async def find_working_domain(start=1000, end=1600):
             if stealth_async:
                 await stealth_async(page)
             try:
-                response = await page.goto(test_url, timeout=4000, wait_until="domcontentloaded")
+                response = await page.goto(test_url, timeout=3000, wait_until="domcontentloaded")
                 final_url = page.url
                 if response and response.status < 400:
-                    print(f"Deniyor -> taraftarium{num}.xyz redirect -> {final_url}")
+                    print(f"Aktif Domain Bulundu -> taraftarium{num}.xyz -> {final_url}")
                     await browser.close()
                     return final_url.rstrip("/")
             except Exception:
@@ -158,17 +145,21 @@ async def find_working_domain(start=1000, end=1600):
             finally:
                 await page.close()
 
+        fallback = "https://taraftarium24.ch"
+        print(f"Yedek domain kullanılıyor: {fallback}")
         await browser.close()
-    return None
+        return fallback
 
 
 async def extract_m3u8(domain_url, channel_id="taraftarium"):
+    # Farklı player/embed kombinasyonları
     urls_to_try = [
+        f"{domain_url}/",
         f"{domain_url}/channel.html?id={channel_id}",
         f"{domain_url}/player.html?id={channel_id}",
         f"{domain_url}/stream.html?id={channel_id}",
         f"{domain_url}/embed.html?id={channel_id}",
-        f"{domain_url}/"
+        f"{domain_url}/get_stream.php?id={channel_id}"
     ]
 
     captured_urls = []
@@ -185,14 +176,27 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 "--autoplay-policy=no-user-gesture-required"
             ]
         )
+        
+        # Gerçek tarayıcı taklidi için genişletilmiş bağlam
         context = await browser.new_context(
             user_agent=USER_AGENT,
-            viewport={"width": 1366, "height": 768},
-            ignore_https_errors=True
+            viewport={"width": 1920, "height": 1080},
+            ignore_https_errors=True,
+            extra_http_headers={
+                "Accept-Language": "tr-TR,tr;q=0.9",
+                "Sec-Ch-Ua": '"Not/A)Brand";v="8", "Chromium";v="126"',
+                "Sec-Ch-Ua-Mobile": "?0",
+                "Sec-Ch-Ua-Platform": '"Windows"',
+                "Sec-Fetch-Dest": "document",
+                "Sec-Fetch-Mode": "navigate",
+                "Sec-Fetch-Site": "cross-site",
+                "Upgrade-Insecure-Requests": "1"
+            }
         )
 
         def check_and_add_url(url, source_label="AĞ"):
             url_lower = url.lower()
+            # M3U8, CFD veya dinamik stream parametreleri kontrolü
             if (
                 ".m3u8" in url_lower
                 or ".cfd" in url_lower
@@ -200,7 +204,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 or "/patron/" in url_lower
                 or "/hls/" in url_lower
                 or "/live/" in url_lower
-            ) and not any(x in url_lower for x in ["google", "analytics", "doubleclick", "ads", "facebook"]):
+            ) and not any(x in url_lower for x in ["google", "analytics", "doubleclick", "ads", "facebook", "jads", "pop"]):
                 if url not in captured_urls:
                     print(f"[{source_label} YAKALANDI] -> {url}")
                     captured_urls.append(url)
@@ -209,30 +213,28 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         context.on("response", lambda res: check_and_add_url(res.url, "RESPONSE"))
 
         for target_page_url in urls_to_try:
-            print(f"\nKanal sayfasina baglaniliyor: {target_page_url}")
+            print(f"Kanal sayfasina baglaniliyor: {target_page_url}")
             page = await context.new_page()
             if stealth_async:
                 await stealth_async(page)
 
             try:
-                await page.goto(target_page_url, timeout=20000, wait_until="networkidle")
-                await asyncio.sleep(3)
+                # Sayfanın tam yüklenmesini sağlamak
+                await page.goto(target_page_url, timeout=20000, wait_until="domcontentloaded")
+                await asyncio.sleep(5)
 
-                # Sayfadaki tıklanabilir alanları ve iframe'leri zorla
+                # Oynatıcı tetikleyici simülasyonları
                 try:
-                    await page.mouse.click(500, 300)
-                    await asyncio.sleep(1)
-                    await page.mouse.click(680, 380)
+                    await page.mouse.click(960, 540)
                     await asyncio.sleep(2)
                 except Exception:
                     pass
 
-                # Derinlemesine IFRAME Taraması
+                # Iframe içeriğine zorla sızma
                 for frame in page.frames:
                     try:
                         f_url = frame.url
                         check_and_add_url(f_url, "FRAME_URL")
-                        
                         f_content = await frame.content()
                         found = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', f_content)
                         for link in found:
@@ -240,6 +242,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                     except Exception:
                         pass
 
+                # Sayfa kaynağı taraması
                 content = await page.content()
                 found_m3u8 = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', content)
                 for link in found_m3u8:
