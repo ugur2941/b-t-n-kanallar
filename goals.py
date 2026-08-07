@@ -9,7 +9,6 @@ import urllib.error
 import urllib.request
 from playwright.async_api import async_playwright
 
-# Anti-bot yakalanmasını engellemek için stealth kütüphanesi
 try:
     from playwright_stealth import stealth_async
 except ImportError:
@@ -193,12 +192,15 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         )
 
         def check_and_add_url(url, source_label="AĞ"):
+            url_lower = url.lower()
             if (
-                ".m3u8" in url.lower()
-                or ".cfd" in url.lower()
-                or "mono" in url.lower()
-                or "/patron/" in url.lower()
-            ) and "ads" not in url.lower():
+                ".m3u8" in url_lower
+                or ".cfd" in url_lower
+                or "mono" in url_lower
+                or "/patron/" in url_lower
+                or "/hls/" in url_lower
+                or "/live/" in url_lower
+            ) and not any(x in url_lower for x in ["google", "analytics", "doubleclick", "ads", "facebook"]):
                 if url not in captured_urls:
                     print(f"[{source_label} YAKALANDI] -> {url}")
                     captured_urls.append(url)
@@ -213,30 +215,35 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 await stealth_async(page)
 
             try:
-                await page.goto(target_page_url, timeout=20000, wait_until="domcontentloaded")
-                await asyncio.sleep(4)
+                await page.goto(target_page_url, timeout=20000, wait_until="networkidle")
+                await asyncio.sleep(3)
 
+                # Sayfadaki tıklanabilir alanları ve iframe'leri zorla
                 try:
-                    await page.mouse.move(680, 380)
+                    await page.mouse.click(500, 300)
+                    await asyncio.sleep(1)
                     await page.mouse.click(680, 380)
-                    await page.keyboard.press("Space")
-                    await asyncio.sleep(3)
+                    await asyncio.sleep(2)
                 except Exception:
                     pass
 
+                # Derinlemesine IFRAME Taraması
                 for frame in page.frames:
                     try:
+                        f_url = frame.url
+                        check_and_add_url(f_url, "FRAME_URL")
+                        
                         f_content = await frame.content()
                         found = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', f_content)
                         for link in found:
-                            check_and_add_url(link, "IFRAME")
+                            check_and_add_url(link, "IFRAME_CONTENT")
                     except Exception:
                         pass
 
                 content = await page.content()
                 found_m3u8 = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', content)
                 for link in found_m3u8:
-                    check_and_add_url(link, "HTML")
+                    check_and_add_url(link, "HTML_CONTENT")
 
             except Exception as e:
                 print(f"Sayfa yukleme uyarisi: {e}")
@@ -249,7 +256,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         await browser.close()
 
     if captured_urls:
-        cfd_links = [u for u in captured_urls if ".cfd" in u or "mono.m3u8" in u]
+        cfd_links = [u for u in captured_urls if ".cfd" in u or "mono.m3u8" in u or ".m3u8" in u]
         final_link = cfd_links[-1] if cfd_links else captured_urls[-1]
 
         if not final_link.endswith(".m3u8") and "/patron/" in final_link:
