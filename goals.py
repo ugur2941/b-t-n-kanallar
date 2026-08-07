@@ -138,33 +138,52 @@ async def find_working_domain(start=1000, end=1600):
 
 
 async def extract_m3u8(domain_url, channel_id="taraftarium"):
-    target_page_url = f"{domain_url}/channel.html?id={channel_id}"
-    print(f"Kullanilan dinamik domain: {domain_url}")
-    print(f"Kanal sayfasina baglaniliyor: {target_page_url}")
+    urls_to_try = [
+        f"{domain_url}/channel.html?id={channel_id}",
+        f"{domain_url}/channel.html?id=1",
+        f"{domain_url}/"
+    ]
 
     captured_urls = []
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(user_agent=USER_AGENT)
-        page = await context.new_page()
 
-        def handle_request(request):
-            url = request.url
-            if ".m3u8" in url and "ads" not in url.lower():
-                print(f"[AĞDA YAKALANDI] -> {url}")
-                captured_urls.append(url)
+        for target_page_url in urls_to_try:
+            print(f"\nKanal sayfasina baglaniliyor: {target_page_url}")
+            page = await context.new_page()
 
-        page.on("request", handle_request)
+            def handle_request(request):
+                url = request.url
+                if (".m3u8" in url.lower() or "stream" in url.lower() or "hls" in url.lower()) and "ads" not in url.lower():
+                    if ".m3u8" in url.lower():
+                        print(f"[AĞDA YAKALANDI] -> {url}")
+                        captured_urls.append(url)
 
-        try:
-            await page.goto(target_page_url, timeout=20000, wait_until="domcontentloaded")
-            print("M3U8 paketleri dinleniyor (10 sn)...\n")
-            await asyncio.sleep(10)
-        except Exception as e:
-            print(f"Sayfa yukleme hatasi: {e}")
-        finally:
-            await browser.close()
+            page.on("request", handle_request)
+
+            try:
+                await page.goto(target_page_url, timeout=15000, wait_until="networkidle")
+                print("M3U8 paketleri dinleniyor (8 sn)...")
+                await asyncio.sleep(8)
+                
+                # Oyuncuya tıklamayı dene (Video başlatmayı tetiklemek için)
+                try:
+                    await page.click("body", timeout=2000)
+                    await asyncio.sleep(3)
+                except Exception:
+                    pass
+
+            except Exception as e:
+                print(f"Sayfa yukleme uyarisi: {e}")
+            finally:
+                await page.close()
+
+            if captured_urls:
+                break
+
+        await browser.close()
 
     if captured_urls:
         final_link = captured_urls[-1]
@@ -173,7 +192,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
             print("[OTOMATİK DÜZELTME] Pasif 'taraftarium' yolu tespit edildi. Aktif 'patron' yoluna çevriliyor...")
             final_link = re.sub(r"/taraftarium/", "/patron/", final_link, flags=re.IGNORECASE)
 
-        print(f"[ÇALIŞAN CANLI YAYIN LİNKİ] -> {final_link}\n")
+        print(f"\n[ÇALIŞAN CANLI YAYIN LİNKİ YAKALANDI] -> {final_link}\n")
         return final_link
     
     return None
