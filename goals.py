@@ -147,8 +147,14 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
     captured_urls = []
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(user_agent=USER_AGENT)
+        browser = await p.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-web-security"]
+        )
+        context = await browser.new_context(
+            user_agent=USER_AGENT,
+            viewport={"width": 1280, "height": 720}
+        )
 
         for target_page_url in urls_to_try:
             print(f"\nKanal sayfasina baglaniliyor: {target_page_url}")
@@ -156,24 +162,46 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
             def handle_request(request):
                 url = request.url
-                if (".m3u8" in url.lower() or "stream" in url.lower() or "hls" in url.lower()) and "ads" not in url.lower():
-                    if ".m3u8" in url.lower():
-                        print(f"[AĞDA YAKALANDI] -> {url}")
-                        captured_urls.append(url)
+                if ".m3u8" in url.lower() and "ads" not in url.lower():
+                    print(f"[AĞDA YAKALANDI] -> {url}")
+                    captured_urls.append(url)
 
             page.on("request", handle_request)
 
             try:
-                await page.goto(target_page_url, timeout=15000, wait_until="networkidle")
-                print("M3U8 paketleri dinleniyor (8 sn)...")
-                await asyncio.sleep(8)
+                await page.goto(target_page_url, timeout=15000, wait_until="domcontentloaded")
+                await asyncio.sleep(3)
+
+                # 1. Iframe adreslerini tara
+                iframes = page.frames
+                iframe_urls = [f.url for f in iframes if f.url and f.url != "about:blank"]
                 
-                # Oyuncuya tıklamayı dene (Video başlatmayı tetiklemek için)
+                for iframe_url in iframe_urls:
+                    if "player" in iframe_url.lower() or "stream" in iframe_url.lower() or "channel" in iframe_url.lower():
+                        print(f"[IFRAME TESPİT EDİLDİ] -> {iframe_url}")
+                        try:
+                            iframe_page = await context.new_page()
+                            iframe_page.on("request", handle_request)
+                            await iframe_page.goto(iframe_url, timeout=10000, wait_until="domcontentloaded")
+                            await asyncio.sleep(4)
+                            await iframe_page.close()
+                        except Exception:
+                            pass
+
+                # 2. Sayfadaki tıklama alanlarını tetikle
                 try:
-                    await page.click("body", timeout=2000)
+                    await page.mouse.click(640, 360)
                     await asyncio.sleep(3)
                 except Exception:
                     pass
+
+                # 3. Sayfa kaynak kodunda HTML/JS içerisindeki m3u8 adreslerini ara
+                content = await page.content()
+                found_m3u8 = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', content)
+                for link in found_m3u8:
+                    if "ads" not in link.lower() and link not in captured_urls:
+                        print(f"[KAYNAK KODDA YAKALANDI] -> {link}")
+                        captured_urls.append(link)
 
             except Exception as e:
                 print(f"Sayfa yukleme uyarisi: {e}")
