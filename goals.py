@@ -38,8 +38,8 @@ def parse_args():
     parser.add_argument("--logo", default=DEFAULT_LOGO, help="Kanal Logosu URL")
     parser.add_argument("--output", default=DEFAULT_OUTPUT, help="Çıktı Dosya Adı")
     parser.add_argument("--github-token", default=os.getenv("GITHUB_TOKEN", ""), help="GitHub Personal Access Token")
-    parser.add_argument("--start-domain", type=int, default=1075, help="Başlangıç Domain No")
-    parser.add_argument("--end-domain", type=int, default=1500, help="Bitiş Domain No")
+    parser.add_argument("--start-domain", type=int, default=1000, help="Başlangıç Domain No")
+    parser.add_argument("--end-domain", type=int, default=1600, help="Bitiş Domain No")
     return parser.parse_args()
 
 
@@ -106,7 +106,7 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
     return "\n".join(output_lines) + "\n"
 
 
-async def find_working_domain(start=1075, end=1500):
+async def find_working_domain(start=1000, end=1600):
     print("Calisan domain araniyor...\n")
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -116,7 +116,7 @@ async def find_working_domain(start=1075, end=1500):
             test_url = f"https://taraftarium{num}.xyz"
             page = await context.new_page()
             try:
-                response = await page.goto(test_url, timeout=5000, wait_until="commit")
+                response = await page.goto(test_url, timeout=4000, wait_until="commit")
                 final_url = page.url
                 
                 if response and response.status < 400:
@@ -158,9 +158,9 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         page.on("request", handle_request)
 
         try:
-            await page.goto(target_page_url, timeout=15000, wait_until="domcontentloaded")
-            print("M3U8 paketleri dinleniyor (8 sn)...\n")
-            await asyncio.sleep(8)
+            await page.goto(target_page_url, timeout=20000, wait_until="domcontentloaded")
+            print("M3U8 paketleri dinleniyor (10 sn)...\n")
+            await asyncio.sleep(10)
         except Exception as e:
             print(f"Sayfa yukleme hatasi: {e}")
         finally:
