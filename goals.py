@@ -109,7 +109,6 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
 async def find_working_domain(start=1000, end=1600):
     print("Calisan domain araniyor...\n")
     
-    # Öncelikli direkt giriş adresi
     priority_domains = [
         "https://taraftarium24.ch"
     ]
@@ -154,8 +153,10 @@ async def find_working_domain(start=1000, end=1600):
 async def extract_m3u8(domain_url, channel_id="taraftarium"):
     urls_to_try = [
         f"{domain_url}/channel.html?id={channel_id}",
-        f"{domain_url}/",
-        f"https://taraftarium24.ch/channel.html?id={channel_id}"
+        f"{domain_url}/player.html?id={channel_id}",
+        f"{domain_url}/stream.html?id={channel_id}",
+        f"{domain_url}/embed.html?id={channel_id}",
+        f"{domain_url}/"
     ]
 
     captured_urls = []
@@ -167,6 +168,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 "--no-sandbox",
                 "--disable-setuid-sandbox",
                 "--disable-web-security",
+                "--disable-features=IsolateOrigins,site-per-process",
                 "--autoplay-policy=no-user-gesture-required"
             ]
         )
@@ -175,10 +177,9 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
             viewport={"width": 1280, "height": 720}
         )
 
-        # Context düzeyinde tüm alt frame/worker yanıtlarını dinle
         def handle_response(response):
             url = response.url
-            if ("mono.m3u8" in url.lower() or ".cfd" in url.lower() or ".m3u8" in url.lower()) and "ads" not in url.lower():
+            if (".m3u8" in url.lower() or "mono" in url.lower() or ".cfd" in url.lower()) and "ads" not in url.lower():
                 if ".m3u8" in url.lower() and url not in captured_urls:
                     print(f"[DERİN AĞDA YAKALANDI] -> {url}")
                     captured_urls.append(url)
@@ -190,25 +191,46 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
             page = await context.new_page()
 
             try:
-                await page.goto(target_page_url, timeout=15000, wait_until="domcontentloaded")
-                await asyncio.sleep(4)
+                await page.goto(target_page_url, timeout=12000, wait_until="domcontentloaded")
+                await asyncio.sleep(3)
 
-                # Oyuncu alanlarına tıklama ve video başlatma simülasyonu
+                # Oyuncu üzerindeki tıklama/başlatma simülasyonu
                 try:
                     await page.mouse.click(640, 360)
                     await page.keyboard.press("Space")
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(3)
                 except Exception:
                     pass
 
-                # Sayfa kodunu ve script içeriklerini tara
-                content = await page.content()
-                
-                # Regex ile doğrudan .cfd domainli mono.m3u8 bağlantılarını bul
-                found_m3u8 = re.findall(r'https?://[^\s\'"]+\.cfd[^\s\'"]*mono\.m3u8[^\s\'"]*', content)
-                if not found_m3u8:
-                    found_m3u8 = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', content)
+                # Iframe'leri tara ve oyuncu linklerine git
+                frames = page.frames
+                for frame in frames:
+                    try:
+                        frame_url = frame.url
+                        if frame_url and frame_url != "about:blank" and frame_url != target_page_url:
+                            if any(k in frame_url.lower() for k in ["player", "stream", "channel", "embed", "patron", "cfd"]):
+                                print(f"[IFRAME TESPİT EDİLDİ] -> {frame_url}")
+                                iframe_page = await context.new_page()
+                                await iframe_page.goto(frame_url, timeout=8000, wait_until="domcontentloaded")
+                                await asyncio.sleep(3)
+                                try:
+                                    await iframe_page.mouse.click(640, 360)
+                                except Exception:
+                                    pass
+                                
+                                iframe_content = await iframe_page.content()
+                                found = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', iframe_content)
+                                for link in found:
+                                    if "ads" not in link.lower() and link not in captured_urls:
+                                        print(f"[IFRAME İÇİNDE YAKALANDI] -> {link}")
+                                        captured_urls.append(link)
+                                await iframe_page.close()
+                    except Exception:
+                        pass
 
+                # Sayfa kaynağında cfd/m3u8 adreslerini ara
+                content = await page.content()
+                found_m3u8 = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', content)
                 for link in found_m3u8:
                     if "ads" not in link.lower() and link not in captured_urls:
                         print(f"[KAYNAK KODDA YAKALANDI] -> {link}")
@@ -224,7 +246,6 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
         await browser.close()
 
-    # Yakalanan bağlantılar arasında öncelikle .cfd veya mono.m3u8 içerenleri seç
     if captured_urls:
         cfd_links = [u for u in captured_urls if ".cfd" in u or "mono.m3u8" in u]
         final_link = cfd_links[-1] if cfd_links else captured_urls[-1]
