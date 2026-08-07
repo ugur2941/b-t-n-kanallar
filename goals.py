@@ -134,7 +134,7 @@ async def find_working_domain(start=1000, end=1600):
             if stealth_async:
                 await stealth_async(page)
             try:
-                response = await page.goto(test_url, timeout=3000, wait_until="domcontentloaded")
+                response = await page.goto(test_url, timeout=4000, wait_until="domcontentloaded")
                 final_url = page.url
                 if response and response.status < 400:
                     print(f"Aktif Domain Bulundu -> taraftarium{num}.xyz -> {final_url}")
@@ -152,7 +152,6 @@ async def find_working_domain(start=1000, end=1600):
 
 
 async def extract_m3u8(domain_url, channel_id="taraftarium"):
-    # Farklı player/embed kombinasyonları
     urls_to_try = [
         f"{domain_url}/",
         f"{domain_url}/channel.html?id={channel_id}",
@@ -176,27 +175,26 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 "--autoplay-policy=no-user-gesture-required"
             ]
         )
-        
-        # Gerçek tarayıcı taklidi için genişletilmiş bağlam
+
         context = await browser.new_context(
             user_agent=USER_AGENT,
             viewport={"width": 1920, "height": 1080},
             ignore_https_errors=True,
             extra_http_headers={
-                "Accept-Language": "tr-TR,tr;q=0.9",
-                "Sec-Ch-Ua": '"Not/A)Brand";v="8", "Chromium";v="126"',
+                "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8",
+                "Sec-Ch-Ua": '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
                 "Sec-Ch-Ua-Mobile": "?0",
                 "Sec-Ch-Ua-Platform": '"Windows"',
                 "Sec-Fetch-Dest": "document",
                 "Sec-Fetch-Mode": "navigate",
-                "Sec-Fetch-Site": "cross-site",
+                "Sec-Fetch-Site": "none",
+                "Sec-Fetch-User": "?1",
                 "Upgrade-Insecure-Requests": "1"
             }
         )
 
         def check_and_add_url(url, source_label="AĞ"):
             url_lower = url.lower()
-            # M3U8, CFD veya dinamik stream parametreleri kontrolü
             if (
                 ".m3u8" in url_lower
                 or ".cfd" in url_lower
@@ -204,8 +202,9 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 or "/patron/" in url_lower
                 or "/hls/" in url_lower
                 or "/live/" in url_lower
-            ) and not any(x in url_lower for x in ["google", "analytics", "doubleclick", "ads", "facebook", "jads", "pop"]):
-                if url not in captured_urls:
+                or "stream" in url_lower
+            ) and not any(x in url_lower for x in ["google", "analytics", "doubleclick", "ads", "facebook", "jads", "pop", "css", "js", "png", "jpg"]):
+                if url not in captured_urls and url.startswith("http"):
                     print(f"[{source_label} YAKALANDI] -> {url}")
                     captured_urls.append(url)
 
@@ -219,18 +218,20 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                 await stealth_async(page)
 
             try:
-                # Sayfanın tam yüklenmesini sağlamak
-                await page.goto(target_page_url, timeout=20000, wait_until="domcontentloaded")
-                await asyncio.sleep(5)
+                # Cloudflare engelini aşmak için önce boş bekleme, sonra sayfa yükleme
+                await page.goto(target_page_url, timeout=25000, wait_until="commit")
+                await asyncio.sleep(6)
 
-                # Oynatıcı tetikleyici simülasyonları
+                # Ekran üzerinde otomatik tıklama (reklam ve oynatıcı bariyerini aşmak için)
                 try:
                     await page.mouse.click(960, 540)
+                    await asyncio.sleep(2)
+                    await page.mouse.click(500, 300)
                     await asyncio.sleep(2)
                 except Exception:
                     pass
 
-                # Iframe içeriğine zorla sızma
+                # Frameler içindeki gizli ağ trafiğini ve kaynakları tara
                 for frame in page.frames:
                     try:
                         f_url = frame.url
@@ -242,7 +243,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
                     except Exception:
                         pass
 
-                # Sayfa kaynağı taraması
+                # Ana sayfa HTML kaynak kontrolü
                 content = await page.content()
                 found_m3u8 = re.findall(r'https?://[^\s\'"]+\.(?:cfd|m3u8)[^\s\'"]*', content)
                 for link in found_m3u8:
@@ -259,6 +260,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
         await browser.close()
 
     if captured_urls:
+        # Öncelikli M3U8 akış URL'ini belirle
         cfd_links = [u for u in captured_urls if ".cfd" in u or "mono.m3u8" in u or ".m3u8" in u]
         final_link = cfd_links[-1] if cfd_links else captured_urls[-1]
 
