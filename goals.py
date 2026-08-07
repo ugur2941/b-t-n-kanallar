@@ -109,7 +109,6 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
 async def find_working_domain(start=1000, end=1600):
     print("Calisan domain araniyor...\n")
     
-    # Doğrudan bilinen aktif yayın servis adresleri
     priority_domains = [
         "https://taraftarium.patron.live",
         "https://patron.live"
@@ -119,7 +118,6 @@ async def find_working_domain(start=1000, end=1600):
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(user_agent=USER_AGENT)
 
-        # Önce bilinen yayın sunucularını dene
         for p_domain in priority_domains:
             page = await context.new_page()
             try:
@@ -133,7 +131,6 @@ async def find_working_domain(start=1000, end=1600):
             finally:
                 await page.close()
 
-        # Bulunamazsa yönlendirme numaralarını tara
         for num in range(start, end):
             test_url = f"https://taraftarium{num}.xyz"
             page = await context.new_page()
@@ -167,7 +164,12 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             headless=True,
-            args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-web-security"]
+            args=[
+                "--no-sandbox",
+                "--disable-setuid-sandbox",
+                "--disable-web-security",
+                "--autoplay-policy=no-user-gesture-required"
+            ]
         )
         context = await browser.new_context(
             user_agent=USER_AGENT,
@@ -180,7 +182,8 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
             def handle_request(request):
                 url = request.url
-                if (".m3u8" in url.lower() or "/patron/" in url.lower()) and "ads" not in url.lower():
+                # CDN sunucularından gelen m3u8 veya mono.m3u8 paketlerini yakala
+                if (".m3u8" in url.lower() or "mono" in url.lower()) and "ads" not in url.lower():
                     if ".m3u8" in url.lower():
                         print(f"[AĞDA YAKALANDI] -> {url}")
                         captured_urls.append(url)
@@ -188,19 +191,20 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
             page.on("request", handle_request)
 
             try:
-                await page.goto(target_page_url, timeout=12000, wait_until="domcontentloaded")
-                await asyncio.sleep(3)
+                await page.goto(target_page_url, timeout=15000, wait_until="networkidle")
+                await asyncio.sleep(4)
 
-                # Oyuncu tespiti için tıklama yap
+                # Oyuncu tespiti ve oynatmayı tetikleme
                 try:
                     await page.mouse.click(640, 360)
-                    await asyncio.sleep(2)
+                    await page.keyboard.press("Space")
+                    await asyncio.sleep(4)
                 except Exception:
                     pass
 
                 content = await page.content()
                 
-                # Regex ile m3u8 veya patron akış bağlantılarını bul
+                # Regex ile cfd / m3u8 bağlantılarını tara
                 found_m3u8 = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', content)
                 for link in found_m3u8:
                     if "ads" not in link.lower() and link not in captured_urls:
@@ -220,16 +224,15 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
     if captured_urls:
         final_link = captured_urls[-1]
         
-        # Taraftarium pasif yolunu aktif patron yoluna çevir
+        # Pasif taraftarium yolunu patron/mono düzenlemesine ayarla
         if "/taraftarium/" in final_link.lower():
-            print("[OTOMATİK DÜZELTME] Pasif 'taraftarium' yolu tespit edildi. Aktif 'patron' yoluna çevriliyor...")
             final_link = re.sub(r"/taraftarium/", "/patron/", final_link, flags=re.IGNORECASE)
 
         print(f"\n[ÇALIŞAN CANLI YAYIN LİNKİ YAKALANDI] -> {final_link}\n")
         return final_link
     
-    # Eğer doğrudan dinlemede m3u8 yakalanamadıysa aktif bilinen dinamik kalıba fallback uygula
-    fallback_link = f"{domain_url}/patron/index.m3u8"
+    # Fallback bağlantısında mono.m3u8 yapısını kullan
+    fallback_link = f"{domain_url}/patron/mono.m3u8"
     print(f"\n[YEDEK MEKANİZMA] Ağ paketlerinde m3u8 bulunamadı, oluşturulan yayın adresi: {fallback_link}\n")
     return fallback_link
 
