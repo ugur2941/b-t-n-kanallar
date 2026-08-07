@@ -109,9 +109,9 @@ def upsert_playlist_entry(existing_content: str, channel_name: str, group: str, 
 async def find_working_domain(start=1000, end=1600):
     print("Calisan domain araniyor...\n")
     
+    # Öncelikli direkt giriş adresi
     priority_domains = [
-        "https://taraftarium.patron.live",
-        "https://patron.live"
+        "https://taraftarium24.ch"
     ]
 
     async with async_playwright() as p:
@@ -121,7 +121,7 @@ async def find_working_domain(start=1000, end=1600):
         for p_domain in priority_domains:
             page = await context.new_page()
             try:
-                res = await page.goto(p_domain, timeout=3000, wait_until="commit")
+                res = await page.goto(p_domain, timeout=5000, wait_until="commit")
                 if res and res.status < 400:
                     print(f"Öncelikli yayın domaini aktif: {p_domain}")
                     await browser.close()
@@ -155,8 +155,7 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
     urls_to_try = [
         f"{domain_url}/channel.html?id={channel_id}",
         f"{domain_url}/",
-        f"https://taraftarium.patron.live/channel.html?id={channel_id}",
-        f"https://patron.live/channel.html?id={channel_id}"
+        f"https://taraftarium24.ch/channel.html?id={channel_id}"
     ]
 
     captured_urls = []
@@ -176,36 +175,40 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
             viewport={"width": 1280, "height": 720}
         )
 
+        # Context düzeyinde tüm alt frame/worker yanıtlarını dinle
+        def handle_response(response):
+            url = response.url
+            if ("mono.m3u8" in url.lower() or ".cfd" in url.lower() or ".m3u8" in url.lower()) and "ads" not in url.lower():
+                if ".m3u8" in url.lower() and url not in captured_urls:
+                    print(f"[DERİN AĞDA YAKALANDI] -> {url}")
+                    captured_urls.append(url)
+
+        context.on("response", handle_response)
+
         for target_page_url in urls_to_try:
             print(f"\nKanal sayfasina baglaniliyor: {target_page_url}")
             page = await context.new_page()
 
-            def handle_request(request):
-                url = request.url
-                # CDN sunucularından gelen m3u8 veya mono.m3u8 paketlerini yakala
-                if (".m3u8" in url.lower() or "mono" in url.lower()) and "ads" not in url.lower():
-                    if ".m3u8" in url.lower():
-                        print(f"[AĞDA YAKALANDI] -> {url}")
-                        captured_urls.append(url)
-
-            page.on("request", handle_request)
-
             try:
-                await page.goto(target_page_url, timeout=15000, wait_until="networkidle")
+                await page.goto(target_page_url, timeout=15000, wait_until="domcontentloaded")
                 await asyncio.sleep(4)
 
-                # Oyuncu tespiti ve oynatmayı tetikleme
+                # Oyuncu alanlarına tıklama ve video başlatma simülasyonu
                 try:
                     await page.mouse.click(640, 360)
                     await page.keyboard.press("Space")
-                    await asyncio.sleep(4)
+                    await asyncio.sleep(5)
                 except Exception:
                     pass
 
+                # Sayfa kodunu ve script içeriklerini tara
                 content = await page.content()
                 
-                # Regex ile cfd / m3u8 bağlantılarını tara
-                found_m3u8 = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', content)
+                # Regex ile doğrudan .cfd domainli mono.m3u8 bağlantılarını bul
+                found_m3u8 = re.findall(r'https?://[^\s\'"]+\.cfd[^\s\'"]*mono\.m3u8[^\s\'"]*', content)
+                if not found_m3u8:
+                    found_m3u8 = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', content)
+
                 for link in found_m3u8:
                     if "ads" not in link.lower() and link not in captured_urls:
                         print(f"[KAYNAK KODDA YAKALANDI] -> {link}")
@@ -221,20 +224,15 @@ async def extract_m3u8(domain_url, channel_id="taraftarium"):
 
         await browser.close()
 
+    # Yakalanan bağlantılar arasında öncelikle .cfd veya mono.m3u8 içerenleri seç
     if captured_urls:
-        final_link = captured_urls[-1]
-        
-        # Pasif taraftarium yolunu patron/mono düzenlemesine ayarla
-        if "/taraftarium/" in final_link.lower():
-            final_link = re.sub(r"/taraftarium/", "/patron/", final_link, flags=re.IGNORECASE)
+        cfd_links = [u for u in captured_urls if ".cfd" in u or "mono.m3u8" in u]
+        final_link = cfd_links[-1] if cfd_links else captured_urls[-1]
 
         print(f"\n[ÇALIŞAN CANLI YAYIN LİNKİ YAKALANDI] -> {final_link}\n")
         return final_link
-    
-    # Fallback bağlantısında mono.m3u8 yapısını kullan
-    fallback_link = f"{domain_url}/patron/mono.m3u8"
-    print(f"\n[YEDEK MEKANİZMA] Ağ paketlerinde m3u8 bulunamadı, oluşturulan yayın adresi: {fallback_link}\n")
-    return fallback_link
+
+    return None
 
 
 def push_to_github(github_token, stream_url, domain, channel_name, group_name, logo_url):
