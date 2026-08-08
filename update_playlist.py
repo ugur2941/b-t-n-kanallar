@@ -2,8 +2,8 @@ import json
 import re
 import yt_dlp
 
-# Deponuzdaki M3U dosyasının adı
-M3U_FILE = "tv.m3u"
+# Deponuzdaki M3U dosyasının tam adı
+M3U_FILE = "boncuk"
 
 def get_live_m3u8(youtube_url):
     ydl_opts = {'format': 'best', 'quiet': True}
@@ -16,15 +16,23 @@ def get_live_m3u8(youtube_url):
         return None
 
 def main():
-    # 1. YouTube yapılandırmasını youtube.json dosyasından oku
-    with open('youtube.json', 'r', encoding='utf-8') as f:
-        yt_channels = json.load(f)
-    
+    # 1. youtube.json dosyasından güncellenecek YouTube kanallarını oku
+    try:
+        with open('youtube.json', 'r', encoding='utf-8') as f:
+            yt_channels = json.load(f)
+    except FileNotFoundError:
+        print("HATA: youtube.json dosyası bulunamadı!")
+        return
+
     yt_map = {item['tvg_id']: item['youtube_url'] for item in yt_channels}
 
-    # 2. Orijinal M3U dosyasını oku
-    with open(M3U_FILE, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
+    # 2. 'boncuk' dosyasındaki mevcut kanalları oku
+    try:
+        with open(M3U_FILE, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        print(f"HATA: '{M3U_FILE}' dosyası depoda bulunamadı!")
+        return
 
     updated_lines = []
     i = 0
@@ -32,11 +40,13 @@ def main():
         line = lines[i]
         updated_lines.append(line)
 
+        # #EXTINF satırındaki tvg-id değerini yakala
         if line.startswith("#EXTINF"):
             match = re.search(r'tvg-id="([^"]+)"', line)
             if match:
                 tvg_id = match.group(1)
                 
+                # Eğer bu tvg-id 'youtube.json' içinde varsa linkini güncelle
                 if tvg_id in yt_map:
                     yt_url = yt_map[tvg_id]
                     print(f"Güncelleniyor: {tvg_id}")
@@ -44,14 +54,16 @@ def main():
                     
                     if live_url and (i + 1) < len(lines):
                         updated_lines.append(f"{live_url}\n")
-                        i += 2  # Eski URL satırını atla
+                        i += 2  # Eski/geçersiz URL satırını atla
                         continue
 
         i += 1
 
-    # 3. Güncellenmiş halini kaydet
+    # 3. Diğer tüm kanallara dokunmadan güncellenmiş halini 'boncuk' dosyasına yaz
     with open(M3U_FILE, 'w', encoding='utf-8') as f:
         f.writelines(updated_lines)
+
+    print("'boncuk' dosyası başarıyla güncellendi.")
 
 if __name__ == "__main__":
     main()
