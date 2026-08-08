@@ -4,28 +4,62 @@ import urllib.request
 
 M3U_FILE = "boncuk"
 
-def get_youtube_m3u8(youtube_url):
-    """YouTube live sayfasından gizli hlsManifestUrl (.m3u8) adresini çeker."""
-    try:
-        req = urllib.request.Request(
-            youtube_url,
-            headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-                'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7'
-            }
-        )
-        with urllib.request.urlopen(req, timeout=15) as response:
-            html = response.read().decode('utf-8')
-            
-            # YouTube HTML içerisindeki canlı m3u8 adresini yakala
-            match = re.search(r'"hlsManifestUrl":"(https:[^"]+)"', html)
-            if match:
-                clean_url = match.group(1).replace('\\/', '/').replace('\\u0026', '&')
-                return clean_url
-            else:
-                print(f"-> m3u8 deseni bulunamadı: {youtube_url}")
-    except Exception as e:
-        print(f"-> Bağlantı Hatası ({youtube_url}): {e}")
+def get_m3u8_via_invidious(youtube_url):
+    """
+    YouTube IP engellerini aşmak için açık kaynak API ucu üzerinden
+    canlı yayın .m3u8 bağlantısını çeker.
+    """
+    # URL'den kanal adını ayıkla (örn: SZCTVKanal)
+    match = re.search(r'@([^/]+)', youtube_url)
+    if not match:
+        return None
+    channel_handle = match.group(1)
+
+    # YouTube IP engellerini aşmak için güvenilir kamuya açık API uçları
+    api_instances = [
+        f"https://inv.tux.pizza/api/v1/channels/symbolpress/{channel_handle}",
+        f"https://invidious.drgns.space/api/v1/channels/symbolpress/{channel_handle}",
+        f"https://vid.puffyan.us/api/v1/channels/symbolpress/{channel_handle}"
+    ]
+
+    # Doğrudan canlı yayının m3u8 manifest adresini HTML içerisinden yedek yöntemle arama
+    scrape_urls = [
+        f"https://yt.artemislena.eu/live/{channel_handle}",
+        f"https://invidious.no-boomer.cafe/live/{channel_handle}"
+    ]
+
+    # Yöntem 1: Doğrudan alternatif HTML canlı yayın akışından m3u8 çekme
+    for url in scrape_urls:
+        try:
+            req = urllib.request.Request(
+                url, 
+                headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+            )
+            with urllib.request.urlopen(req, timeout=10) as response:
+                html = response.read().decode('utf-8')
+                m3u8_match = re.search(r'(https?://[^\s"'<>]+?\.m3u8[^\s"'<>]*?)', html)
+                if m3u8_match:
+                    return m3u8_match.group(1)
+        except Exception:
+            continue
+
+    # Yöntem 2: Invidious API üzerinden video id bulup m3u8 türetme
+    for api_url in api_instances:
+        try:
+            req = urllib.request.Request(
+                f"https://invidious.nerdvpn.de/api/v1/channels/{channel_handle}/live",
+                headers={'User-Agent': 'Mozilla/5.0'}
+            )
+            with urllib.request.urlopen(req, timeout=10) as response:
+                data = json.loads(response.read().decode('utf-8'))
+                if 'videoId' in data:
+                    video_id = data['videoId']
+                    # HLS manifest adresini getir
+                    manifest_url = f"https://invidious.nerdvpn.de/api/v1/manifest/hls/{video_id}"
+                    return manifest_url
+        except Exception:
+            continue
+
     return None
 
 def main():
@@ -54,16 +88,15 @@ def main():
 
         print(f"\n[İşleniyor]: '{tvg_id}'")
 
-        # #EXTINF... tvg-id="Kanal" altındaki URL'yi yakalayan regex
+        # #EXTINF satırından sonra gelen HTTP linkini yakala
         pattern = re.compile(
             r'(#EXTINF:[^\r\n]*?tvg-id="' + re.escape(tvg_id) + r'"[^\r\n]*?[\r\n]+)(https?://[^\s\r\n]+)',
             re.IGNORECASE
         )
 
-        match = pattern.search(content)
-        if match:
-            print(f"-> Eşleşti, m3u8 çekiliyor...")
-            live_url = get_youtube_m3u8(yt_url)
+        if pattern.search(content):
+            print(f"-> Eşleşti, m3u8 adresi çekiliyor...")
+            live_url = get_m3u8_via_invidious(yt_url)
 
             if live_url:
                 content = pattern.sub(r'\1' + live_url, content)
