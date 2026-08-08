@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 
 
-DEFAULT_CHANNEL_ID = "patron"
+DEFAULT_CHANNEL_ID = "taraftarium"
 DEFAULT_CHANNEL_NAME = "BeIN Sports 1"
 DEFAULT_GROUP = "BeinSports"
 DEFAULT_OUTPUT = "sporb"
