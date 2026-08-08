@@ -4,36 +4,54 @@ import subprocess
 
 M3U_FILE = "boncuk"
 
-def get_live_m3u8_ytdlp(youtube_url):
+def get_live_m3u8(youtube_url):
     """
-    yt-dlp ile bot engellerini (Sign in to confirm you're not a bot)
-    aşmak için Android/iOS client parametreleri kullanır.
+    1. Yöntem: yt-dlp ile iOS/Android client simülasyonu
     """
-    cmd = [
+    cmd_ytdlp = [
         "yt-dlp",
         "-g",
         "-f", "best",
         "--no-warnings",
         "--no-cache-dir",
-        "--extractor-args", "youtube:player_client=android,ios,web",
+        "--extractor-args", "youtube:player_client=ios,android,web_creator",
         youtube_url
     ]
     
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        if result.returncode == 0:
-            url = result.stdout.strip()
-            # birden fazla format dönerse ilk m3u8 içeren satırı al
-            lines = url.split('\n')
+        res = subprocess.run(cmd_ytdlp, capture_output=True, text=True, timeout=30)
+        if res.returncode == 0:
+            lines = [line.strip() for line in res.stdout.strip().split('\n') if line.strip()]
             for line in lines:
-                if ".m3u8" in line or "manifest" in line:
-                    return line.strip()
+                if ".m3u8" in line or "manifest" in line or "googlevideo.com" in line:
+                    return line
             if lines:
-                return lines[0].strip()
+                return lines[0]
         else:
-            print(f"      [yt-dlp Hata]: {result.stderr.strip()}")
+            print(f"      [yt-dlp Denemesi Başarısız]: {res.stderr.strip()[:120]}")
     except Exception as e:
         print(f"      [yt-dlp Exception]: {e}")
+
+    """
+    2. Yöntem (Yedek): streamlink ile bot korumasını aşma
+    """
+    print("   -> Fallback: 'streamlink' ile deneniyor...")
+    cmd_streamlink = [
+        "streamlink",
+        "--stream-url",
+        youtube_url,
+        "best"
+    ]
+    try:
+        res_sl = subprocess.run(cmd_streamlink, capture_output=True, text=True, timeout=30)
+        if res_sl.returncode == 0:
+            url = res_sl.stdout.strip()
+            if url.startswith("http"):
+                return url
+        else:
+            print(f"      [streamlink Hata]: {res_sl.stderr.strip()[:120]}")
+    except Exception as e:
+        print(f"      [streamlink Exception]: {e}")
 
     return None
 
@@ -74,18 +92,18 @@ def main():
             old_url = match.group(2)
             print(f" -> Bulunan Eski Link: {old_url[:65]}...")
             
-            live_url = get_live_m3u8_ytdlp(yt_url)
+            live_url = get_live_m3u8(yt_url)
 
             if live_url:
                 if old_url == live_url:
                     print(f" -> UYARI: Çekilen yeni link eski link ile BİREBİR AYNI.")
                 else:
                     content = pattern.sub(r'\1' + live_url, content)
-                    print(f" -> BAŞARILI: Yeni link yazıldı!")
+                    print(f" -> BAŞARILI: Yeni link güncellendi!")
                     print(f"    Yeni Link: {live_url[:65]}...")
                     updated_count += 1
             else:
-                print(f" -> HATA: yt-dlp canlı link çıkaramadı.")
+                print(f" -> HATA: İki yöntemle de canlı m3u8 linki çıkarılamadı.")
         else:
             print(f" -> HATA: '{tvg_id}' tvg-id değeri 'boncuk' dosyasında bulunamadı!")
 
