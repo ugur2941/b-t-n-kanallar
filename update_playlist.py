@@ -4,61 +4,49 @@ import urllib.request
 
 M3U_FILE = "boncuk"
 
-def get_m3u8_via_invidious(youtube_url):
+def get_m3u8_via_api(youtube_url):
     """
-    YouTube IP engellerini aşmak için açık kaynak API ucu üzerinden
-    canlı yayın .m3u8 bağlantısını çeker.
+    YouTube IP engellerine takılmamak için alternatif Invidious/Piped API 
+    uç noktalarını kullanarak canlı m3u8 adresini çeker.
     """
-    # URL'den kanal adını ayıkla (örn: SZCTVKanal)
     match = re.search(r'@([^/]+)', youtube_url)
     if not match:
         return None
     channel_handle = match.group(1)
 
-    # YouTube IP engellerini aşmak için güvenilir kamuya açık API uçları
-    api_instances = [
-        f"https://inv.tux.pizza/api/v1/channels/symbolpress/{channel_handle}",
-        f"https://invidious.drgns.space/api/v1/channels/symbolpress/{channel_handle}",
-        f"https://vid.puffyan.us/api/v1/channels/symbolpress/{channel_handle}"
+    # YouTube IP engellerini aşan kamuya açık API uçları
+    instances = [
+        f"https://api.piped.private.coffee/channel/{channel_handle}",
+        f"https://pipedapi.kavin.rocks/channel/{channel_handle}",
+        f"https://inv.tux.pizza/api/v1/channels/{channel_handle}"
     ]
 
-    # Doğrudan canlı yayının m3u8 manifest adresini HTML içerisinden yedek yöntemle arama
-    scrape_urls = [
-        f"https://yt.artemislena.eu/live/{channel_handle}",
-        f"https://invidious.no-boomer.cafe/live/{channel_handle}"
-    ]
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-    # Yöntem 1: Doğrudan alternatif HTML canlı yayın akışından m3u8 çekme
-    for url in scrape_urls:
+    for api_url in instances:
         try:
-            req = urllib.request.Request(
-                url, 
-                headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-            )
+            req = urllib.request.Request(api_url, headers=headers)
             with urllib.request.urlopen(req, timeout=10) as response:
-                html = response.read().decode('utf-8')
-                m3u8_match = re.search(r'(https?://[^\s"'<>]+?\.m3u8[^\s"'<>]*?)', html)
+                html_or_json = response.read().decode('utf-8')
+                
+                # Yanıt içerisindeki m3u8 adresini arayan düzeltilmiş Regex
+                m3u8_match = re.search(r'https?://[^\s"<>\'"]+?\.m3u8[^\s"<>\'"]*', html_or_json)
                 if m3u8_match:
-                    return m3u8_match.group(1)
+                    return m3u8_match.group(0)
         except Exception:
             continue
 
-    # Yöntem 2: Invidious API üzerinden video id bulup m3u8 türetme
-    for api_url in api_instances:
-        try:
-            req = urllib.request.Request(
-                f"https://invidious.nerdvpn.de/api/v1/channels/{channel_handle}/live",
-                headers={'User-Agent': 'Mozilla/5.0'}
-            )
-            with urllib.request.urlopen(req, timeout=10) as response:
-                data = json.loads(response.read().decode('utf-8'))
-                if 'videoId' in data:
-                    video_id = data['videoId']
-                    # HLS manifest adresini getir
-                    manifest_url = f"https://invidious.nerdvpn.de/api/v1/manifest/hls/{video_id}"
-                    return manifest_url
-        except Exception:
-            continue
+    # Alternatif: Doğrudan HTML scraping
+    scrape_url = f"https://yt.artemislena.eu/live/{channel_handle}"
+    try:
+        req = urllib.request.Request(scrape_url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as response:
+            html = response.read().decode('utf-8')
+            m3u8_match = re.search(r'https?://[^\s"<>\'"]+?\.m3u8[^\s"<>\'"]*', html)
+            if m3u8_match:
+                return m3u8_match.group(0)
+    except Exception:
+        pass
 
     return None
 
@@ -88,7 +76,7 @@ def main():
 
         print(f"\n[İşleniyor]: '{tvg_id}'")
 
-        # #EXTINF satırından sonra gelen HTTP linkini yakala
+        # #EXTINF... tvg-id="Kanal" altındaki URL satırını yakalar
         pattern = re.compile(
             r'(#EXTINF:[^\r\n]*?tvg-id="' + re.escape(tvg_id) + r'"[^\r\n]*?[\r\n]+)(https?://[^\s\r\n]+)',
             re.IGNORECASE
@@ -96,7 +84,7 @@ def main():
 
         if pattern.search(content):
             print(f"-> Eşleşti, m3u8 adresi çekiliyor...")
-            live_url = get_m3u8_via_invidious(yt_url)
+            live_url = get_m3u8_via_api(yt_url)
 
             if live_url:
                 content = pattern.sub(r'\1' + live_url, content)
