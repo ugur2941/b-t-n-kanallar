@@ -18,10 +18,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: yt-dlp Kütüphanesini Yükle
+      - name: Gerekli Paketleri Yükle
         run: |
           python -m pip install --upgrade pip
-          pip install yt-dlp
+          pip install yt-dlp streamlink
 
       - name: Güncelleme Betiğini Çalıştır
         run: python update_playlist.py
