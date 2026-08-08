@@ -5,26 +5,29 @@ import yt_dlp
 M3U_FILE = "boncuk"
 
 def get_live_m3u8(youtube_url):
-    # GitHub Actions bot engellerini aşmak için özel yt-dlp parametreleri
+    # TV ve Android Embed istemcilerini kullanarak IP engelini aşma
     ydl_opts = {
         'format': 'best',
         'quiet': True,
         'no_warnings': True,
         'extractor_args': {
             'youtube': {
-                'player_client': ['android', 'ios', 'web_embedded'],
-                'skip': ['hls', 'dash']
+                'player_client': ['tv_embedded', 'android', 'web_creator'],
+                'player_skip': ['webpage', 'configs']
             }
-        },
-        'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        }
     }
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(youtube_url, download=False)
+            
+            # Yayın adresini kontrol et
             if 'url' in info:
                 return info['url']
             elif 'manifest_url' in info:
                 return info['manifest_url']
+            elif 'entries' in info and len(info['entries']) > 0:
+                return info['entries'][0].get('url')
             return None
     except Exception as e:
         print(f"yt-dlp Hatası ({youtube_url}): {e}")
@@ -54,7 +57,7 @@ def main():
         tvg_id = channel.get('tvg_id', '').strip()
         yt_url = channel.get('youtube_url', '').strip()
 
-        print(f"\n[İşleniyor]: '{tvg_id}'")
+        print(f"\n[İşleniyor]: '{tvg_id}' -> {yt_url}")
 
         pattern = re.compile(
             r'(#EXTINF:[^\r\n]*?tvg-id="' + re.escape(tvg_id) + r'"[^\r\n]*?[\r\n]+)(https?://[^\s\r\n]+)',
