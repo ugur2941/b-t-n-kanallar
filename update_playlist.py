@@ -20,10 +20,11 @@ def main():
         with open('youtube.json', 'r', encoding='utf-8') as f:
             yt_channels = json.load(f)
     except FileNotFoundError:
-        print("HATA: youtube.json dosyası bulunamadı!")
+        print("HATA: youtube.json bulunamadı!")
         return
 
-    yt_map = {item['tvg_id']: item['youtube_url'] for item in yt_channels}
+    # tvg_id küçük harfe çevrilerek harf duyarlılığı kaldırılır
+    yt_map = {item['tvg_id'].strip().lower(): item['youtube_url'] for item in yt_channels}
 
     # 2. boncuk dosyasını oku
     try:
@@ -39,21 +40,20 @@ def main():
         line = lines[i]
         updated_lines.append(line)
 
-        # EXTINF satırı yakalama
         if line.startswith("#EXTINF"):
-            match = re.search(r'tvg-id="([^"]+)"', line)
+            match = re.search(r'tvg-id="([^"]+)"', line, re.IGNORECASE)
             if match:
-                tvg_id = match.group(1)
+                tvg_id_file = match.group(1).strip().lower()
                 
-                # Eşleşen YouTube kanalı varsa
-                if tvg_id in yt_map:
-                    yt_url = yt_map[tvg_id]
-                    print(f"Güncelleniyor: {tvg_id}")
+                # Eşleşme kontrolü
+                if tvg_id_file in yt_map:
+                    yt_url = yt_map[tvg_id_file]
+                    print(f"Eşleşti, link çekiliyor: {match.group(1)}")
                     live_url = get_live_m3u8(yt_url)
                     
                     if live_url:
-                        # Bir sonraki satır eski URL ise onu atlayıp yeni URL'yi yaz
-                        if (i + 1) < len(lines) and lines[i + 1].startswith("http"):
+                        # Bir sonraki satır eski link ise atla ve yenisini koy
+                        if (i + 1) < len(lines) and lines[i + 1].strip().startswith("http"):
                             updated_lines.append(f"{live_url}\n")
                             i += 1  # Eski URL satırını atla
                         else:
@@ -63,11 +63,11 @@ def main():
 
         i += 1
 
-    # 3. Temizlenmiş ve güncellenmiş listeyi kaydet
+    # 3. Güncellenmiş halini dosyaya yaz
     with open(M3U_FILE, 'w', encoding='utf-8') as f:
         f.writelines(updated_lines)
 
-    print("Güncelleme tamamlandı.")
+    print("İşlem tamamlandı.")
 
 if __name__ == "__main__":
     main()
