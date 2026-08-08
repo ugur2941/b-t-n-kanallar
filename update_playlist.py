@@ -5,22 +5,31 @@ import subprocess
 M3U_FILE = "boncuk"
 
 def get_live_m3u8_ytdlp(youtube_url):
+    """
+    yt-dlp ile bot engellerini (Sign in to confirm you're not a bot)
+    aşmak için Android/iOS client parametreleri kullanır.
+    """
+    cmd = [
+        "yt-dlp",
+        "-g",
+        "-f", "best",
+        "--no-warnings",
+        "--no-cache-dir",
+        "--extractor-args", "youtube:player_client=android,ios,web",
+        youtube_url
+    ]
+    
     try:
-        # --force-overwrites ve fresh manifest parametreleri eklendi
-        cmd = [
-            "yt-dlp",
-            "-g",
-            "-f", "best",
-            "--no-warnings",
-            "--no-cache-dir",
-            youtube_url
-        ]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=25)
-        
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
         if result.returncode == 0:
             url = result.stdout.strip()
-            if ".m3u8" in url or "manifest" in url:
-                return url
+            # birden fazla format dönerse ilk m3u8 içeren satırı al
+            lines = url.split('\n')
+            for line in lines:
+                if ".m3u8" in line or "manifest" in line:
+                    return line.strip()
+            if lines:
+                return lines[0].strip()
         else:
             print(f"      [yt-dlp Hata]: {result.stderr.strip()}")
     except Exception as e:
@@ -69,7 +78,7 @@ def main():
 
             if live_url:
                 if old_url == live_url:
-                    print(f" -> UYARI: Çekilen yeni link eski link ile BİREBİR AYNI. (Değişiklik yok)")
+                    print(f" -> UYARI: Çekilen yeni link eski link ile BİREBİR AYNI.")
                 else:
                     content = pattern.sub(r'\1' + live_url, content)
                     print(f" -> BAŞARILI: Yeni link yazıldı!")
