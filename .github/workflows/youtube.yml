@@ -12,15 +12,20 @@ jobs:
       - name: Repoyu Çek
         uses: actions/checkout@v3
 
+      - name: Node.js Kur (YouTube Bot Engelini Aşmak İçin)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
       - name: Python Kur
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
       - name: Bağımlılıkları Yükle
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade --no-cache-dir "yt-dlp[default]"
+          pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz
 
       - name: Betiği Çalıştır
         run: python update_playlist.py
