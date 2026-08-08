@@ -1,52 +1,32 @@
 import json
 import re
-import urllib.request
+import subprocess
 
 M3U_FILE = "boncuk"
 
-def get_live_m3u8(youtube_url):
+def get_live_m3u8_ytdlp(youtube_url):
     """
-    YouTube canlı yayın adresinden m3u8 linkini çekmek için
-    mobil tarayıcı ve alternatif API katmanlarını kullanır.
+    yt-dlp kullanarak YouTube canlı yayınından ham .m3u8 linkini çeker.
     """
-    # 1. YÖNTEM: Mobil iOS / Safari User-Agent (YouTube engeline takılmaz)
-    mobile_headers = {
-        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
-        'Accept-Language': 'tr-TR,tr;q=0.9'
-    }
-
     try:
-        req = urllib.request.Request(youtube_url, headers=mobile_headers)
-        with urllib.request.urlopen(req, timeout=12) as response:
-            html = response.read().decode('utf-8')
-            
-            # M3U8 linkini HTML içinden yakala
-            match = re.search(r'"hlsManifestUrl":"(https:[^"]+)"', html)
-            if match:
-                return match.group(1).replace('\\/', '/').replace('\\u0026', '&')
-    except Exception as e:
-        print(f"   [1. Yöntem Başarısız]: Direct Mobil Request -> {e}")
-
-    # 2. YÖNTEM: Kanal adı üzerinden Piped / Invidious API
-    handle_match = re.search(r'@([^/]+)', youtube_url)
-    if handle_match:
-        handle = handle_match.group(1)
-        api_urls = [
-            f"https://pipedapi.kavin.rocks/channel/{handle}",
-            f"https://api.piped.private.coffee/channel/{handle}",
-            f"https://inv.tux.pizza/api/v1/channels/{handle}"
+        # yt-dlp -g -f best [URL] komutu doğrudan .m3u8 linkini döner
+        cmd = [
+            "yt-dlp",
+            "-g",
+            "-f", "best",
+            "--no-warnings",
+            youtube_url
         ]
-
-        for api in api_urls:
-            try:
-                req = urllib.request.Request(api, headers={'User-Agent': 'Mozilla/5.0'})
-                with urllib.request.urlopen(req, timeout=8) as response:
-                    data_str = response.read().decode('utf-8')
-                    m3u8_match = re.search(r'https?://[^\s"<>\']+\.m3u8[^\s"<>\']*', data_str)
-                    if m3u8_match:
-                        return m3u8_match.group(0)
-            except Exception:
-                continue
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
+        
+        if result.returncode == 0:
+            url = result.stdout.strip()
+            if ".m3u8" in url or "manifest" in url:
+                return url
+        else:
+            print(f"   [yt-dlp Hata]: {result.stderr.strip()}")
+    except Exception as e:
+        print(f"   [yt-dlp Çalıştırılamadı]: {e}")
 
     return None
 
@@ -82,16 +62,16 @@ def main():
         )
 
         if pattern.search(content):
-            print(f" -> Eşleşti, canlı link çekiliyor...")
-            live_url = get_live_m3u8(yt_url)
+            print(f" -> Eşleşti, yt-dlp ile ham canlı .m3u8 adresi çekiliyor...")
+            live_url = get_live_m3u8_ytdlp(yt_url)
 
             if live_url:
                 content = pattern.sub(r'\1' + live_url, content)
-                print(f" -> BAŞARILI: {tvg_id} linki güncellendi!")
-                print(f"    Yeni Link: {live_url[:65]}...")
+                print(f" -> BAŞARILI: {tvg_id} ham .m3u8 linki alındı!")
+                print(f"    Gerçek Link: {live_url[:80]}...")
                 updated = True
             else:
-                print(f" -> HATA: {tvg_id} için canlı link çekilemedi.")
+                print(f" -> HATA: {tvg_id} için yt-dlp canlı link çıkaramadı.")
         else:
             print(f" -> HATA: '{tvg_id}' ismi boncuk dosyasında bulunamadı.")
 
