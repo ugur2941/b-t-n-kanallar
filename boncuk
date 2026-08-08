@@ -41,6 +41,8 @@ https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="OlayTurk.tr" tvg-logo="https://cdn.technettv.com/channel/15219/logo_256_1699951464.png" ,OlayTurk
 https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
+#EXTINF:-1 group-title="HABER" tvg-id="Haber Global.tr" tvg-logo="https://images.seeklogo.com/logo-png/61/1/haber-global-logo-png_seeklogo-612626.png" ,Haber Global
+https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="ilketv.tr" tvg-logo="https://ilketv.com.tr/wp-content/uploads/2024/06/logo.png" ,İlke TV
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv
