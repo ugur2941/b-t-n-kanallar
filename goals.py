@@ -224,6 +224,7 @@ def parse_args():
     parser.add_argument("--output", default=DEFAULT_OUTPUT)
     parser.add_argument("--start-domain", type=int, default=1061)
     parser.add_argument("--end-domain", type=int, default=1500)
+    parser.add_argument("--github-token", help="GitHub token passed from workflow")
     return parser.parse_args()
 
 
