@@ -46,7 +46,7 @@ https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="ilketv.tr" tvg-logo="https://ilketv.com.tr/wp-content/uploads/2024/06/logo.png" ,İlke TV
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv
-https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/szc_tv/index.m3u8
+http://204.52.191.254:80/play/live.php?mac=00:1A:79:00:17:4E&stream=475740&extension=ts&play_token=z9RgHO9X8G
 #EXTINF:-1 group-title="HABER" tvg-id="Haber61.tr" tvg-logo="https://cdn.technettv.com/channel/29520/logo_256_1733832303.jpg" ,Haber 61
 https://cdn1-haber61tv.yayin.com.tr/haber61tv/haber61tv/playlist.m3u8
 #EXTINF:-1 group-title="SPOR" tvg-id="A SPOR.tr" tvg-logo="https://cdn.technettv.com/channel/33860/logo_256.png" ,z-A Spor
