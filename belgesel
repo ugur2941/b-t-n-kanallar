@@ -9,6 +9,8 @@
 https://vavoo.to/vavoo-iptv/play/3856957052050da882aa10
 #EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV b.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png"  ,Tarih TV b
 https://proud-river-e20b.pantonum1.workers.dev/tarihtv.m3u8
+#EXTINF:-1 group-title="BELGESEL" tvg-id="TARİH TV c.tr" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/tarihtv.png"  ,Tarih TV c
+https://65.108.239.207/tarihtv/index.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH.tr" tvg-logo="https://www.creativeboom.com/upload/articles/8f/8f6cd51ec38e4f9ccab6a7350ba42d4ca9c429da_1280.png"  ,BBC earth
 https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
 #EXTINF:-1 group-title="BELGESEL" tvg-id="BBC EARTH b.tr" tvg-logo="https://www.creativeboom.com/upload/articles/8f/8f6cd51ec38e4f9ccab6a7350ba42d4ca9c429da_1280.png"  ,BBC earth b
