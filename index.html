@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - GÜNEŞ DNS KORUMA</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .language-selector {
+            text-align: center;
+            margin-bottom: 40px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+
+        .lang-btn {
+            background: var(--card-bg);
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .lang-btn:hover, .lang-btn.active {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .policy-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            font-size: 1.3em;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e0e0e0;
+            margin: 40px 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                padding: 15px;
+            }
+            .policy-card {
+                padding: 20px;
+            }
+        }
+    </style>
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                
+                // Buton durumlarını güncelle
+                document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+                document.getElementById('btn-' + id).classList.add('active');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="language-selector">
+            <button id="btn-english" class="lang-btn active" onclick="scrollToSection('english')">English</button>
+            <button id="btn-turkish" class="lang-btn" onclick="scrollToSection('turkish')">Türkçe</button>
+        </div>
+
+        <!-- ENGLISH SECTION -->
+        <div id="english" class="policy-card">
+            <h1>Privacy Policy</h1>
+            <span class="last-updated">Last Updated: December 14, 2025</span>
+
+            <p><strong>GÜNEŞ DNS KORUMA</strong> ("the app", "we", "us") is a DNS protection and local VPN tool designed to provide users with safer and uncensored access to the internet. We are committed to protecting your privacy and ensuring the security of your personal information.</p>
+            <p>This Privacy Policy explains how your data is handled when you use the GÜNEŞ DNS KORUMA app.</p>
+
+            <h2>1. Information Collection and "No-Logs" Policy</h2>
+            <p>GÜNEŞ DNS KORUMA is a privacy-first application.</p>
+            <ul>
+                <li><strong>No Traffic Logs:</strong> We <strong>do not</strong> collect, store, log, or share your internet traffic data, DNS queries, or browsing history. Your data is never sent to our servers.</li>
+                <li><strong>Local Processing:</strong> All DNS encryption (DNS-over-HTTPS) and tunneling processes are performed <strong>locally on your device</strong>. Your data remains with you.</li>
+            </ul>
+
+            <h2>2. Use of VPN Service</h2>
+            <p>GÜNEŞ DNS KORUMA utilizes the Android <strong>VpnService</strong> API. This is necessary for the core functionality of the app, and it is used for the following purposes:</p>
+            <ol>
+                <li><strong>DNS Protection:</strong> To encrypt your DNS queries (DNS-over-HTTPS), preventing your Internet Service Provider (ISP) or third parties from monitoring your browsing activity.</li>
+                <li><strong>Anti-Censorship:</strong> To bypass censorship and access blocked websites through DNS manipulation techniques.</li>
+                <li><strong>Local Tunneling:</strong> The VPN tunnel created by the app does <strong>not</strong> route your traffic to a remote server. Instead, it creates a local loopback interface on your device. This ensures no speed loss and guarantees that your data does not leave your device.</li>
+            </ol>
+
+            <h2>3. App Communication and Automation</h2>
+            <p>GÜNEŞ DNS KORUMA is designed to interact securely with trusted partner applications (e.g., media players developed by the same developer).</p>
+            <ul>
+                <li><strong>Remote Control Permission:</strong> The app defines a custom secure permission named <code>app.sundnsguard.permission.VPN_CONTROL</code>.</li>
+                <li><strong>Signature Protection:</strong> This permission is protected by <strong>Signature Level Security</strong>. Only applications signed with the <strong>same digital certificate (Keystore)</strong> as GÜNEŞ DNS KORUMA are granted this permission. This prevents malicious or unauthorized apps from controlling your VPN connection.</li>
+                <li><strong>No Data Sharing:</strong> Partner apps can only send "Start" or "Stop" commands. We do <strong>not share</strong> any traffic data, personal information, or logs with partner applications.</li>
+            </ul>
+
+            <h2>4. Permissions</h2>
+            <p>The app requires the following permissions to function correctly:</p>
+            <ul>
+                <li><strong>BIND_VPN_SERVICE:</strong> Mandatory for creating the local VPN tunnel and handling network traffic on Android.</li>
+                <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required to connect to encrypted DNS resolvers (e.g., Google DNS, Cloudflare) and monitor network connectivity.</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Required to automatically start the protection service when the device reboots (if enabled by the user).</li>
+                <li><strong>FOREGROUND_SERVICE:</strong> Required to keep the VPN service running in the background without being killed by the operating system.</li>
+            </ul>
+
+            <h2>5. Third-Party Services</h2>
+            <p>Our app communicates with trusted third-party DNS resolvers (such as Google DNS or Cloudflare DNS) to resolve your internet queries. By default, these providers are used, but users can configure custom resolvers in the settings. The privacy policies of these respective DNS providers apply to the resolution of queries.</p>
+            <p>We may collect anonymous crash reports and performance data to improve the stability of the application. These reports do not contain any personal data or traffic information.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>GÜNEŞ DNS KORUMA is intended for general audiences and does not knowingly collect personal information from children under the age of 13.</p>
+
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted.</p>
+
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:oktay2617@gmail.com">oktay2617@gmail.com</a></p>
+        </div>
+
+        <!-- TURKISH SECTION -->
+        <div id="turkish" class="policy-card">
+            <h1>Gizlilik Politikası</h1>
+            <span class="last-updated">Son Güncelleme: 14 Aralık 2025</span>
+
+            <p><strong>GÜNEŞ DNS KORUMA</strong> ("uygulama", "biz"), kullanıcıların internete daha güvenli ve sansürsüz bir şekilde erişmelerini sağlamak amacıyla geliştirilmiş bir DNS koruma ve yerel VPN aracıdır. Kullanıcılarımızın gizliliği bizim için en öncelikli konudur.</p>
+            <p>Bu Gizlilik Politikası, GÜNEŞ DNS KORUMA uygulamasını kullandığınızda verilerinizin nasıl işlendiğini açıklar.</p>
+
+            <h2>1. Toplanan Bilgiler ve "Kayıt Tutmama" (No-Logs) Politikası</h2>
+            <p>GÜNEŞ DNS KORUMA, gizlilik odaklı bir uygulamadır.</p>
+            <ul>
+                <li><strong>Trafik Verileri Kaydedilmez:</strong> Uygulamamız üzerinden geçen internet trafiği, DNS sorguları veya ziyaret edilen web siteleri <strong>asla sunucularımıza gönderilmez, kaydedilmez veya üçüncü taraflarla paylaşılmaz.</strong></li>
+                <li><strong>Yerel İşlem:</strong> Tüm DNS şifreleme (DNS-over-HTTPS) ve tünelleme işlemleri, veriler cihazınızdan çıkmadan önce <strong>yerel olarak</strong> gerçekleşir.</li>
+            </ul>
+
+            <h2>2. VPN Hizmetinin Kullanımı</h2>
+            <p>GÜNEŞ DNS KORUMA, Android işletim sisteminin <strong>VpnService</strong> API'sini kullanır. Bu kullanımın amacı şudur:</p>
+            <ol>
+                <li><strong>DNS Koruması:</strong> DNS sorgularınızı (hangi web sitesine gitmek istediğiniz bilgisi) şifreleyerek, internet servis sağlayıcınızın veya ağdaki diğer kişilerin bu sorguları görmesini engeller.</li>
+                <li><strong>Sansür Aşma:</strong> DNS manipülasyonu yoluyla engellenmiş sitelere erişim sağlar.</li>
+                <li><strong>Yerel Tünel:</strong> Oluşturulan VPN tüneli, trafiğinizi uzak bir sunucuya (Remote Server) yönlendirmez. Trafik, cihazınızdaki yerel bir döngüden (loopback) geçer. Bu sayede hız kaybı yaşanmaz ve verileriniz güvende kalır.</li>
+            </ol>
+
+            <h2>3. Uygulama İçi İletişim ve Otomasyon</h2>
+            <p>GÜNEŞ DNS KORUMA, güvenilir partner uygulamalarla (örneğin; aynı geliştiriciye ait medya oynatıcılar) etkileşime girecek şekilde tasarlanmıştır.</p>
+            <ul>
+                <li><strong>Uzaktan Kontrol İzni:</strong> Uygulamamız, <code>app.sundnsguard.permission.VPN_CONTROL</code> adında özel ve güvenli bir izin tanımlar.</li>
+                <li><strong>İmza Koruması:</strong> Bu izin, yalnızca GÜNEŞ DNS KORUMA ile <strong>aynı dijital imzaya (Keystore)</strong> sahip olan uygulamalar tarafından kullanılabilir. Bu, kötü niyetli veya yabancı uygulamaların VPN bağlantınızı kontrol etmesini engeller.</li>
+                <li><strong>Veri Paylaşımı Yoktur:</strong> Partner uygulamalar sadece "Başlat" veya "Durdur" komutlarını gönderebilir. GÜNEŞ DNS KORUMA, partner uygulamalarla hiçbir trafik verisi veya kişisel bilgi <strong>paylaşmaz</strong>.</li>
+            </ul>
+
+            <h2>4. İzinler</h2>
+            <p>Uygulamanın çalışması için aşağıdaki izinler gereklidir:</p>
+            <ul>
+                <li><strong>BIND_VPN_SERVICE:</strong> Android sisteminde VPN tüneli oluşturmak ve ağ trafiğini işlemek için zorunludur.</li>
+                <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Şifreli DNS sunucularına (örneğin Google DNS, Cloudflare) bağlanmak ve internet bağlantısını kontrol etmek için.</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Cihaz yeniden başlatıldığında korumanın otomatik olarak devreye girmesi için (kullanıcı tercihine bağlıdır).</li>
+                <li><strong>FOREGROUND_SERVICE:</strong> Uygulamanın arka planda kesintisiz çalışabilmesi ve işletim sistemi tarafından kapatılmaması için.</li>
+            </ul>
+
+            <h2>5. Üçüncü Taraf Hizmetler</h2>
+            <p>Uygulamamız, temel işlevselliği sağlamak için güvenilir DNS sağlayıcıları (Resolver) ile iletişim kurar. Varsayılan olarak Google DNS veya Cloudflare DNS kullanılır, ancak kullanıcılar bunu ayarlardan değiştirebilir. Bu sağlayıcıların kendi gizlilik politikaları geçerlidir.</p>
+            <p>Uygulama, geliştirme sürecini desteklemek amacıyla anonimleştirilmiş hata raporları (Crash Logs) toplayabilir. Bu raporlar hiçbir kişisel veri veya trafik bilgisi içermez.</p>
+
+            <h2>6. Çocukların Gizliliği</h2>
+            <p>GÜNEŞ DNS KORUMA, genel kullanıma yöneliktir ve çocuklardan bilerek kişisel bilgi toplamaz.</p>
+
+            <h2>7. Değişiklikler</h2>
+            <p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Herhangi bir değişiklik yapıldığında, güncel politika bu sayfada yayınlanacaktır. Uygulamayı kullanmaya devam etmeniz, değişiklikleri kabul ettiğiniz anlamına gelir.</p>
+
+            <h2>8. İletişim</h2>
+            <p>Gizlilik Politikamız veya uygulamanın çalışma mantığı ile ilgili sorularınız için:</p>
+            <p><strong>E-posta:</strong> <a href="mailto:oktay2617@gmail.com">oktay2617@gmail.com</a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
