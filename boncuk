@@ -10,9 +10,9 @@ https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Kanal D.tr" tvg-logo="https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/euro-d-buyuk.png" ,Euro D
 https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="Now Tv.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzeswylV2HHekCcNOAXDxMOhDzAsB76BEVUg&s" ,Now Tv
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
+https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8?st=9LYXkxggarOGeKrXsZArpA&e=1789070798
 #EXTINF:-1 group-title="ULUSAL" tvg-id="ATV.tr" tvg-logo="https://cdn.technettv.com/channel/33825/logo_256.png" ,z-ATV
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
+https://trkvz.daioncdn.net/atv/atv.m3u8?ce=3&app=d1ce2d40-5256-4550-b02e-e73c185a314e&st=jt8DY9ixgm6l0-KaMupapw&e=1789101914&ppid=5b23e7e8009e60c7676f65ef364cef81
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TV8.tr" tvg-logo="https://cdn.technettv.com/channel/33790/logo_256.png" ,TV8
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=7uwoyq6usvp2&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=2
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TV 8,5.tr" tvg-logo="https://cdn.technettv.com/channel/33958/logo_256.png" ,TV8.5
