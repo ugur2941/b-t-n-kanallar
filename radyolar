@@ -1,941 +1,2271 @@
-
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/power-pop-dinle.jpg" group-title="Pop",Power Pop
-https://listen.powerapp.com.tr/powerpop/mpeg/icecast.audio
-#EXTINF:-1 tvg-logo="" group-title="Haber & Spor",Show Radyo - Türkiye'nin En İyi Radyosu
-http://www.showradyo.com.tr
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-alem-fm.jpg" group-title="Pop",Alem FM
-https://alemfm.radyotvonline.net/alemfmaac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-alem-fm.jpg" group-title="Türk Halk Müziği",Türkü Radyo
-https://eu8.fastcast4u.com/proxy/ugur4129/mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ask-fm-dinle.jpg" group-title="Arabesk",Aşk Fm
-https://stream.netradyom.com/radio/8000/radio.mp3
-https://stream.netradyom.com/listen/askfm1/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/avrasya-turk-dinle.jpg" group-title="Türk Halk Müziği",Avrasya Türk 107.1 Ankara
-https://sslyayin.netyayin.net:10909
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/baba-radyo-dinle.jpg" group-title="Arabesk",Baba Radyo 105.6
-https://officialbabaradyo.radyotvonline.net/babaofficial
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bayram-fm-dinle.jpg" group-title="İslami",Bayram FM
-https://sslyayin.netyayin.net/3442/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/best-fm-dinle.jpg" group-title="Pop",Best Fm
-https://officialbestfm.radyotvonline.net/bestfmofficial
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-efkar-fm.jpg" group-title="Arabesk",Efkar FM
-https://playerservices.streamtheworld.com/api/livestream-redirect/EFKAR128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-haber-turk-dinle.jpg" group-title="Haber & Spor",Habertürk Radyo
-https://haberturkradyo.radyotvonline.net/haberturkradyo
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/istanbulun-sesi-radyosu.jpg" group-title="Pop",İstanbulun Sesi Radyosu
-https://yayin.radyomadyo.com:9180/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/joy-fm-dinle.jpg" group-title="Yabancı",Joy FM
-https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_FM128AAC.aac
-https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_FM_ITUNES.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-joy-turk-akustik.jpg" group-title="Slow",Joy Türk Akustik
-https://playerservices.streamtheworld.com/api/livestream-redirect/JOYTURK_AKUSTIK128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/joy-turk-canli.jpg" group-title="Slow",Joy Türk
-https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_TURK128AAC.aac?ttag=G:f,m,AG:1,2,SES:1,2,OC:1,3,6,7,INT:2,5,6,CH:3
-https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_TURK_ITUNES.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kalp-fm-dinle.jpg" group-title="Slow",Kalp FM
-https://yayin.kalpfm.com:8080/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kiss-fm-dinle.jpg" group-title="Yabancı",Kiss FM
-https://kiss.radyotvonline.net/kissfm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/metro-fm-dinle.jpg" group-title="Yabancı",Metro Fm
-https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac
-https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM_ITUNES.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-doga.jpg" group-title="Türk Halk Müziği",Pal Doğa
-https://stream.rcast.net/200259
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-park-fm-dinle.jpg" group-title="Pop",Park FM
-https://stream.netradyom.com/listen/parkfm/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/polis-radyosu-dinle.png" group-title="Pop",Polis Radyosu
-https://m.egm.gov.tr:8093/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-mydonose-dinle.jpg" group-title="Yabancı",Radio Mydonose
-https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_MYDONOSE128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-2000-dinle.jpg" group-title="Arabesk",Radyo 2000
-https://edge1.socialsmart.tv/radyo2000/bant1/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-alaturka.jpg" group-title="Türk Sanat Müziği",Radyo Alaturka
-https://yayin.jumboserver.net:9100/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-banko-dinle.jpg" group-title="Pop",Ankara Radyo Banko
-https://stream.netradyom.com/listen/radyobanko/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-ekin-dinle.jpg" group-title="Türk Halk Müziği",Radyo Ekin
-https://yayin.turkhosted.com:6006/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-fenomen-dinle.jpg" group-title="Yabancı",Radyo Fenomen
-https://live.radyofenomen.com/fenomen/128/icecast.audio? 
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-mars-fm-dinle.jpg" group-title="Rap & Rock",Radyo Mars
-https://yayin.radyomadyo.com:9400/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-megasite-dinle.jpg" group-title="Arabesk",Radyo Megasite
-https://stream.netradyom.com/listen/megasite/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ostim-radyo-dinle.jpg" group-title="Türk Halk Müziği",Radyo Ostim
-https://stream.netradyom.com/radio/8010/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/pop-90-dinle.jpg" group-title="Pop",Radyo Pop 90
-https://playerservices.streamtheworld.com/api/livestream-redirect/POP90128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-seymen-dinle.jpg" group-title="Pop",İstanbul Radyo Seymen
-https://yayin.radyoseymen.com.tr:1070/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-slow-turk.jpg" group-title="Slow",Slow Türk
-https://radyo.duhnet.tv/slowturk
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/super-fm-canli.jpg" group-title="Pop",Süper Fm
-https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER_FM128AAC.aac?ttag=G:f,m,AG:2,3,SES:1,2,OC:1,2,3,4,6,INT:1,3,7,CH:3
-https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER_FM_ITUNES.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tgrt-fm-dinle.jpg" group-title="Haber & Spor",TGRT FM
-https://icecasttgrt.ihlasdigitalassets.com/tgrtfm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/virgin-radio-dinle.jpg" group-title="Yabancı",Virgin Radio Türkiye
-https://playerservices.streamtheworld.com/api/livestream-redirect/VIRGIN_RADIO128AAC.aac
-https://playerservices.streamtheworld.com/api/livestream-redirect/VIRGIN_RADIO_ITUNES.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/dalkas-fm-live.jpg" group-title="Yabancı",Dalkas FM
-https://stream.radiojar.com/pr9r38w802hvv?rand=867135
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kibris-dance-fm-dinle.jpg" group-title="Yabancı",Dance FM – KKTC
-https://live.enerjiplay.com/stream/dancefm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/greatest-hits-of-all-time-fm.jpg" group-title="Yabancı",Greatest Hits of All Time
-https://playerservices.streamtheworld.com/api/livestream-redirect/GHOAT_EN128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/heart-fm-dinle.jpg" group-title="Yabancı",Heart FM
-https://live.heartfm.com.tr/listen/heart_fm/128.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/joy-jazz-dinle.jpg" group-title="Yabancı",Joy Jazz
-https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_JAZZ128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kore-pop-radyo.jpg" group-title="Yabancı",Kore Pop
-https://rtlberlin.streamabc.net/rtlb-jamfmkpop-mp3-192-9474790
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/literal-radio-dinle.jpg" group-title="Yabancı",Literal Radio
-https://playerservices.streamtheworld.com/api/livestream-redirect/LITERAL128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/lounge-fm-dinle.jpg" group-title="Yabancı",Lounge FM
-https://edge1.radyotvonline.net/shoutcast/play/loungefm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/max-fm-dinle.jpg" group-title="Rap & Rock",Max Fm
-https://maxfm.radyotvonline.net/stream/164
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-mix-fm-dinle.jpg" group-title="Yabancı",Mix Fm Mersin
-https://ssl16.ozelip.com/asistan/stream/8aa9fd0f13881c98afb2ca549c9037f6
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radio-nrk-jazz-dinle.jpg" group-title="Yabancı",NRK Jazz
-https://lyd.nrk.no/nrk_radio_jazz_aac_h
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/pop-hits-dinle.jpg" group-title="Yabancı",Pop Hits
-https://playerservices.streamtheworld.com/api/livestream-redirect/SC002_SO1AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/the-radio-2020-dinle.jpg" group-title="Yabancı",Radio 2020
-https://stream.radiojar.com/kakeb0w57nhvv
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radio-veronika-dinle.jpg" group-title="Yabancı",Radio Veronika
-https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_VERONIKAAAC_L.aac?dist=DESKTOP
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-bilkent-dinle.jpg" group-title="Yabancı",Radyo Bilkent
-https://stream.netradyom.com/listen/radyobilkent/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyonom-klasik-muzik.png" group-title="Klasik",Radyo Klasik
-https://playerservices.streamtheworld.com/api/livestream-redirect/BORUSAN_KLASIK128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-odtu-dinle.jpg" group-title="Yabancı",Radyo ODTÜ
-https://stream.radyoodtu.com.tr/canli
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-vizyon-dinle.jpg" group-title="Yabancı",Radyovizyon
-https://stream.netradyom.com/radio/9300/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/rock-station-dinle.jpg" group-title="Rap & Rock",Rock Station
-https://playerservices.streamtheworld.com/api/livestream-redirect/ROCK_STATION128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radio-slow-time.jpg" group-title="Yabancı",Slow Time
-https://yayin.radyomadyo.com:8004/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/moral-fm-dinle.jpg" group-title="İslami",Moral Fm
-https://stream-51.zeno.fm/0cfiqwdkobavv?zs=RptTdDEHQ2Wej62cArILjQ
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erkam-radyo-dinle.png" group-title="İslami",Erkam Radyo
-https://api-tv5.yayin.com.tr:8002/mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-arkadas-fm-dinle.jpg" group-title="İslami",Arkadaş FM
-https://radyo.yayindakiler.com:4134/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-baris-radyo-dinle.jpg" group-title="İslami",Barış Radyo
-https://yayin2.canliyayin.org:9350/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bizim-iller-radyo-dinle.jpg" group-title="İslami",Bizim İller Radyo
-https://radyo.yayindakiler.com:4078/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/corum-cagri-fm-dinle.jpg" group-title="İslami",Çorum Çağrı FM
-https://sssx.radyosfer.com/9398/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/dolunay-fm-canli.jpg" group-title="İslami",Dolunay FM
-https://yayin2.canliyayin.org:10955/;stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kayseri-furkan-radyo-dinle.jpg" group-title="İslami",Furkan Radyo Kayseri
-https://radyo.yayindakiler.com:6191/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gonca-fm-dinle.jpg" group-title="İslami",Gonca FM
-https://sslyayin.netyayin.net/8912/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-gul-dinle.jpg" group-title="İslami",Kocaeli Radyo Gül
-https://yayin2.canliyayin.org:10989
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/isra-fm-dinle.jpg" group-title="İslami",Konya İsra FM
-https://yayin2.canliyayin.org:8210/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/konya-radyo-en-dinle.jpg" group-title="İslami",Konya Radyo En
-https://yayin2.canliyayin.org:7222/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-mesaj-fm-dinle.jpg" group-title="İslami",Mesaj Fm
-https://yayin1.canlitv.fun:8010/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/malatya-nur-fm-dinle.jpg" group-title="İslami",Nur FM
-https://sssx.radyosfer.com/nurfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/diyarbakir-nur-radyo-dinle.jpg" group-title="İslami",Nur Radyo
-https://sssx.radyosfer.com/nurradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/isparta-radyo-dilara-dinle.jpg" group-title="İslami",Radyo Dilara Isparta
-https://sssx.radyosfer.com/radyodilara/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-feza.jpg" group-title="İslami",Radyo Feza
-https://yayin.radyofeza.com/8002/stream
-https://radyodinle1.turkhosted.com/yayin?uri=173.212.205.99:8000/radio.mp3?/&tkn=YlLPOD5DvSxCMUiu1zT_kg&tms=1766391185
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-fitrat-dinle.jpg" group-title="İslami",Radyo Fıtrat
-https://radyofitrat.radyotvonline.net/radyofitrat
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-genc-ses-fm-dinle.jpg" group-title="İslami",Radyo Genç Ses
-https://sssx.radyosfer.com/gencsesfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-genclik-dinle.jpg" group-title="İslami",Radyo Gençlik
-https://canli.radyogenclik.com:9000
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/malatya-radyo-huzur-dinle.jpg" group-title="İslami",Radyo Huzur Malatya
-https://sssx.radyosfer.com/malatyaradyohuzur/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-nida-dinle.jpg" group-title="İslami",Radyo Nida
-https://anadolu.liderhost.com.tr/8106/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-urfa-dinle.jpg" group-title="İslami",Radyo Urfa
-https://radyourfa.ozelip.com/8038/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-efsane-radyo-dinle.jpg" group-title="Arabesk",Adana Efsane Radyo
-https://host10.onlineradyotv.net/9602/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/nigde-bor-fm-dinle.jpg" group-title="Arabesk",Bor FM
-https://sssx.radyosfer.com/borfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/istanbul-can-fm-dinle.jpg" group-title="Arabesk",Can FM
-https://canfmgen.80.yayin.com.tr/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/denizli-art-fm-dinle.jpg" group-title="Arabesk",Denizli Art FM
-https://sslyayin.netyayin.net/denizliartfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yore-fm-dinle.jpg" group-title="Arabesk",Elbistan Yöre FM
-https://ip.elbistanyorefm.com.tr:8022/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/istanbul-gercek-radyo-dinle.jpg" group-title="Arabesk",Gerçek Radyo
-https://sslyayin.radyoyayini.com:7085/stream?type=http&nocache=16
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-karesi-fm-dinle.jpg" group-title="Arabesk",Karesi Radyo
-https://sssx.radyosfer.com/karesiradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kars-kralim-fm-dinle.jpg" group-title="Arabesk",Kralım FM 99.3
-https://dinle.kralimfm.com/7890/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/radio/radyo-2000.jpg" group-title="Arabesk",Radyo 2000 Fm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ankara-radyo-durak-dinle.jpg" group-title="Arabesk",Radyo Durak
-https://radyo.yayindakiler.com:8018/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/samsun-bafra-radyo-moda-dinle.jpg" group-title="Arabesk",Radyo Moda
-https://yayin.radyomoda.com.tr:7084/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-nester.jpg" group-title="Arabesk",Radyo Neşter
-https://live.sinirsizhost.com/8026/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-usta-dinle.jpg" group-title="Arabesk",Radyo Usta
-https://yayin.turkhosted.com/usta/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/star-arti-fm-dinle.jpg" group-title="Arabesk",Star Artı FM
-https://ritim.80.yayin.com.tr/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/sultan-radyo-canli.jpg" group-title="Arabesk",Sultan Radyo
-https://yayin.turkhosted.com/sultanradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-yol-arkadasim-dinle.jpg" group-title="Arabesk",Yol Arkadaşım Radyo
-https://playerservices.streamtheworld.com/api/livestream-redirect/YOL_ARKADASIM128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yeni-rap-radyo-dinle.jpg" group-title="Rap & Rock",Yeni Rap
-https://playerservices.streamtheworld.com/api/livestream-redirect/SC018_SO1AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/joy-turk-rock-canli.jpg" group-title="Rap & Rock",Joy Türk Rock
-https://playerservices.streamtheworld.com/api/livestream-redirect/JOYTURK_ROCK128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-duble-rap-dinle.jpg" group-title="Rap & Rock",Radyo Duble Rap
-https://sslyayin.radyoyayini.com:7042/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/super-2-fm-dinle.jpg" group-title="Pop",Süper2 FM
-https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER2128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/karadeniz-radyo-dinle.jpg" group-title="Pop",Karadeniz Radyo
-https://playerservices.streamtheworld.com/api/livestream-redirect/KARADENIZ128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/baska-fm.jpg" group-title="Pop",Başka Radyo
-https://playerservices.streamtheworld.com/api/livestream-redirect/BASKA128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/baby-joy-dinle.jpg" group-title="Pop",Baby Joy
-https://playerservices.streamtheworld.com/api/livestream-redirect/SC009_SO1AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-bbc-world-service-dinle.jpg" group-title="Haber & Spor",BBC World Service Radio
-https://stream.live.vc.bbcmedia.co.uk/bbc_world_service
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/berlin-metropol-fm-dinle.jpg" group-title="Pop",Berlin Metropol Fm
-https://metropol-fm.api.radiosphere.io/channels/MetropolFM/stream.mp3?quality=4
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/blue-karadeniz-radyo-dinle.jpg" group-title="Pop",Blue Karadeniz Radyo
-https://sslyayin.netyayin.net/bluekaradeniz/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyonom-dream-turk.jpg" group-title="Pop",Dream Türk
-https://radyo.duhnet.tv/dreamturk
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/nrg-enerji-dinle.jpg" group-title="Pop",Enerji 93.1 – KKTC
-https://live.enerjiplay.com/stream/enerji
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/nrg-enerji-slow-dinle.jpg" group-title="Pop",Enerji Slow 106.2 – KKTC
-https://live.enerjiplay.com/stream/enerjislow
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/hit-radio-dinle.jpg" group-title="Pop",Hit Radyo
-https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3
-https://hitradio-maroc.ice.infomaniak.ch/hr-burkina-64.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kiss-turk-dinle.jpg" group-title="Pop",Kiss Türk
-https://kiss.radyotvonline.net/kissturk
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mydonose-turk-pop.jpg" group-title="Pop",Mydonose Türk
-https://playerservices.streamtheworld.com/api/livestream-redirect/MYDONOSE_TURK128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/nrk-klasik-dinle.jpg" group-title="Klasik",NRK Klasik
-https://lyd.nrk.no/nrk_radio_klassisk_aac_h
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/popbesk-dinle.jpg" group-title="Pop",Popbesk
-https://playerservices.streamtheworld.com/api/livestream-redirect/POPBESK128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/power-turk-best-of.jpg" group-title="Pop",PowerTürk En İyiler
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-assos-dinle.jpg" group-title="Pop",Radyo Assos
-https://stream.radio.co/sb2e24edf5/low
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-basaksehir-dinle.jpg" group-title="Pop",Radyo Başakşehir
-https://icecast.netmedya.net/rbasaksehir
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/sole-radyo-dinle.jpg" group-title="Pop",Radyo Sole
-https://playerservices.streamtheworld.com/api/livestream-redirect/SOLE128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/slow-hits-dinle.jpg" group-title="Slow",Slow Hits
-https://playerservices.streamtheworld.com/api/livestream-redirect/SC030_SO1AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tum-zamanlarin-en-iyilerini-dinle.jpg" group-title="Pop",Tüm Zamanların En İyileri
-https://playerservices.streamtheworld.com/api/livestream-redirect/GHOAT_TR128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-ulku-dinle.jpg" group-title="Pop",Ülkü FM
-https://radyo.yayindakiler.com:4112/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/viyana-fm-dinle.jpg" group-title="Pop",Viyana FM
-https://radyo.viyanafm.at/viyanafm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yeni-pop-radyo-dinle.jpg" group-title="Pop",Yeni Pop
-https://playerservices.streamtheworld.com/api/livestream-redirect/SC006_SO1AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yeni-slow-dinle.jpg" group-title="Slow",Yeni Slow
-https://playerservices.streamtheworld.com/api/livestream-redirect/SC021_SO1AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/fg-turk-dinle.jpg" group-title="Pop",FG Türk Radyo
-https://edge1.radyotvonline.net/shoutcast/play/fgturk
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/istanbul-fm-dinle.jpg" group-title="Pop",İstanbul Fm
-https://yayin.istanbulfm.com.tr/istanbulfm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kupe-fm-dinle.jpg" group-title="Pop",İstanbul Küpe FM
-https://icecast.netmedya.net/kupefm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ordu-fm-canli.jpg" group-title="Pop",Ordu FM
-https://radyo.yayindakiler.com:8012/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-pal-remix.jpg" group-title="Pop",Pal Remix
-https://shoutcast.radyogrup.com:2010
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-35-dinle.jpg" group-title="Pop",Radyo 35
-https://yayin.turkhosted.com/6012/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-trio-dinle.jpg" group-title="Pop",Radyo Trio
-https://radyotrio.radyotvonline.net/radyotrio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-retro-turk.jpg" group-title="Pop",Retro Türk
-https://playerservices.streamtheworld.com/api/livestream-redirect/RETROTURK128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/siaray-turk-cri-dinle.jpg" group-title="Pop",Siaray Türk FM
-https://criturk.radyotvonline.net/criturk
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/borusan-klasik-dinle.jpg" group-title="Klasik",Borusan Klasik
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/romantik-turk-dinle.jpg" group-title="Slow",Radyo Romantik Türk
-https://radyo.yayin.com.tr:6042/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/romantik-ses-isparta-dinle.jpg" group-title="Slow",Romantik Ses Isparta
-https://radyo.romantikses.com/romantiksesispart/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/romantik-ses-sakarya-dinle.jpg" group-title="Slow",Romantik Ses Sakarya
-https://radyo.romantikses.com/romantiksessakary/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-radyo-guney-dinle.jpg" group-title="Türk Halk Müziği",Adana Radyo Güney
-https://stream.radyolarburada.com:8250/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/cem-radyo-dinle.jpg" group-title="Türk Halk Müziği",Cem Radyo
-https://cemradyo.radyotvonline.net/cemradyo
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/dadas-fm-dinle.jpg" group-title="Türk Halk Müziği",Dadaş FM
-https://sslyayin.netyayin.net:8084/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/konya-derya-fm-dinle.jpg" group-title="Türk Halk Müziği",Derya FM
-https://yayin.turkhosted.com:6032/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erzincan-radyo-2000-dinle.jpg" group-title="Türk Halk Müziği",Erzincan Radyo 2000
-https://radyo.yayindakiler.com:3030/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erzincan-radyo-cem-dinle.jpg" group-title="Türk Halk Müziği",Erzincan Radyo Cem
-https://erzincan.80.yayin.com.tr/stream/1/?icy=http
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/elazig-firat-fm-dinle.jpg" group-title="Türk Halk Müziği",Fırat FM
-https://sslyayin.radyoyayini.com:7053/stream?type=http&nocache=5
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/hatay-asya-radyo-dinle.jpg" group-title="Türk Halk Müziği",Hatay Asya Radyo
-https://sslyayin.netyayin.net/9850/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/hatay-radyo-tempo-fm-dinle.jpg" group-title="Türk Halk Müziği",Hatay Tempo FM
-https://sslyayin.netyayin.net/tempo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-kent-radyo-dinle.jpg" group-title="Türk Halk Müziği",Kent Radyo Mersin
-https://anadolu.liderhost.com.tr:10906/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kocaeli-tempo-fm-dinle.jpg" group-title="Türk Halk Müziği",Kocaeli Tempo FM
-https://yayin1.canlitv.fun:8012/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/konya-fm-dinle.jpg" group-title="Türk Halk Müziği",Konya FM
-https://sssx.radyosfer.com/konyafm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-gonul-fm-dinle.jpg" group-title="Türk Halk Müziği",Radyo Gönül FM
-https://playerservices.streamtheworld.com/api/livestream-redirect/GONUL_TURKULERI128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/corum-radyo-gun-dinle.jpg" group-title="Türk Halk Müziği",Radyo Gün
-https://player.web.tr/listen/5a7f2ddf204c90439125a6813f301952
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/harman-fm.jpg" group-title="Türk Halk Müziği",Radyo Harman FM
-https://free.rcast.net/200259
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-manavgat-dinle.jpg" group-title="Türk Halk Müziği",Radyo Manavgat
-https://sslyayin.netyayin.net/8355/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/sancak-fm-dinle.jpg" group-title="Türk Halk Müziği",Sancak FM
-https://radyo.yayin.com.tr:5916/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ulusal-radyo-turku-dinle.jpg" group-title="Türk Halk Müziği",Ulusal Radyo – Türkü
-https://radio.guventechnology.com/9308/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ankara-polis-radyosu-tsm-dinle.jpg" group-title="Türk Sanat Müziği",Polis Radyosu TSM
-https://m.egm.gov.tr:8095/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/uludag-fm-dinle.jpg" group-title="Türk Sanat Müziği",Uludağ Fm 91.7
-https://sssx.radyosfer.com/uludagfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kayseri-radyo-han-dinle.jpg" group-title="Türk Sanat Müziği",Radyo Han Kayseri
-https://sssx.radyosfer.com/radyohan/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/karnaval-radyo-makam-dinle.jpg" group-title="Türk Sanat Müziği",Makam Radyo
-https://playerservices.streamtheworld.com/api/livestream-redirect/MAKAM128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-ulusal-sanat-dinle.jpg" group-title="Türk Sanat Müziği",Ulusal Radyo &#8211; Sanat
-https://radio.guventechnology.com/9312/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ulusal-radyo-dinle.jpg" group-title="Haber & Spor",Ulusal Radyo
-https://radio.guventechnology.com/9302/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/24-radyo-dinle.jpg" group-title="Haber & Spor",24 Radyo
-https://radyo24.radyotvonline.net/radyo24
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/Bloomberg-Ht-Radyo.jpg" group-title="Haber & Spor",Bloomberg HT Radyo
-https://bloomberghtradyo.radyotvonline.net/bloomberghtradyo
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-gol-dinle.jpg" group-title="Haber & Spor",Radyo Gol
-https://edge1.radyotvonline.net/shoutcast/play/radyogol
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-radyo-sun-dinle.jpg" group-title="Haber & Spor",Sun Radyo
-https://tr2.socialsmart.tv/tepemedya/sunradyo/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-fm-dinle.jpg" group-title="Pop",Bursa FM
-https://radyo.yayin.com.tr:1055/stream/1/?icy=http
-#EXTINF:-1 tvg-logo="/radio/keyf-fm-nevsehir.jpg" group-title="Pop",Keyf Fm Nevşehir
-https://sssx.radyosfer.com/radyokeyf/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-deniz-fm-bursa.jpg" group-title="Pop",Bursa Radyo Deniz
-https://sssx.radyosfer.com/denizfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gozyasi-fm-dinle.jpg" group-title="Pop",Konya Gözyaşı Fm
-https://yayin2.canliyayin.org:8700/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yalova-gozde-fm-dinle.jpg" group-title="Pop",Yalova Gözde Fm
-https://gozdefm.80.yayin.com.tr
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/antalya-art-fm-dinle.jpg" group-title="Pop",Art FM Antalya
-https://anadolu.liderhost.com.tr/9338/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-tiryaki-fm-dinle.jpg" group-title="Pop",Konya Tiryaki FM
-https://yayin.turkhosted.com/6056/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-81-dinle.jpg" group-title="Pop",Düzce Radyo 81
-https://yayin.turkhosted.com/3030/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/elbistan-kent-fm-dinle.jpg" group-title="Pop",Elbistan Kent FM
-https://radyo.arkacadde.org/4648/elbistankentfm.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-yunus-fm-dinle.jpg" group-title="Pop",Eskişehir Yunus FM
-https://radyoplayer.net/listen/fd21667a7c51c250be770210c921676f
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/samsun-radyo-gercek-dinle.jpg" group-title="Pop",Radyo Gerçek
-https://ssl120.radyotelekom.com.tr/8198/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-radyo-ses-dinle.jpg" group-title="Pop",Radyo Ses Eskişehir
-https://radyoses.radyotvonline.net:8095/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/hatay-radyo-melodi-dinle.jpg" group-title="Pop",Hatay Melodi FM
-https://radyomelodi.80.yayin.com.tr
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/trabzon-yildiz-fm-dinle.jpg" group-title="Pop",Yıldız FM Trabzon
-https://yildizfm.80.yayin.com.tr
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-firat-dinle.jpg" group-title="Pop",Radyo Fırat
-https://listen.powerapp.com.tr/radyofirat/mpeg/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/istanbul-universitesi-radyo-iletisim.jpg" group-title="Pop",Radyo İletişim
-https://listen.powerapp.com.tr/radyoiletisim/mpeg/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-universitesi-radyosu-dinle.jpg" group-title="Pop",Mersin Üniversitesi Radyosu
-https://listen.powerapp.com.tr/mersin/mpeg/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-liva-dinle.jpg" group-title="Pop",Radyo Liva
-https://live.radyo.in/3068/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yalova-radyo-cinar-dinle.jpg" group-title="Pop",Radyo Çınar
-https://sslyayin.netyayin.net:10992
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/brt-fm-dinle.jpg" group-title="Pop",Bafra BRT FM
-https://node-29.zeno.fm/0n6bb726cm8uv.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-mastika-dinle.jpg" group-title="Pop",Radyo Mastika
-https://mastika1.80.yayin.com.tr/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-bursada-bugun-dinle.jpg" group-title="Pop",Bursada Bugün Radyo
-https://radyo.bursadabugun.com/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kahramanmaras-radyo-fresh-fm-dinle.jpg" group-title="Pop",Kahramanmaraş Fresh FM
-https://canli.radyofresh.com/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/elbistan-radyo-umut-dinle.jpg" group-title="Pop",Elbistan Radyo Umut
-https://yayin2.canliyayin.org:10953
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-yanki-dinle.jpg" group-title="Pop",Radyo Yankı
-https://radyoyanki.ozelip.com/9918/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-halikarnas-dinle.jpg" group-title="Pop",Radyo Halikarnas
-https://halikrns.80.yayin.com.tr/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/damar-turk-fm-dinle.jpg" group-title="Pop",Damar Türk FM
-https://live.radyositesihazir.com/7000/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ankara-radyo-karadeniz-dinle.jpg" group-title="Pop",Radyo Karadeniz
-https://radyo1.radyo-dinle.tc/8138/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/izmir-aktif-fm-radyo-dinle.jpg" group-title="Pop",İzmir Aktif FM Radyo
-https://radyodinle1.turkhosted.com/yayin?uri=77.223.142.225:9170/aktiffm/;stream.mp3/&tkn=g7otQFuBWhON7Ppa2epp7A&tms=1766397019
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kastamonu-radyo-37-dinle.jpg" group-title="Pop",Radyo 37
-https://radyo.yayindakiler.com:3192/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/eregli-fm-dinle.jpg" group-title="Pop",Ereğli FM
-https://radyo.yayindakiler.com:3000/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adiyaman-radyo-tek-dinle.jpg" group-title="Pop",Adıyaman Radyo Tek
-https://radyo.yayindakiler.com:3102/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/rize-gelisim-radyo-dinle.jpg" group-title="Pop",Rize Gelişim Radyo
-https://radyo.yayindakiler.com:4008/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bergama-best-fm-dinle.jpg" group-title="Pop",Bergama Best FM
-https://radyo.yayindakiler.com:3535/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/edirne-radyo-mola-dinle.jpg" group-title="Pop",Radyo Mola
-https://radyo.yayindakiler.com:2018/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erzincan-incitek-fm-dinle.jpg" group-title="Pop",İncitek FM
-https://radyo.yayindakiler.com:4204/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/magic-fm-dinle.jpg" group-title="Pop",Magic FM
-https://radyo.yayindakiler.com:3032/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kirklareli-melodi-fm-dinle.jpg" group-title="Pop",Kırklareli Melodi FM
-https://radyo.yayindakiler.com:4164/stream
-#EXTINF:-1 tvg-logo="/radio/radyo-net-eskisehir.jpg" group-title="Pop",Radyo Net 97.8
-https://radyo.yayindakiler.com:3925/stream
-#EXTINF:-1 tvg-logo="/radio/radyo-ses-marmaris.jpg" group-title="Pop",Marmaris Radyo Ses
-https://radyo.yayindakiler.com:3076/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erzincan-dost-radyo-dinle.jpg" group-title="Pop",Erzincan Dost Radyo
-https://radyo.yayindakiler.com:3156/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tatvan-radyo-13-dinle.jpg" group-title="Pop",Radyo 13 Tatvan
-https://radyo.yayindakiler.com:3050/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-radyo-deva-dinle.jpg" group-title="Pop",Radyo Deva
-https://radyo.yayindakiler.com:3040/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/malatya-imparator-fm.jpg" group-title="Pop",Malatya Radyo İmparator
-https://radyo.yayindakiler.com:4042/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kayseri-kent-fm-dinle.jpg" group-title="Pop",Kayseri Kent FM
-https://radyo.yayindakiler.com:4056/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yore-fm-canli-1.jpg" group-title="Pop",Yöre FM
-https://radyo.yayindakiler.com:4082/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/dersim-munzur-radyo-dinle.jpg" group-title="Pop",Radyo Munzur
-https://radyo.yayindakiler.com:3002/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-mavi-radyo-dinle.jpg" group-title="Pop",Eskişehir Mavi Radyo
-https://radyo.yayindakiler.com:3140/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-karamursel-dinle.jpg" group-title="Pop",Radyo Karamürsel
-https://radyo.yayindakiler.com:3052/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/luleburgaz-fm-dinle.jpg" group-title="Pop",Lüleburgaz FM
-https://radyo.yayindakiler.com:3122/stream
-#EXTINF:-1 tvg-logo="/radio/radyo-gunes-sivas.jpg" group-title="Pop",Sivas Radyo Güneş
-https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_20438_stream_38709136
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/diyarbakir-radyo-can-dinle.jpg" group-title="Pop",Diyarbakır Can Radyo
-https://radyo.yayindakiler.com:2028/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aksaray-radyo-mavi-dinle.jpg" group-title="Pop",Radyo Mavi Aksaray
-https://radyo.yayindakiler.com:4026/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-radyo-can-dinle.jpg" group-title="Pop",Tekirdağ Radyo Can
-https://radyo.yayindakiler.com:4174/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erzincan-time-turk-dinle.jpg" group-title="Pop",Time Türk Erzincan
-https://radyo.yayindakiler.com:4195/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aksaray-radyo-68-dinle.jpg" group-title="Pop",Radyo 68
-https://radyo.yayindakiler.com:4022/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/trabzon-radyo-kuzey-fm-dinle.jpg" group-title="Pop",Kuzey FM
-https://radyo.yayindakiler.com:3028/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/merzifon-radyo-5-dinle.jpg" group-title="Pop",Radyo 5
-https://sslyayin.radyoyayini.com:7062/mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-radyo-haber-dinle.jpg" group-title="Pop",Tekirdağ Radyo Haber
-https://radyo.yayindakiler.com:4118/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/soylu-fm-dinle.jpg" group-title="Pop",Soylu FM
-https://radyo.yayindakiler.com:4034/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/manisa-radyo-gokkusagi-dinle.jpg" group-title="Pop",Radyo Gökkuşağı
-https://live.radyo.in/9700/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-kadirga-dinle.jpg" group-title="Pop",Radyo Kadirga
-https://radyo.yayin.com.tr:4022/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radio-life-dinle.jpg" group-title="Pop",Radio Life
-https://yayin2.canliyayin.org:8698/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-teknik-universitesi-radyosu-dinle.jpg" group-title="Pop",Radyo ESTÜ
-https://ssl120.radyotelekom.com.tr/8024/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-osmangazi-universitesi-radyosu-dinle.jpg" group-title="Pop",Radyo ESOGÜ
-https://radyodinle.ogu.edu.tr/Radyo_Ogu
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/konya-selam-radyo-dinle.jpg" group-title="Pop",Selam Radyo
-http://yayin1.canliyayin.org:7066/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/balikesir-radyo-camlica-dinle.jpg" group-title="Pop",Radyo Çamlıca FM
-https://camlicafm.ozelip.com:9314/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-pause-dinle.jpg" group-title="Pop",Radyo Pause
-https://radyopause.ozelip.com.tr:8040/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-zafer-dinle.jpg" group-title="Pop",Radyo Zafer
-https://radyozafer.ozelip.com:8034/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-zeugma-dinle.jpg" group-title="Pop",Radyo Zeugma
-https://sssx.radyosfer.com/radyozeugma/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-corlu-fm-dinle.jpg" group-title="Pop",Çorlu FM
-https://sssx.radyosfer.com/corlufm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-frigya-canli.jpg" group-title="Pop",Radyo Frigya
-https://sssx.radyosfer.com/8174/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kapadokya-fm-dinle.jpg" group-title="Pop",Kapadokya FM 94.5
-https://sssx.radyosfer.com/kapadokyafm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-50-dinle.jpg" group-title="Pop",Radyo 50
-https://sssx.radyosfer.com/radyo50/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kocaeli-mega-fm-dinle.jpg" group-title="Pop",Kocaeli Mega FM
-https://sssx.radyosfer.com/megafm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-dost-fm-dinle.jpg" group-title="Pop",Dost Fm Bursa
-https://sssx.radyosfer.com/dostfmbursa/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erciyes-fm-kayseri.jpg" group-title="Pop",Erciyes Fm Kayseri
-https://sssx.radyosfer.com/9328/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/usak-ozlem-fm.jpg" group-title="Pop",Özlem Fm Uşak
-https://sssx.radyosfer.com/ozlemfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/trabzon-radyo-dinle.jpg" group-title="Pop",Trabzon Radyo 91.0
-https://sssx.radyosfer.com/8038/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/sakarya-imparator-fm-dinle.jpg" group-title="Pop",İmparator FM Sakarya
-https://sssx.radyosfer.com/imparatorfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-eregli-dinle.jpg" group-title="Pop",Radyo Ereğli
-https://sssx.radyosfer.com/sonixfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/unye-melodi-fm-dinle.jpg" group-title="Pop",Melodi Fm Ünye
-https://sssx.radyosfer.com/unyemelodifm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/balikesir-radyo-10-fm-dinle.jpg" group-title="Pop",Radyo 10
-https://sssx.radyosfer.com/radyoon/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/osmaniye-radyo-80-dinle.jpg" group-title="Pop",Radyo 80
-https://sssx.radyosfer.com/radyo80/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/usak-keyf-radyo-dinle.jpg" group-title="Pop",Keyf Radyo
-https://sssx.radyosfer.com/keyfradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-karadeniz-fm.jpg" group-title="Pop",Karadeniz Fm Bursa
-https://sssx.radyosfer.com/bursakaradenizfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/soke-tempo-radyo-dinle.jpg" group-title="Pop",Söke Radyo Tempo
-https://sssx.radyosfer.com/radyotempo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/Radyo-Seker.jpg" group-title="Pop",Tekirdağ Radyo Şeker
-https://sssx.radyosfer.com/radyoseker/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/malatya-dost-fm-dinle.jpg" group-title="Pop",Dost FM Malatya
-https://sssx.radyosfer.com/dostfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/samsun-adige-radyo-dinle.jpg" group-title="Pop",Adige Radyo
-https://sssx.radyosfer.com/adigeradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-gunes-dinle.jpg" group-title="Pop",Bursa Radyo Güneş
-https://sssx.radyosfer.com/9390/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-radyo-ulku-dinle.jpg" group-title="Pop",Radyo Ülkü
-https://radyo.yayin.com.tr:4006/stream/1/?icy=http
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-caglar-fm-malatya.jpg" group-title="Pop",Malatya Çağlar Fm
-https://sssx.radyosfer.com/radyocaglar/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-52-dinle.jpg" group-title="Pop",Radyo 52
-https://sssx.radyosfer.com/radyo52/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gaziantep-nizip-radyo-dinle.jpg" group-title="Pop",Gaziantep Nizip Radyo
-https://sssx.radyosfer.com/nrtfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/hur-fm-sakarya-dinle.jpg" group-title="Pop",Hür FM
-https://radyo.fikirsahipleri.com:9952
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/canakkale-can-fm-dinle.jpg" group-title="Pop",Çanakkale Çan Fm
-https://sssx.radyosfer.com/canfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/giresun-radyo-flash-fm-dinle.jpg" group-title="Pop",Giresun Radyo Flash
-https://sssx.radyosfer.com/9430/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mugla-ornek-radyo-dinle.jpg" group-title="Pop",Örnek Radyo Muğla
-https://radyo.yayindakiler.com:3006/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/batman-super-fm-dinle.jpg" group-title="Pop",Batman Süper FM
-https://radyo.yayindakiler.com:4090/stream
-#EXTINF:-1 tvg-logo="/radio/aktif-fm-kutahya.jpg" group-title="Pop",Kütahya Aktif FM
-https://radyo.yayindakiler.com:3164/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/izmir-can-radyo-dinle.jpg" group-title="Pop",İzmir Radyo Can
-https://radyo.yayindakiler.com:3124/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/afsin-fm-canli.png" group-title="Pop",Afşin Fm
-https://radyo.arkacadde.org/4646/afsinradyo.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kolej-fm-dinle.jpg" group-title="Pop",Kayseri Kolej FM
-https://sssx.radyosfer.com/kolejfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-azelya-dinle.jpg" group-title="Pop",Radyo Azelya
-https://sssx.radyosfer.com/radyoazelya/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-dumlupinar-dinle.jpg" group-title="Pop",Kütahya Radyo Dumlupınar
-https://radyo.yayin.com.tr:6090/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-plus-dinle.jpg" group-title="Pop",Radyo Plus
-https://sssx.radyosfer.com/kayseriradyoplus/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-seyhan-dinle.jpg" group-title="Pop",Radyo Seyhan
-https://sssx.radyosfer.com/radyoseyhan/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-sirinnar-dinle.jpg" group-title="Pop",Şirinnar FM
-https://sssx.radyosfer.com/sirinnarfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-solmaz-fm-dinle.jpg" group-title="Pop",Solmaz FM
-https://sssx.radyosfer.com/solmazfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/balikesir-sev-radyo-dinle.jpg" group-title="Pop",Sev Radyo
-https://sssx.radyosfer.com/sevradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/hatay-akdeniz-fm-dinle.jpg" group-title="Pop",Radyo Akdeniz FM Hatay
-https://sslyayin.netyayin.net/hatayakdenizfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-nikomedya-dinle.jpg" group-title="Pop",Radyo Nikomedya
-https://sslyayin.radyoyayini.com:7091/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/konya-radyonet-fm-dinle.jpg" group-title="Pop",Radyo Net Konya
-https://sslyayin.netyayin.net:8068/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aydin-radyo-mega-dinle.jpg" group-title="Pop",Aydın Radyo Mega
-https://sssx.radyosfer.com/radyomegafm105/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-radyo-armoni-fm-dinle.jpg" group-title="Pop",Tekirdağ Armoni FM
-https://sssx.radyosfer.com/8074/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tutku-fm-dinle.jpg" group-title="Pop",Samsun Tutku FM
-https://sslyayin.radyoyayini.com/8012/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aydin-radyo-guven-dinle.jpg" group-title="Pop",Radyo Güven
-https://radyo.yayin.com.tr:4098/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aydin-radyo-as-fm-dinle.jpg" group-title="Pop",Radyo AS FM
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/alanya-radyo-time-dinle.jpg" group-title="Pop",Radyo Time Alanya
-https://sssx.radyosfer.com/alanyaradyotime/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/malatya-radyo-fon-dinle.jpg" group-title="Pop",Fon Radyo
-https://sssx.radyosfer.com/radyofon/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/van-tutku-radyo-dinle.jpg" group-title="Pop",Tutku Radyo
-https://sssx.radyosfer.com/tutkuradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-aktif-dinle.jpg" group-title="Pop",Radyo Aktif Bursa
-https://radyoaktif.radyosfer.org/1/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mut-hilal-fm-dinle.jpg" group-title="Pop",Hilal FM Mut
-https://sssx.radyosfer.com/9314/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-radyo-metropol-dinle.jpg" group-title="Pop",Mersin Radyo Metropol
-https://sssx.radyosfer.com/radyometropol/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/afyon-radyo-tek-dinle.jpg" group-title="Pop",Afyon Radyo Tek
-https://radyo.yayindakiler.com:8004/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-baskent-dinle.jpg" group-title="Pop",Adana Radyo Başkent
-https://baskentaudiovideo.com.tr/adana
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/sakarya-radyo-rota-dinle.jpg" group-title="Pop",Radyo Rota
-https://sslyayin.radyoyayini.com:7082
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aksaray-ar-fm-dinle.jpg" group-title="Pop",Aksaray Ar Radyo
-https://radyo.yayindakiler.com:4036/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/igdir-fm-dinle.jpg" group-title="Pop",Iğdır FM
-https://radyo.yayindakiler.com:4158/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-tarsus-fm-dinle.jpg" group-title="Pop",Mersin Tarsus FM
-https://tarsusfm.80.yayin.com.tr/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/van-radyo-m-dinle.jpg" group-title="Pop",Radyo M
-https://radyo.slmbilisim.net/8006/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kastamonu-fm-dinle.jpg" group-title="Pop",Kastamonu Fm
-https://radyo.yayin.com.tr:4264/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-moni-dinle.jpg" group-title="Pop",Radyo Moni
-https://radyo.yayin.com.tr:4262/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adiyaman-mert-fm-dinle.jpg" group-title="Pop",Mert FM
-https://radyo.yayindakiler.com:4004/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gebze-fm-dinle.jpg" group-title="Pop",Gebze FM
-https://eminmisin.radyodinle.stream/9530/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/usak-banaz-dost-fm-dinle.jpg" group-title="Pop",Banaz Dost FM
-https://sssx.radyosfer.com/banazdostfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gurbetci-fm-dinle.jpg" group-title="Pop",Gurbetçi FM
-https://sssx.radyosfer.com/gurbetcifm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-sefa-dinle.jpg" group-title="Pop",Radyo Sefa
-https://host10.onlineradyotv.net/8500/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-bu-dinle.jpg" group-title="Pop",Radyo Bu
-https://radyo.yayindakiler.com:8006/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ego-radyo-dinle.jpg" group-title="Pop",EGO Radyo
-https://radio.guventechnology.com/9372/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/zara-fm-dinle.jpg" group-title="Pop",Zara FM
-https://sslyayin.netyayin.net:8150/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ege-fm-dinle.jpg" group-title="Pop",Ege FM 95.4
-https://sslyayin.netyayin.net:2024/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kesan-fm-dinle.jpg" group-title="Pop",Edirne Keşan FM
-https://sslyayin.netyayin.net/kesanfm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erzurum-imaj-fm-dinle.jpg" group-title="Pop",Erzurum İmaj Fm
-https://sslyayin.netyayin.net/imajfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/side-fm-dinle.jpg" group-title="Pop",Antalya Side FM
-https://sslyayin.netyayin.net/8155/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kocaeli-radyo-mavi-dinle.jpg" group-title="Pop",Radyo Mavi Kocaeli
-https://sslyayin.netyayin.net/8070/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tunceli-radyo-baris-dinle.jpg" group-title="Pop",Tunceli Radyo Barış
-https://sslyayin.netyayin.net/8510/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/karaman-kgrt-fm-dinle.jpg" group-title="Pop",KGRT FM
-https://sslyayin.netyayin.net/7042/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/giresun-fm-dinle.jpg" group-title="Pop",Giresun FM 102.5
-https://sslyayin.netyayin.net/2828/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/elazig-ezgi-radyo-dinle.jpg" group-title="Pop",Elazığ Ezgi Radyo
-https://sslyayin.netyayin.net/elazigezgiradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/karabuk-bizim-radyo-dinle.jpg" group-title="Pop",89.4 Bizim Radyo
-https://sslyayin.netyayin.net/8162/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kozan-fm-dinle.jpg" group-title="Pop",Adana Kozan Fm
-https://sslyayin.netyayin.net/3401/stream
-#EXTINF:-1 tvg-logo="/radio/radyo-sahin.jpg" group-title="Pop",Kocaeli Radyo Şahin
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/goksun-fm-dinle.jpg" group-title="Pop",Göksun FM
-https://sslyayin.netyayin.net:10970/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/hatay-vivaldi-fm-dinle.jpg" group-title="Pop",Vivaldi FM
-https://sslyayin.netyayin.net/3133/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mugla-tur-fm-dinle.jpg" group-title="Pop",Tur FM
-https://sslyayin.netyayin.net/4848/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mus-filiz-fm-dinle.jpg" group-title="Pop",Filiz FM
-https://sslyayin.netyayin.net/6746/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/odea-radyo-dinle.jpg" group-title="Pop",Odea Radyo
-https://playerservices.streamtheworld.com/api/livestream-redirect/ODEA128AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/akgul-fm-dinle.jpg" group-title="Pop",Akgül FM
-https://sssx.radyosfer.com/akgulfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-aksaray-kral-fm-dinle.jpg" group-title="Pop",Kral FM Aksaray
-https://sssx.radyosfer.com/aksaraykralfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aksarayin-sesi-dinle.jpg" group-title="Pop",Aksaray&#8217;ın Sesi
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-kilim-dinle.jpg" group-title="Pop",Radyo Kilim 100.0
-https://sslyayin.netyayin.net/2727/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-sampiyon-dinle.jpg" group-title="Pop",Bursa Radyo Şampiyon
-https://radyo.yayin.com.tr:4106/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/esas-radyo-dinle.jpg" group-title="Pop",Esas Radyo
-https://yayin.turkhosted.com:6034/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-ktu-dinle.jpg" group-title="Pop",Radyo KTÜ
-https://sslyayin.netyayin.net/radyoktu/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/merzifon-sila-fm-dinle.jpg" group-title="Pop",Sıla FM
-https://radyo.yayin.com.tr:4164/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/boyabat-ezgi-fm-dinle.jpg" group-title="Pop",Boyabat Ezgi Fm
-https://radyo.yayindakiler.com:3044/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gerede-fm-radyo-14-dinle.jpg" group-title="Pop",Radyo 14
-https://radyo.yayin.com.tr:4104/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bingol-fm-dinle.jpg" group-title="Pop",Bingöl FM
-https://radyo.yayin.com.tr:4302/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-van-dinle.jpg" group-title="Pop",Radyo Van
-https://sslyayin.netyayin.net/radyovan/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/antalya-radyo-v-dinle.jpg" group-title="Pop",Radyo V
-https://edge1.socialsmart.tv/vtvradyo/bant1/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mugla-frt-fm-dinle.jpg" group-title="Pop",FRT FM
-https://sssx.radyosfer.com/frtfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/samsun-baris-fm-dinle.jpg" group-title="Pop",Bafra Barış FM
-https://barisfm.ozelip.com:9588/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/karaman-cagdas-radyo-dinle.jpg" group-title="Pop",Çağdaş Radyo Karaman
-https://radyo.yayin.com.tr:4366/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/cumhuriyet-universitesi-radyosu.jpg" group-title="Pop",CU Radyo &#8211; Cumhuriyet Üniversitesi
-https://ip1.ozelip.com/8046/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-gimsa-dinle.jpg" group-title="Pop",Radyo Gimsa
-https://yayin2.canliyayin.org:9482/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-antalya-dinle.jpg" group-title="Pop",Radyo Antalya
-https://sslyayin.netyayin.net:8036/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-sifir-bir-dinle.jpg" group-title="Pop",01 FM
-https://sssx.radyosfer.com/01fm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bodrum-fm-dinle.jpg" group-title="Pop",Bodrum FM
-https://live.bodrumfm.org/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/karadeniz-akustik-dinle.jpg" group-title="Pop",Karadeniz Akustik FM
-https://karadenizakustik.radyotvonline.net
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-sok-dinle.jpg" group-title="Pop",Radyo Şok
-https://sokradyo.80.yayin.com.tr/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-bogazici-dinle.jpg" group-title="Pop",Radyo Boğaziçi
-https://listen.powerapp.com.tr/radyobogazici/mpeg/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/van-ilac-radyo-dinle.jpg" group-title="Pop",İlaç Radyo
-https://ilacgibiradyo.ozelip.com/9798/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/dinar-dost-radyo-dinle.jpg" group-title="Pop",Dinar Dost Radyo
-https://radyo1.radyo-dinle.tc/8062/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/erzincan-radyo-tek-dinle.jpg" group-title="Pop",Erzincan Radyo Tek
-https://sssx.radyosfer.com/radyotek/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ankara-radyo-beyaz-dinle.jpg" group-title="Pop",Ankara Radyo Beyaz
-https://radyo.normyazilim.com:8030/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-ses-ankara-dinle.jpg" group-title="Pop",Radyo Ses Ankara
-https://radyo.normyazilim.com:8020/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-likya-dinle.jpg" group-title="Pop",Radyo Likya
-https://radyo.yayin.com.tr:4260/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-desibel-dinle.jpg" group-title="Pop",Radyo Desibel
-https://www.radyodesibel.com/stream.php
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ankara-ozgur-radyo-dinle.jpg" group-title="Pop",Ankara Radyo Özgür
-https://radyoozgur.kesintisizyayin.com:9898/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/sile-bizim-fm-dinle.jpg" group-title="Pop",Bizim FM Şile
-https://sssx.radyosfer.com/bizimfmsile/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/nazilli-radyo-9-dinle.jpg" group-title="Pop",Radyo 9
-https://radyo.yayin.com.tr:4010/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-raks-fm-dinle.jpg" group-title="Pop",Raks FM
-https://sslyayin.radyoyayini.com:7092
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-cgtnturk-dinle.jpg" group-title="Pop",CGTN Türk
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-gold-dinle.jpg" group-title="Pop",Radyo Gold
-https://ssl120.radyotelekom.com.tr:10804/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-super-fm-dinle.jpg" group-title="Pop",Adana Süper FM
-https://radyo.yayindakiler.com:4002/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-hisar-dinle.jpg" group-title="Pop",Radyo Hisar
-https://radyo.yayindakiler.com:4006/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/suleyman-demirel-universitesi-radyosu.jpg" group-title="Pop",Radyo SDÜ
-https://listen.powerapp.com.tr/radyosduu/mpeg/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-isparta-dinle.jpg" group-title="Pop",Radyo Isparta
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bartin-radyo-b-dinle.jpg" group-title="Pop",Radyo B
-https://abamedya.80.yayin.com.tr/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/usak-radyo-ugur-fm-dinle.jpg" group-title="Pop",Uğur FM
-https://radyo.yayin.com.tr:4256/stream/1/?icy=http
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aksaray-fm-dinle.jpg" group-title="Pop",Aksaray FM 99.5
-https://sssx.radyosfer.com/aksarayfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aydin-radyo-flas-dinle.jpg" group-title="Pop",Aydın Radyo Flaş
-https://radyo.yayindakiler.com:4096/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-kemence-fm-dinle.jpg" group-title="Pop",Kemençe FM
-https://sssx.radyosfer.com/kemencefm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-arnavutkoy-dinle.jpg" group-title="Pop",Radyo Arnavutköy
-https://radyo.yayin.com.tr:4206/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/zonguldak-enerji-fm-dinle.jpg" group-title="Pop",Enerji FM
-https://ssl22.radyotelekom.com/8306/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-ankara-dinle.jpg" group-title="Pop",Radyo Ankara
-https://radyoankara.ozelip.net:8152
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-oz-fm-dinle.jpg" group-title="Pop",Öz Fm
-https://ip231.ozelip.com/9914/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-efebey-dinle.jpg" group-title="Pop",Radyo Efebey
-https://radyo.radyoimza.com:8016/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/likya-class-fm-dinle.jpg" group-title="Pop",Likya Class FM
-https://yayin1.canlitv.fun:8026/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tokat-ert-fm-dinle.jpg" group-title="Pop",Tokat ERT FM
-https://yayin1.canlitv.fun:8024/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/amasya-art-fm-dinle.jpg" group-title="Pop",Amasya Art FM
-https://yayin1.canlitv.fun:8014/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ankara-radyo-imaj-pop-fm-dinle.jpg" group-title="Pop",İmaj Pop
-https://stream.netradyom.com/listen/imajpop/radio.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/atlantis-fm-dinle.jpg" group-title="Pop",Atlantis FM
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/alanya-go-fm-dinle.jpg" group-title="Pop",Alanya GO FM
-https://listen3.myradio24.com/95703
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/silivri-metropol-fm-dinle.jpg" group-title="Pop",Silivri Metropol FM
-https://stream2.rtvtakip.com:7034/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kumluca-bizim-fm-dinle.jpg" group-title="Pop",Bizim FM Kumluca
-https://yayin.turkhosted.com/bizimfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-koroglu-fm-dinle.jpg" group-title="Pop",Köroğlu FM
-https://yayin.turkhosted.com:6068/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-merkoc-dinle.jpg" group-title="Pop",Radyo Merkoç
-https://host10.onlineradyotv.net/8030/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kocaeli-radyo-trend-dinle.jpg" group-title="Pop",Radyo Trend
-https://sslyayin.radyoyayini.com:7032/stream?type=http&nocache=1
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adapazari-radyo-net-dinle.jpg" group-title="Pop",Radyo Net 89.3
-https://streaming.radionomy.com/JamendoLounge
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-siverek-fm-dinle.jpg" group-title="Pop",Siverek FM
-https://gokyuzuserver.com.tr:9696/live
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kay-radyo-dinle.jpg" group-title="Pop",Kayseri Kay Radyo
-https://sssx.radyosfer.com/kayradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/diyarbakir-cagri-fm-dinle.jpg" group-title="Pop",Diyarbakır Çağrı Fm
-https://live.cagrifm.com.tr/cagrifm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/vuslat-fm-dinle.jpg" group-title="Pop",Vuslat FM
-https://live.vuslatfm.com.tr/vuslatfm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aksa-fm-dinle.jpg" group-title="Pop",Aksa FM
-https://live.aksafm.com.tr/aksafm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/botan-fm-dinle.jpg" group-title="Pop",Botan FM
-https://live.botanfm.com/botanfm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/cemre-fm-dinle.jpg" group-title="Pop",Cemre FM
-https://live.cemrefm.net/cemrefm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gaziantep-kervan-fm-dinle.jpg" group-title="Pop",Gaziantep Kervan FM
-https://live.kervanfm.com.tr/kervanfm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/serhad-fm-dinle.jpg" group-title="Pop",Serhad FM
-https://live.serhadfm.com/serhadfm
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-piramit-dinle.jpg" group-title="Pop",Radyo Piramit FM
-https://sslyayin.netyayin.net/2637/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yoruk-fm-dinle.jpg" group-title="Pop",Yörük FM
-https://tr2.socialsmart.tv/tepemedya/yorukfm/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/amasya-fm-dinle.jpg" group-title="Pop",Amasya FM
-https://amasyafm.ozelip.com:8022/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-fm-dinle.jpg" group-title="Pop",Mersin Fm
-https://tr2.socialsmart.tv/tepemedya/mersinfm/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mersin-icel-fm-dinle.jpg" group-title="Pop",İçel FM
-https://tr2.socialsmart.tv/tepemedya/icelfm/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mardin-radyo-emek-fm-dinle.jpg" group-title="Pop",Emek Radyo
-https://yayin5.radyohizmeti.com:10992/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-49-dinle.jpg" group-title="Pop",Radyo 49
-https://sssx.radyosfer.com/radyo49/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/amasya-esinti-fm-dinle.jpg" group-title="Pop",Amasya Esinti FM
-https://stream.zeno.fm/yzg9n0sma8zuv
-https://radyodinle1.turkhosted.com/yayin?uri=node-29.zeno.fm/yzg9n0sma8zuv.aac?/&tkn=fj1hYnniA1mQ689H7twQ3A&tms=1766394579
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-mer-dinle.jpg" group-title="Pop",Radyo Mer
-https://tr2.socialsmart.tv/tepemedya/radyomer/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kuradyo-dinle.jpg" group-title="Pop",KURadyo
-https://s3.radio.co/sdbea8450c/listen
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/dogan-21-fm-dinle.jpg" group-title="Pop",Doğan 21 FM
-https://radyo.yayindakiler.com:3024/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/izmir-radyo-ege-dinle.jpg" group-title="Pop",Radyo Ege
-https://istek.ozelip.com/radyoege
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-cukurova-dinle.jpg" group-title="Pop",Adana Radyo Çukurova
-https://host10.onlineradyotv.net/8010/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kilis-sultan-radyo-dinle.jpg" group-title="Pop",Kilis Sultan Radyo
-https://kilissul.80.yayin.com.tr/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-secil-fm-dinle.jpg" group-title="Pop",Radyo Seçil FM
-https://canli.radyosecil.com.tr/8066/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ondokuz-mayis-universitesi-radyosu.jpg" group-title="Pop",OMÜ Radyo
-https://omuradyo.ozelip.com/8042/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/armoni-fm-dinle.jpg" group-title="Pop",Afyon Armoni Fm
-https://radyo.yayindakiler.com:4084/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/batman-radyo-yuksel-dinle.jpg" group-title="Pop",Radyo Yüksel
-https://yayin2.canliyayin.org:8232/stream
-#EXTINF:-1 tvg-logo="/radio/one-fm-adana.jpg" group-title="Pop",Adana One Fm
-https://stream.radyolarburada.com/radio/9085/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/fistik-fm-samsun.jpg" group-title="Pop",Samsun Fıstık Fm
-https://sslyayin.radyoyayini.com:7029/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kocaeli-universitesi-radyosu-dinle.jpg" group-title="Pop",Radyo Ki
-https://listen.powerapp.com.tr/radyoki/mpeg/icecast.audio
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-hiras-dinle.jpg" group-title="Pop",Manisa Radyo Hiraş
-https://radyo.wlsrv.com:9082
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ordu-unye-radyo-moda-fm-dinle.jpg" group-title="Pop",Ordu Moda FM
-https://modafm.ozelip.com.tr:8016/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-venus-dinle.jpg" group-title="Pop",Bursa Radyo Venüs
-https://yayin.radyovenus.com.tr:3416
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-yakamoz-dinle.jpg" group-title="Pop",Radyo Yakamoz
-https://www.radyoyakamoz.com.tr/radyoyakamoz.php
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-lider-01-fm-dinle.jpg" group-title="Pop",Lider FM
-https://radyo1.radyo-dinle.tc/8108/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/kayseri-gozde-fm-dinle.jpg" group-title="Pop",Kayseri Gözde Fm
-https://sslyayin.radyoyayini.com:7067/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/nigde-can-radyo-dinle.jpg" group-title="Pop",Niğde Can Radyo
-https://dinle.canradyonigde.com/8048/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/rock-hits-dinle.jpg" group-title="Pop",Rock Hits
-https://playerservices.streamtheworld.com/api/livestream-redirect/SC017_SO1AAC.aac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ordu-radyo-net-dinle.jpg" group-title="Pop",Radyo Net
-https://anadolu.liderhost.com.tr/8052/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/seydisehir-fm-dinle.jpg" group-title="Pop",Konya Seydişehir Fm
-https://sssx.radyosfer.com/seydisehirfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-vatan-dinle.jpg" group-title="Pop",Radyo Vatan
-https://sslyayin.radyoyayini.com:7026/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-eray-dinle.jpg" group-title="Pop",Eray FM
-https://erayfm.ozelip.com/8072/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/biber-fm-dinle.jpg" group-title="Pop",Biber FM
-https://radyo1.radyo-dinle.tc/8136/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-sahane-dinle.jpg" group-title="Pop",Şahane Radyo
-https://sssx.radyosfer.com/sahaneradyo/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/usak-ses-fm-dinle.jpg" group-title="Pop",Uşak Ses FM
-https://yayin.sesfm.com.tr/sesfm/stream?icy=http
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-megastar-dinle.jpg" group-title="Pop",Radyo Megastar
-https://sslyayin.radyoyayini.com:7039/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/yuksekova-fm.jpg" group-title="Pop",Yova FM
-https://radyo.slmbilisim.net/8002/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/malazgirt-fm-dinle.jpg" group-title="Pop",Malazgirt FM
-https://radyo.malazgirtfm.com/1071/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/isparta-evrensel-fm.jpg" group-title="Pop",Evrensel FM
-https://evrenselfm.ozelip.com.tr/9996/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bergama-super-fm-dinlejpg.jpg" group-title="Pop",Bergama Süper FM
-https://panel.radyomhd.com:1330/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-gozlem-dinle.jpg" group-title="Pop",Radyo Gözlem
-https://radyogozlem.ozelip.net/8030/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/izmir-radyo-remix-dinle.jpg" group-title="Pop",Radyo Remix
-https://radyo.yayin.com.tr:5250/playlist.mp3
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gonen-radyo-venus-fm-dinle.jpg" group-title="Pop",Radyo Venüs Gönen
-https://sssx.radyosfer.com/gonenradyovenus/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/aydin-maraton-fm-dinle.jpg" group-title="Pop",Maraton FM
-https://live.radyo.in/9985/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/konya-kent-fm-eregli-dinle.jpg" group-title="Pop",Kent FM Ereğli
-https://kentfm955.ozelip.com/9306/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/gaziantep-radyo-ihya-dinle.jpg" group-title="Pop",Radyo İhya
-https://radyo.yayin.com.tr:2727/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-radyo-erkan-dinle.jpg" group-title="Pop",Adana Radyo Erkan
-https://stream.radyolarburada.com:8095/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-mesk-fm-dinle.jpg" group-title="Pop",Meşk Fm 95.5
-https://stream.radyolarburada.com:8000/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-adana-fm-dinle.jpg" group-title="Pop",Adana FM
-https://host10.onlineradyotv.net/8004/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/buca-fm-dinle.jpg" group-title="Pop",Buca FM
-https://radyo.yayin.com.tr:5864/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/asr-adiyamanin-sesi-radyosu.jpg" group-title="Pop",ASR FM
-https://radyo.yayindakiler.com:4072/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-kocatepe-dinle.jpg" group-title="Pop",Radyo Kocatepe
-https://radyo.aku.edu.tr/radyo
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/unye-oney-flash-fm-dinle.jpg" group-title="Pop",Oney Flash FM
-https://sssx.radyosfer.com/oneyflashfm/stream?2907
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/elazigfm23.jpg" group-title="Pop",FM 23 Elazığ
-https://radyo.yayin.com.tr:8280/stream/1/?icy=http
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-turkiyem-dinle.jpg" group-title="Pop",Radyo Türkiyem
-https://radyo.yayindakiler.com:5254/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/elazig-radyo-kulup-dinle.jpg" group-title="Pop",Radyo Kulüp Elazığ
-https://radyo.yayin.com.tr:8282/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/nevsehir-radyo-mega-fm-dinle.jpg" group-title="Pop",Nevşehir Radyo Mega
-https://yayin.nevsehirmegaradyo.com:8050/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-soma-fm-dinle.jpg" group-title="Pop",Soma FM
-https://radyo1.radyo-dinle.tc/8010/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/afyon-radyo-03-dinle.jpg" group-title="Pop",Radyo 03
-https://sslyayin.netyayin.net/radyo03/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-poturgeli-dinle.jpg" group-title="Pop",Radyo Pötürgeli
-https://yayin.radyopoturgeli.com/4444/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/mardin-radyo-zergan-dinle.jpg" group-title="Pop",Mardin Radyo Zergan
-https://sslyayin.netyayin.net/radyozergan/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/devrek-fm-dinle.jpg" group-title="Pop",Devrek Fm 93.0
-https://live.sinirsizhost.com/8008/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/super-sov-radyo-dinle.jpg" group-title="Pop",Süpersov Radyo
-https://sslyayin.netyayin.net:6065/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-genc-fm-dinle.jpg" group-title="Pop",Tekirdağ Genç Fm
-https://radyo.yayindakiler.com:4052/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-pegai.jpg" group-title="Pop",Çanakkale Radyo Pegai
-https://radyo2.fkbs.com.tr:8016/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/fg-slow-dinle.jpg" group-title="Pop",FG Slow
-https://edge1.radyotvonline.net/shoutcast/play/fgslow
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/osmaniye-gonul-fm-dinle.jpg" group-title="Pop",Osmaniye Radyo Gönül
-https://sslyayin.netyayin.net/gonulfm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/izmir-cagri-radyo-dinle.jpg" group-title="Pop",İzmir Radyo Çağrı
-https://radyo.wlsrv.com:8604/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-radyo-sis-dinle.jpg" group-title="Pop",Radyo Sis
-https://stream.radyolarburada.com:8110/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/sakarya-radyo-mega-dinle.jpg" group-title="Pop",Sakarya Radyo Mega
-https://sssx.radyosfer.com/8012/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/bingol-universitesi-radyosu.jpg" group-title="Pop",Radyo Kampüs
-https://sslyayin.netyayin.net:8048/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-ritm-dinle.jpg" group-title="Pop",Radyo Ritm
-https://sssx.radyosfer.com/radyoritm/stream
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-canakkale-dinle.jpg" group-title="Pop",Radyo Çanakkale
-https://radyo2.fkbs.com.tr:8018
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/adana-crt-fm-dinle.jpg" group-title="Pop",CRT FM
-https://www.gokyuzuserver.com.tr:9000/stream
+[
+  {
+    "name": "Power Pop",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/power-pop-dinle.jpg",
+    "url": "https://listen.powerapp.com.tr/powerpop/mpeg/icecast.audio"
+  },
+  {
+    "name": "Show Radyo - Türkiye'nin En İyi Radyosu",
+    "group": "Haber & Spor",
+    "logo": "",
+    "url": "http://www.showradyo.com.tr"
+  },
+  {
+    "name": "Alem FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-alem-fm.jpg",
+    "url": "https://alemfm.radyotvonline.net/alemfmaac"
+  },
+  {
+    "name": "Türkü Radyo",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-alem-fm.jpg",
+    "url": "https://eu8.fastcast4u.com/proxy/ugur4129/mp3"
+  },
+  {
+    "name": "Aşk Fm",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ask-fm-dinle.jpg",
+    "url": [
+      "https://stream.netradyom.com/radio/8000/radio.mp3",
+      "https://stream.netradyom.com/listen/askfm1/radio.mp3"
+    ]
+  },
+  {
+    "name": "Avrasya Türk 107.1 Ankara",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/avrasya-turk-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net:10909"
+  },
+  {
+    "name": "Baba Radyo 105.6",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/baba-radyo-dinle.jpg",
+    "url": "https://officialbabaradyo.radyotvonline.net/babaofficial"
+  },
+  {
+    "name": "Bayram FM",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bayram-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/3442/stream"
+  },
+  {
+    "name": "Best Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/best-fm-dinle.jpg",
+    "url": "https://officialbestfm.radyotvonline.net/bestfmofficial"
+  },
+  {
+    "name": "Efkar FM",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-efkar-fm.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/EFKAR128AAC.aac"
+  },
+  {
+    "name": "Habertürk Radyo",
+    "group": "Haber & Spor",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-haber-turk-dinle.jpg",
+    "url": "https://haberturkradyo.radyotvonline.net/haberturkradyo"
+  },
+  {
+    "name": "İstanbulun Sesi Radyosu",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/istanbulun-sesi-radyosu.jpg",
+    "url": "https://yayin.radyomadyo.com:9180/stream"
+  },
+  {
+    "name": "Joy FM",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/joy-fm-dinle.jpg",
+    "url": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_FM128AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_FM_ITUNES.mp3"
+    ]
+  },
+  {
+    "name": "Joy Türk Akustik",
+    "group": "Slow",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-joy-turk-akustik.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOYTURK_AKUSTIK128AAC.aac"
+  },
+  {
+    "name": "Joy Türk",
+    "group": "Slow",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/joy-turk-canli.jpg",
+    "url": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_TURK128AAC.aac?ttag=G:f,m,AG:1,2,SES:1,2,OC:1,3,6,7,INT:2,5,6,CH:3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_TURK_ITUNES.mp3"
+    ]
+  },
+  {
+    "name": "Kalp FM",
+    "group": "Yavaş",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kalp-fm-dinle.jpg",
+    "url": "https://yayin.kalpfm.com:8080/stream"
+  },
+  {
+    "name": "Kiss FM",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kiss-fm-dinle.jpg",
+    "url": "https://kiss.radyotvonline.net/kissfm"
+  },
+  {
+    "name": "Metro Fm",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/metro-fm-dinle.jpg",
+    "url": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM_ITUNES.mp3"
+    ]
+  },
+  {
+    "name": "Pal Doğa",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-doga.jpg",
+    "url": "https://stream.rcast.net/200259"
+  },
+  {
+    "name": "Park FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-park-fm-dinle.jpg",
+    "url": "https://stream.netradyom.com/listen/parkfm/radio.mp3"
+  },
+  {
+    "name": "Polis Radyosu",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/polis-radyosu-dinle.png",
+    "url": "https://m.egm.gov.tr:8093/stream"
+  },
+  {
+    "name": "Radio Mydonose",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-mydonose-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_MYDONOSE128AAC.aac"
+  },
+  {
+    "name": "Radyo 2000",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-2000-dinle.jpg",
+    "url": "https://edge1.socialsmart.tv/radyo2000/bant1/icecast.audio"
+  },
+  {
+    "name": "Radyo Alaturka",
+    "group": "Türk Sanat Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-alaturka.jpg",
+    "url": "https://yayin.jumboserver.net:9100/stream"
+  },
+  {
+    "name": "Ankara Radyo Banko",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-banko-dinle.jpg",
+    "url": "https://stream.netradyom.com/listen/radyobanko/radio.mp3"
+  },
+  {
+    "name": "Radyo Ekin",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-ekin-dinle.jpg",
+    "url": "https://yayin.turkhosted.com:6006/stream"
+  },
+  {
+    "name": "Radyo Fenomen",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-fenomen-dinle.jpg",
+    "url": "https://live.radyofenomen.com/fenomen/128/icecast.audio?"
+  },
+  {
+    "name": "Radyo Mars",
+    "group": "Rap & Rock",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-mars-fm-dinle.jpg",
+    "url": "https://yayin.radyomadyo.com:9400/stream"
+  },
+  {
+    "name": "Radyo Megasite",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-megasite-dinle.jpg",
+    "url": "https://stream.netradyom.com/listen/megasite/radio.mp3"
+  },
+  {
+    "name": "Radyo Ostim",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ostim-radyo-dinle.jpg",
+    "url": "https://stream.netradyom.com/radio/8010/radio.mp3"
+  },
+  {
+    "name": "Radyo Pop 90",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/pop-90-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/POP90128AAC.aac"
+  },
+  {
+    "name": "İstanbul Radyo Seymen",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-seymen-dinle.jpg",
+    "url": "https://yayin.radyoseymen.com.tr:1070/stream"
+  },
+  {
+    "name": "Slow Türk",
+    "group": "Slow",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-slow-turk.jpg",
+    "url": "https://radyo.duhnet.tv/slowturk"
+  },
+  {
+    "name": "Süper Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/super-fm-canli.jpg",
+    "url": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER_FM128AAC.aac?ttag=G:f,m,AG:2,3,SES:1,2,OC:1,2,3,4,6,INT:1,3,7,CH:3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER_FM_ITUNES.mp3"
+    ]
+  },
+  {
+    "name": "TGRT FM",
+    "group": "Haber & Spor",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tgrt-fm-dinle.jpg",
+    "url": "https://icecasttgrt.ihlasdigitalassets.com/tgrtfm"
+  },
+  {
+    "name": "Virgin Radio Türkiye",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/virgin-radio-dinle.jpg",
+    "url": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/VIRGIN_RADIO128AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/VIRGIN_RADIO_ITUNES.mp3"
+    ]
+  },
+  {
+    "name": "Dalkas FM",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/dalkas-fm-live.jpg",
+    "url": "https://stream.radiojar.com/pr9r38w802hvv?rand=867135"
+  },
+  {
+    "name": "Dans FM – KKTC",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kibris-dance-fm-dinle.jpg",
+    "url": "https://live.enerjiplay.com/stream/dancefm"
+  },
+  {
+    "name": "Greatest Hits of All Time",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/greatest-hits-of-all-time-fm.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/GHOAT_EN128AAC.aac"
+  },
+  {
+    "name": "Heart FM",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/heart-fm-dinle.jpg",
+    "url": "https://live.heartfm.com.tr/listen/heart_fm/128.aac"
+  },
+  {
+    "name": "Joy Jazz",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/joy-jazz-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOY_JAZZ128AAC.aac"
+  },
+  {
+    "name": "Kore Pop",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kore-pop-radyo.jpg",
+    "url": "https://rtlberlin.streamabc.net/rtlb-jamfmkpop-mp3-192-9474790"
+  },
+  {
+    "name": "Literal Radio",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/literal-radio-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LITERAL128AAC.aac"
+  },
+  {
+    "name": "Lounge FM",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/lounge-fm-dinle.jpg",
+    "url": "https://edge1.radyotvonline.net/shoutcast/play/loungefm"
+  },
+  {
+    "name": "Max Fm",
+    "group": "Rap & Rock",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/max-fm-dinle.jpg",
+    "url": "https://maxfm.radyotvonline.net/stream/164"
+  },
+  {
+    "name": "Mix Fm Mersin",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mersin-mix-fm-dinle.jpg",
+    "url": "https://ssl16.ozelip.com/asistan/stream/8aa9fd0f13881c98afb2ca549c9037f6"
+  },
+  {
+    "name": "NRK Jazz",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radio-nrk-jazz-dinle.jpg",
+    "url": "https://lyd.nrk.no/nrk_radio_jazz_aac_h"
+  },
+  {
+    "name": "Pop Hits",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/pop-hits-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SC002_SO1AAC.aac"
+  },
+  {
+    "name": "Radio 2020",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/the-radio-2020-dinle.jpg",
+    "url": "https://stream.radiojar.com/kakeb0w57nhvv"
+  },
+  {
+    "name": "Radio Veronika",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radio-veronika-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_VERONIKAAAC_L.aac?dist=DESKTOP"
+  },
+  {
+    "name": "Radyo Bilkent",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-bilkent-dinle.jpg",
+    "url": "https://stream.netradyom.com/listen/radyobilkent/radio.mp3"
+  },
+  {
+    "name": "Radyo Klasik",
+    "group": "Klasik",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyonom-klasik-muzik.png",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BORUSAN_KLASIK128AAC.aac"
+  },
+  {
+    "name": "Radyo ODTÜ",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-odtu-dinle.jpg",
+    "url": "https://stream.radyoodtu.com.tr/canli"
+  },
+  {
+    "name": "Radyovizyon",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-vizyon-dinle.jpg",
+    "url": "https://stream.netradyom.com/radio/9300/radio.mp3"
+  },
+  {
+    "name": "Rock Station",
+    "group": "Rap & Rock",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/rock-station-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ROCK_STATION128AAC.aac"
+  },
+  {
+    "name": "Slow Time",
+    "group": "Yabancı",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radio-slow-time.jpg",
+    "url": "https://yayin.radyomadyo.com:8004/stream"
+  },
+  {
+    "name": "Moral Fm",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/moral-fm-dinle.jpg",
+    "url": "https://stream-51.zeno.fm/0cfiqwdkobavv?zs=RptTdDEHQ2Wej62cArILjQ"
+  },
+  {
+    "name": "Erkam Radyo",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erkam-radyo-dinle.png",
+    "url": "https://api-tv5.yayin.com.tr:8002/mp3"
+  },
+  {
+    "name": "Arkadaş FM",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-arkadas-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4134/stream"
+  },
+  {
+    "name": "Barış Radyo",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/adana-baris-radyo-dinle.jpg",
+    "url": "https://yayin2.canliyayin.org:9350/stream"
+  },
+  {
+    "name": "Bizim İller Radyo",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bizim-iller-radyo-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4078/stream"
+  },
+  {
+    "name": "Çorum Çağrı FM",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/corum-cagri-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/9398/stream"
+  },
+  {
+    "name": "Dolunay FM",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/dolunay-fm-canli.jpg",
+    "url": "https://yayin2.canliyayin.org:10955/;stream"
+  },
+  {
+    "name": "Furkan Radyo Kayseri",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kayseri-furkan-radyo-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:6191/stream"
+  },
+  {
+    "name": "Gonca FM",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/gonca-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/8912/stream"
+  },
+  {
+    "name": "Kocaeli Radyo Gül",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-gul-dinle.jpg",
+    "url": "https://yayin2.canliyayin.org:10989"
+  },
+  {
+    "name": "Konya İsra FM",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/isra-fm-dinle.jpg",
+    "url": "https://yayin2.canliyayin.org:8210/stream"
+  },
+  {
+    "name": "Konya Radyo En",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/konya-radyo-en-dinle.jpg",
+    "url": "https://yayin2.canliyayin.org:7222/stream"
+  },
+  {
+    "name": "Mesaj Fm",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-mesaj-fm-dinle.jpg",
+    "url": "https://yayin1.canlitv.fun:8010/stream"
+  },
+  {
+    "name": "Nur FM",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/malatya-nur-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/nurfm/stream"
+  },
+  {
+    "name": "Nur Radyo",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/diyarbakir-nur-radyo-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/nurradyo/stream"
+  },
+  {
+    "name": "Radyo Dilara Isparta",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/isparta-radyo-dilara-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyodilara/stream"
+  },
+  {
+    "name": "Radyo Feza",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-feza.jpg",
+    "url": [
+      "https://yayin.radyofeza.com/8002/stream",
+      "https://radyodinle1.turkhosted.com/yayin?uri=173.212.205.99:8000/radio.mp3?/&tkn=YlLPOD5DvSxCMUiu1zT_kg&tms=1766391185"
+    ]
+  },
+  {
+    "name": "Radyo Fıtrat",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-fitrat-dinle.jpg",
+    "url": "https://radyofitrat.radyotvonline.net/radyofitrat"
+  },
+  {
+    "name": "Radyo Genç Ses",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-genc-ses-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/gencsesfm/stream"
+  },
+  {
+    "name": "Radyo Gençlik",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-genclik-dinle.jpg",
+    "url": "https://canli.radyogenclik.com:9000"
+  },
+  {
+    "name": "Radyo Huzur Malatya",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/malatya-radyo-huzur-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/malatyaradyohuzur/stream"
+  },
+  {
+    "name": "Radyo Nida",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-nida-dinle.jpg",
+    "url": "https://anadolu.liderhost.com.tr/8106/stream"
+  },
+  {
+    "name": "Radyo Urfa",
+    "group": "İslami",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-urfa-dinle.jpg",
+    "url": "https://radyourfa.ozelip.com/8038/stream"
+  },
+  {
+    "name": "Adana Efsane Radyo",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/adana-efsane-radyo-dinle.jpg",
+    "url": "https://host10.onlineradyotv.net/9602/stream"
+  },
+  {
+    "name": "Bor FM",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/nigde-bor-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/borfm/stream"
+  },
+  {
+    "name": "Can FM",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/istanbul-can-fm-dinle.jpg",
+    "url": "https://canfmgen.80.yayin.com.tr/stream"
+  },
+  {
+    "name": "Denizli Sanat FM",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/denizli-art-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/denizliartfm/stream"
+  },
+  {
+    "name": "Elbistan Yöre FM",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/yore-fm-dinle.jpg",
+    "url": "https://ip.elbistanyorefm.com.tr:8022/stream"
+  },
+  {
+    "name": "Gerçek Radyo",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/istanbul-gercek-radyo-dinle.jpg",
+    "url": "https://sslyayin.radyoyayini.com:7085/stream?type=http&nocache=16"
+  },
+  {
+    "name": "Karesi Radyo",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-karesi-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/karesiradyo/stream"
+  },
+  {
+    "name": "Kralım FM 99.3",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kars-kralim-fm-dinle.jpg",
+    "url": "https://dinle.kralimfm.com/7890/stream"
+  },
+  {
+    "name": "Radyo 2000 Fm",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/radio/radyo-2000.jpg",
+    "url": null
+  },
+  {
+    "name": "Radyo Durak",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ankara-radyo-durak-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:8018/stream"
+  },
+  {
+    "name": "Radyo Moda",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/samsun-bafra-radyo-moda-dinle.jpg",
+    "url": "https://yayin.radyomoda.com.tr:7084/stream"
+  },
+  {
+    "name": "Radyo Neşter",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-nester.jpg",
+    "url": "https://live.sinirsizhost.com/8026/stream"
+  },
+  {
+    "name": "Radyo Usta",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-usta-dinle.jpg",
+    "url": "https://yayin.turkhosted.com/usta/stream"
+  },
+  {
+    "name": "Star Artı FM",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/star-arti-fm-dinle.jpg",
+    "url": "https://ritim.80.yayin.com.tr/stream"
+  },
+  {
+    "name": "Sultan Radyo",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/sultan-radyo-canli.jpg",
+    "url": "https://yayin.turkhosted.com/sultanradyo/stream"
+  },
+  {
+    "name": "Yol Arkadaşım Radyo",
+    "group": "Arabesk",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-yol-arkadasim-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/YOL_ARKADASIM128AAC.aac"
+  },
+  {
+    "name": "Yeni Rap",
+    "group": "Rap & Rock",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/yeni-rap-radyo-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SC018_SO1AAC.aac"
+  },
+  {
+    "name": "Joy Türk Rock",
+    "group": "Rap & Rock",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/joy-turk-rock-canli.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/JOYTURK_ROCK128AAC.aac"
+  },
+  {
+    "name": "Radyo Duble Rap",
+    "group": "Rap & Rock",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-duble-rap-dinle.jpg",
+    "url": "https://sslyayin.radyoyayini.com:7042/stream"
+  },
+  {
+    "name": "Süper2 FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/super-2-fm-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SUPER2128AAC.aac"
+  },
+  {
+    "name": "Karadeniz Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/karadeniz-radyo-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KARADENIZ128AAC.aac"
+  },
+  {
+    "name": "Başka Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/baska-fm.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BASKA128AAC.aac"
+  },
+  {
+    "name": "Baby Joy",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/baby-joy-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SC009_SO1AAC.aac"
+  },
+  {
+    "name": "BBC World Service Radio",
+    "group": "Haber & Spor",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-bbc-world-service-dinle.jpg",
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+  },
+  {
+    "name": "Berlin Metropol Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/berlin-metropol-fm-dinle.jpg",
+    "url": "https://metropol-fm.api.radiosphere.io/channels/MetropolFM/stream.mp3?quality=4"
+  },
+  {
+    "name": "Mavi Karadeniz Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/blue-karadeniz-radyo-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/bluekaradeniz/stream"
+  },
+  {
+    "name": "Dream Türk",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyonom-dream-turk.jpg",
+    "url": "https://radyo.duhnet.tv/dreamturk"
+  },
+  {
+    "name": "Enerji 93.1 – KKTC",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/nrg-enerji-dinle.jpg",
+    "url": "https://live.enerjiplay.com/stream/enerji"
+  },
+  {
+    "name": "Enerji Slow 106.2 – KKTC",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/nrg-enerji-slow-dinle.jpg",
+    "url": "https://live.enerjiplay.com/stream/enerjislow"
+  },
+  {
+    "name": "Hit Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/hit-radio-dinle.jpg",
+    "url": [
+      "https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3",
+      "https://hitradio-maroc.ice.infomaniak.ch/hr-burkina-64.aac"
+    ]
+  },
+  {
+    "name": "Kiss Türk",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kiss-turk-dinle.jpg",
+    "url": "https://kiss.radyotvonline.net/kissturk"
+  },
+  {
+    "name": "Mydonose Türk",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mydonose-turk-pop.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MYDONOSE_TURK128AAC.aac"
+  },
+  {
+    "name": "NRK Klasik",
+    "group": "Klasik",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/nrk-klasik-dinle.jpg",
+    "url": "https://lyd.nrk.no/nrk_radio_klassisk_aac_h"
+  },
+  {
+    "name": "Popbesk",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/popbesk-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/POPBESK128AAC.aac"
+  },
+  {
+    "name": "PowerTürk En İyiler",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/power-turk-best-of.jpg",
+    "url": null
+  },
+  {
+    "name": "Radyo Assos",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-assos-dinle.jpg",
+    "url": "https://stream.radio.co/sb2e24edf5/low"
+  },
+  {
+    "name": "Radyo Başakşehir",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-basaksehir-dinle.jpg",
+    "url": "https://icecast.netmedya.net/rbasaksehir"
+  },
+  {
+    "name": "Radyo Sole",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/sole-radyo-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SOLE128AAC.aac"
+  },
+  {
+    "name": "Slow Hits",
+    "group": "Slow",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/slow-hits-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SC030_SO1AAC.aac"
+  },
+  {
+    "name": "Tüm Zamanların En İyileri",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tum-zamanlarin-en-iyilerini-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/GHOAT_TR128AAC.aac"
+  },
+  {
+    "name": "Ülkü FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-ulku-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4112/stream"
+  },
+  {
+    "name": "Viyana FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/viyana-fm-dinle.jpg",
+    "url": "https://radyo.viyanafm.at/viyanafm/stream"
+  },
+  {
+    "name": "Yeni Pop",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/yeni-pop-radyo-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SC006_SO1AAC.aac"
+  },
+  {
+    "name": "Yeni Slow",
+    "group": "Slow",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/yeni-slow-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SC021_SO1AAC.aac"
+  },
+  {
+    "name": "FG Türk Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/fg-turk-dinle.jpg",
+    "url": "https://edge1.radyotvonline.net/shoutcast/play/fgturk"
+  },
+  {
+    "name": "İstanbul Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/istanbul-fm-dinle.jpg",
+    "url": "https://yayin.istanbulfm.com.tr/istanbulfm"
+  },
+  {
+    "name": "İstanbul Küpe FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kupe-fm-dinle.jpg",
+    "url": "https://icecast.netmedya.net/kupefm"
+  },
+  {
+    "name": "Ordu FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ordu-fm-canli.jpg",
+    "url": "https://radyo.yayindakiler.com:8012/stream"
+  },
+  {
+    "name": "Pal Remix",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-pal-remix.jpg",
+    "url": "https://shoutcast.radyogrup.com:2010"
+  },
+  {
+    "name": "Radyo 35",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-35-dinle.jpg",
+    "url": "https://yayin.turkhosted.com/6012/stream"
+  },
+  {
+    "name": "Radyo Trio",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-trio-dinle.jpg",
+    "url": "https://radyotrio.radyotvonline.net/radyotrio"
+  },
+  {
+    "name": "Retro Türk",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-retro-turk.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RETROTURK128AAC.aac"
+  },
+  {
+    "name": "Siaray Türk FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/siaray-turk-cri-dinle.jpg",
+    "url": "https://criturk.radyotvonline.net/criturk"
+  },
+  {
+    "name": "Borusan Klasik",
+    "group": "Klasik",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/borusan-klasik-dinle.jpg",
+    "url": null
+  },
+  {
+    "name": "Radyo Romantik Türk",
+    "group": "Slow",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/romantik-turk-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:6042/stream"
+  },
+  {
+    "name": "Romantik Ses Isparta",
+    "group": "Yavaş",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/romantik-ses-isparta-dinle.jpg",
+    "url": "https://radyo.romantikses.com/romantiksesispart/stream"
+  },
+  {
+    "name": "Romantik Ses Sakarya",
+    "group": "Yavaş",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/romantik-ses-sakarya-dinle.jpg",
+    "url": "https://radyo.romantikses.com/romantiksessakary/stream"
+  },
+  {
+    "name": "Adana Radyo Güney",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/adana-radyo-guney-dinle.jpg",
+    "url": "https://stream.radyolarburada.com:8250/stream"
+  },
+  {
+    "name": "Cem Radyo",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/cem-radyo-dinle.jpg",
+    "url": "https://cemradyo.radyotvonline.net/cemradyo"
+  },
+  {
+    "name": "Dadaş FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/dadas-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net:8084/stream"
+  },
+  {
+    "name": "Derya FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/konya-derya-fm-dinle.jpg",
+    "url": "https://yayin.turkhosted.com:6032/stream"
+  },
+  {
+    "name": "Erzincan Radyo 2000",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erzincan-radyo-2000-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3030/stream"
+  },
+  {
+    "name": "Erzincan Radyo Cem",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erzincan-radyo-cem-dinle.jpg",
+    "url": "https://erzincan.80.yayin.com.tr/stream/1/?icy=http"
+  },
+  {
+    "name": "Fırat FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/elazig-firat-fm-dinle.jpg",
+    "url": "https://sslyayin.radyoyayini.com:7053/stream?type=http&nocache=5"
+  },
+  {
+    "name": "Hatay Asya Radyo",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/hatay-asya-radyo-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/9850/stream"
+  },
+  {
+    "name": "Hatay Tempo FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/hatay-radyo-tempo-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/tempo/stream"
+  },
+  {
+    "name": "Kent Radyo Mersin",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mersin-kent-radyo-dinle.jpg",
+    "url": "https://anadolu.liderhost.com.tr:10906/stream"
+  },
+  {
+    "name": "Kocaeli Tempo FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kocaeli-tempo-fm-dinle.jpg",
+    "url": "https://yayin1.canlitv.fun:8012/stream"
+  },
+  {
+    "name": "Konya FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/konya-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/konyafm/stream"
+  },
+  {
+    "name": "Radyo Gönül FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-gonul-fm-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/GONUL_TURKULERI128AAC.aac"
+  },
+  {
+    "name": "Radyo Gün",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/corum-radyo-gun-dinle.jpg",
+    "url": "https://player.web.tr/listen/5a7f2ddf204c90439125a6813f301952"
+  },
+  {
+    "name": "Radyo Harman FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/harman-fm.jpg",
+    "url": "https://free.rcast.net/200259"
+  },
+  {
+    "name": "Radyo Manavgat",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-manavgat-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/8355/stream"
+  },
+  {
+    "name": "Sancak FM",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/sancak-fm-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:5916/stream"
+  },
+  {
+    "name": "Ulusal Radyo – Türkü",
+    "group": "Türk Halk Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ulusal-radyo-turku-dinle.jpg",
+    "url": "https://radio.guventechnology.com/9308/stream"
+  },
+  {
+    "name": "Polis Radyosu TSM",
+    "group": "Türk Sanat Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ankara-polis-radyosu-tsm-dinle.jpg",
+    "url": "https://m.egm.gov.tr:8095/stream"
+  },
+  {
+    "name": "Uludağ Fm 91.7",
+    "group": "Türk Sanat Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/uludag-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/uludagfm/stream"
+  },
+  {
+    "name": "Radyo Han Kayseri",
+    "group": "Türk Sanat Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kayseri-radyo-han-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyohan/stream"
+  },
+  {
+    "name": "Makam Radyo",
+    "group": "Türk Sanat Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/karnaval-radyo-makam-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MAKAM128AAC.aac"
+  },
+  {
+    "name": "Ulusal Radyo – sanat",
+    "group": "Türk Sanat Müziği",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-ulusal-sanat-dinle.jpg",
+    "url": "https://radio.guventechnology.com/9312/stream"
+  },
+  {
+    "name": "Ulusal Radyo",
+    "group": "Haber & Spor",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ulusal-radyo-dinle.jpg",
+    "url": "https://radio.guventechnology.com/9302/stream"
+  },
+  {
+    "name": "24 Radyo",
+    "group": "Haber & Spor",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/24-radyo-dinle.jpg",
+    "url": "https://radyo24.radyotvonline.net/radyo24"
+  },
+  {
+    "name": "Bloomberg HT Radyo",
+    "group": "Haber & Spor",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/Bloomberg-Ht-Radyo.jpg",
+    "url": "https://bloomberghtradyo.radyotvonline.net/bloomberghtradyo"
+  },
+  {
+    "name": "Radyo Gol",
+    "group": "Haber & Spor",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-gol-dinle.jpg",
+    "url": "https://edge1.radyotvonline.net/shoutcast/play/radyogol"
+  },
+  {
+    "name": "Sun Radyo",
+    "group": "Haber & Spor",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mersin-radyo-sun-dinle.jpg",
+    "url": "https://tr2.socialsmart.tv/tepemedya/sunradyo/icecast.audio"
+  },
+  {
+    "name": "Bursa FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bursa-fm-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:1055/stream/1/?icy=http"
+  },
+  {
+    "name": "Keyf Fm Nevşehir",
+    "group": "Pop",
+    "logo": "/radio/keyf-fm-nevsehir.jpg",
+    "url": "https://sssx.radyosfer.com/radyokeyf/stream"
+  },
+  {
+    "name": "Bursa Radyo Deniz",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-deniz-fm-bursa.jpg",
+    "url": "https://sssx.radyosfer.com/denizfm/stream"
+  },
+  {
+    "name": "Konya Gözyaşı Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/gozyasi-fm-dinle.jpg",
+    "url": "https://yayin2.canliyayin.org:8700/stream"
+  },
+  {
+    "name": "Yalova Gözde Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/yalova-gozde-fm-dinle.jpg",
+    "url": "https://gozdefm.80.yayin.com.tr"
+  },
+  {
+    "name": "Art FM Antalya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/antalya-art-fm-dinle.jpg",
+    "url": "https://anadolu.liderhost.com.tr/9338/stream"
+  },
+  {
+    "name": "Konya Tiryaki FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-tiryaki-fm-dinle.jpg",
+    "url": "https://yayin.turkhosted.com/6056/stream"
+  },
+  {
+    "name": "Düzce Radyo 81",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-81-dinle.jpg",
+    "url": "https://yayin.turkhosted.com/3030/stream"
+  },
+  {
+    "name": "Elbistan Kent FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/elbistan-kent-fm-dinle.jpg",
+    "url": "https://radyo.arkacadde.org/4648/elbistankentfm.mp3"
+  },
+  {
+    "name": "Eskişehir Yunus FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-yunus-fm-dinle.jpg",
+    "url": "https://radyoplayer.net/listen/fd21667a7c51c250be770210c921676f"
+  },
+  {
+    "name": "Radyo Gerçek",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/samsun-radyo-gercek-dinle.jpg",
+    "url": "https://ssl120.radyotelekom.com.tr/8198/stream"
+  },
+  {
+    "name": "Radyo Ses Eskisehir",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-radyo-ses-dinle.jpg",
+    "url": "https://radyoses.radyotvonline.net:8095/stream"
+  },
+  {
+    "name": "Hatay Melodi FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/hatay-radyo-melodi-dinle.jpg",
+    "url": "https://radyomelodi.80.yayin.com.tr"
+  },
+  {
+    "name": "Yıldız FM Trabzon",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/trabzon-yildiz-fm-dinle.jpg",
+    "url": "https://yildizfm.80.yayin.com.tr"
+  },
+  {
+    "name": "Radyo Fırat",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-firat-dinle.jpg",
+    "url": "https://listen.powerapp.com.tr/radyofirat/mpeg/icecast.audio"
+  },
+  {
+    "name": "Radyo İletişim",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/istanbul-universitesi-radyo-iletisim.jpg",
+    "url": "https://listen.powerapp.com.tr/radyoiletisim/mpeg/icecast.audio"
+  },
+  {
+    "name": "Mersin Üniversitesi Radyosu",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mersin-universitesi-radyosu-dinle.jpg",
+    "url": "https://listen.powerapp.com.tr/mersin/mpeg/icecast.audio"
+  },
+  {
+    "name": "Radyo Liva",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-liva-dinle.jpg",
+    "url": "https://live.radyo.in/3068/stream"
+  },
+  {
+    "name": "Radyo Çınar",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/yalova-radyo-cinar-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net:10992"
+  },
+  {
+    "name": "Bafra BRT FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/brt-fm-dinle.jpg",
+    "url": "https://node-29.zeno.fm/0n6bb726cm8uv.aac"
+  },
+  {
+    "name": "Radyo Mastika",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-mastika-dinle.jpg",
+    "url": "https://mastika1.80.yayin.com.tr/stream"
+  },
+  {
+    "name": "Bursada Bugün Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-bursada-bugun-dinle.jpg",
+    "url": "https://radyo.bursadabugun.com/stream"
+  },
+  {
+    "name": "Kahramanmaraş Taze FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kahramanmaras-radyo-fresh-fm-dinle.jpg",
+    "url": "https://canli.radyofresh.com/stream"
+  },
+  {
+    "name": "Elbistan Radyo Umut",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/elbistan-radyo-umut-dinle.jpg",
+    "url": "https://yayin2.canliyayin.org:10953"
+  },
+  {
+    "name": "Radyo Yankı",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-yanki-dinle.jpg",
+    "url": "https://radyoyanki.ozelip.com/9918/stream"
+  },
+  {
+    "name": "Radyo Halikarnas",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-halikarnas-dinle.jpg",
+    "url": "https://halikrns.80.yayin.com.tr/stream"
+  },
+  {
+    "name": "Damar Türk FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/damar-turk-fm-dinle.jpg",
+    "url": "https://live.radyositesihazir.com/7000/stream"
+  },
+  {
+    "name": "Radyo Karadeniz",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ankara-radyo-karadeniz-dinle.jpg",
+    "url": "https://radyo1.radyo-dinle.tc/8138/stream"
+  },
+  {
+    "name": "İzmir Aktif FM Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/izmir-aktif-fm-radyo-dinle.jpg",
+    "url": "https://radyodinle1.turkhosted.com/yayin?uri=77.223.142.225:9170/aktiffm/;stream.mp3/&tkn=g7otQFuBWhON7Ppa2epp7A&tms=1766397019"
+  },
+  {
+    "name": "Radyo 37",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kastamonu-radyo-37-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3192/stream"
+  },
+  {
+    "name": "Eregli FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/eregli-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3000/stream"
+  },
+  {
+    "name": "Adıyaman Radyo Tek",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/adiyaman-radyo-tek-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3102/stream"
+  },
+  {
+    "name": "Rize Gelişim Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/rize-gelisim-radyo-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4008/stream"
+  },
+  {
+    "name": "Bergama Best FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bergama-best-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3535/stream"
+  },
+  {
+    "name": "Radyo Mola",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/edirne-radyo-mola-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:2018/stream"
+  },
+  {
+    "name": "İncitek FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erzincan-incitek-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4204/stream"
+  },
+  {
+    "name": "Magic FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/magic-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3032/stream"
+  },
+  {
+    "name": "Kırklareli Melodi FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kirklareli-melodi-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4164/stream"
+  },
+  {
+    "name": "Radyo Net 97.8",
+    "group": "Pop",
+    "logo": "/radio/radyo-net-eskisehir.jpg",
+    "url": "https://radyo.yayindakiler.com:3925/stream"
+  },
+  {
+    "name": "Marmaris Radyo Ses",
+    "group": "Pop",
+    "logo": "/radio/radyo-ses-marmaris.jpg",
+    "url": "https://radyo.yayindakiler.com:3076/stream"
+  },
+  {
+    "name": "Erzincan Dost Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erzincan-dost-radyo-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3156/stream"
+  },
+  {
+    "name": "Radyo 13 Tatvan",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tatvan-radyo-13-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3050/stream"
+  },
+  {
+    "name": "Radyo Deva",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/adana-radyo-deva-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3040/stream"
+  },
+  {
+    "name": "Malatya Radyo İmparator",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/malatya-imparator-fm.jpg",
+    "url": "https://radyo.yayindakiler.com:4042/stream"
+  },
+  {
+    "name": "Kayseri Kent FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kayseri-kent-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4056/stream"
+  },
+  {
+    "name": "Yöre FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/yore-fm-canli-1.jpg",
+    "url": "https://radyo.yayindakiler.com:4082/stream"
+  },
+  {
+    "name": "Radyo Munzur",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/dersim-munzur-radyo-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3002/stream"
+  },
+  {
+    "name": "Eskişehir Mavi Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-mavi-radyo-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3140/stream"
+  },
+  {
+    "name": "Radyo Karamürsel",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-karamursel-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3052/stream"
+  },
+  {
+    "name": "Lüleburgaz FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/luleburgaz-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3122/stream"
+  },
+  {
+    "name": "Sivas Radyo Güneş",
+    "group": "Pop",
+    "logo": "/radio/radyo-gunes-sivas.jpg",
+    "url": "https://freeuk25.listen2myradio.com/live.mp3?typeportmount=s1_20438_stream_38709136"
+  },
+  {
+    "name": "Diyarbakır Can Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/diyarbakir-radyo-can-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:2028/stream"
+  },
+  {
+    "name": "Radyo Mavi Aksaray",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aksaray-radyo-mavi-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4026/stream"
+  },
+  {
+    "name": "Tekirdağ Radyo Can",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-radyo-can-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4174/stream"
+  },
+  {
+    "name": "Time Türk Erzincan",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erzincan-time-turk-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4195/stream"
+  },
+  {
+    "name": "Radyo 68",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aksaray-radyo-68-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4022/stream"
+  },
+  {
+    "name": "Kuzey FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/trabzon-radyo-kuzey-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3028/stream"
+  },
+  {
+    "name": "Radyo 5",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/merzifon-radyo-5-dinle.jpg",
+    "url": "https://sslyayin.radyoyayini.com:7062/mp3"
+  },
+  {
+    "name": "Tekirdağ Radyo Haber",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-radyo-haber-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4118/stream"
+  },
+  {
+    "name": "Soylu FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/soylu-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4034/stream"
+  },
+  {
+    "name": "Radyo Gökkuşağı",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/manisa-radyo-gokkusagi-dinle.jpg",
+    "url": "https://live.radyo.in/9700/stream"
+  },
+  {
+    "name": "Radyo Kadırga",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-kadirga-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4022/stream"
+  },
+  {
+    "name": "Radio Life",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radio-life-dinle.jpg",
+    "url": "https://yayin2.canliyayin.org:8698/stream"
+  },
+  {
+    "name": "Radyo ESTÜ",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-teknik-universitesi-radyosu-dinle.jpg",
+    "url": "https://ssl120.radyotelekom.com.tr/8024/stream"
+  },
+  {
+    "name": "Radyo ESOGÜ",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/eskisehir-osmangazi-universitesi-radyosu-dinle.jpg",
+    "url": "https://radyodinle.ogu.edu.tr/Radyo_Ogu"
+  },
+  {
+    "name": "Selam Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/konya-selam-radyo-dinle.jpg",
+    "url": "http://yayin1.canliyayin.org:7066/stream"
+  },
+  {
+    "name": "Radyo Çamlıca FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/balikesir-radyo-camlica-dinle.jpg",
+    "url": "https://camlicafm.ozelip.com:9314/stream"
+  },
+  {
+    "name": "Radyo Pause",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-pause-dinle.jpg",
+    "url": "https://radyopause.ozelip.com.tr:8040/stream"
+  },
+  {
+    "name": "Radyo Zafer",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-zafer-dinle.jpg",
+    "url": "https://radyozafer.ozelip.com:8034/stream"
+  },
+  {
+    "name": "Radyo Zeugma",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-zeugma-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyozeugma/stream"
+  },
+  {
+    "name": "Çorlu FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-corlu-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/corlufm/stream"
+  },
+  {
+    "name": "Radyo Frigya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-frigya-canli.jpg",
+    "url": "https://sssx.radyosfer.com/8174/stream"
+  },
+  {
+    "name": "Kapadokya FM 94.5",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kapadokya-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/kapadokyafm/stream"
+  },
+  {
+    "name": "Radyo 50",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-50-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyo50/stream"
+  },
+  {
+    "name": "Kocaeli Mega FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kocaeli-mega-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/megafm/stream"
+  },
+  {
+    "name": "Dost Fm Bursa",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bursa-dost-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/dostfmbursa/stream"
+  },
+  {
+    "name": "Erciyes Fm Kayseri",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erciyes-fm-kayseri.jpg",
+    "url": "https://sssx.radyosfer.com/9328/stream"
+  },
+  {
+    "name": "Özlem Fm Uşak",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/usak-ozlem-fm.jpg",
+    "url": "https://sssx.radyosfer.com/ozlemfm/stream"
+  },
+  {
+    "name": "Trabzon Radyo 91.0",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/trabzon-radyo-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/8038/stream"
+  },
+  {
+    "name": "İmparator FM Sakarya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/sakarya-imparator-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/imparatorfm/stream"
+  },
+  {
+    "name": "Radyo Ereğli",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-eregli-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/sonixfm/stream"
+  },
+  {
+    "name": "Melodi Fm Ünye",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/unye-melodi-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/unyemelodifm/stream"
+  },
+  {
+    "name": "Radyo 10",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/balikesir-radyo-10-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyoon/stream"
+  },
+  {
+    "name": "Radyo 80",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/osmaniye-radyo-80-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyo80/stream"
+  },
+  {
+    "name": "Keyf Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/usak-keyf-radyo-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/keyfradyo/stream"
+  },
+  {
+    "name": "Karadeniz Fm Bursa",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bursa-karadeniz-fm.jpg",
+    "url": "https://sssx.radyosfer.com/bursakaradenizfm/stream"
+  },
+  {
+    "name": "Söke Radyo Tempo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/soke-tempo-radyo-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyotempo/stream"
+  },
+  {
+    "name": "Tekirdağ Radyo Şeker",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/Radyo-Seker.jpg",
+    "url": "https://sssx.radyosfer.com/radyoseker/stream"
+  },
+  {
+    "name": "Dost FM Malatya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/malatya-dost-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/dostfm/stream"
+  },
+  {
+    "name": "Adige Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/samsun-adige-radyo-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/adigeradyo/stream"
+  },
+  {
+    "name": "Bursa Radyo Güneş",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-gunes-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/9390/stream"
+  },
+  {
+    "name": "Radyo Ülkü",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mersin-radyo-ulku-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4006/stream/1/?icy=http"
+  },
+  {
+    "name": "Malatya Çağlar Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-caglar-fm-malatya.jpg",
+    "url": "https://sssx.radyosfer.com/radyocaglar/stream"
+  },
+  {
+    "name": "Radyo 52",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-52-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyo52/stream"
+  },
+  {
+    "name": "Gaziantep Nizip Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/gaziantep-nizip-radyo-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/nrtfm/stream"
+  },
+  {
+    "name": "Hür FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/hur-fm-sakarya-dinle.jpg",
+    "url": "https://radyo.fikirsahipleri.com:9952"
+  },
+  {
+    "name": "Çanakkale Çan Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/canakkale-can-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/canfm/stream"
+  },
+  {
+    "name": "Giresun Radyo Flash",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/giresun-radyo-flash-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/9430/stream"
+  },
+  {
+    "name": "Örnek Radyo Muğla",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mugla-ornek-radyo-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3006/stream"
+  },
+  {
+    "name": "Batman Süper FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/batman-super-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4090/stream"
+  },
+  {
+    "name": "Kütahya Aktif FM",
+    "group": "Pop",
+    "logo": "/radio/aktif-fm-kutahya.jpg",
+    "url": "https://radyo.yayindakiler.com:3164/stream"
+  },
+  {
+    "name": "İzmir Radyo Can",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/izmir-can-radyo-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3124/stream"
+  },
+  {
+    "name": "Afşin Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/afsin-fm-canli.png",
+    "url": "https://radyo.arkacadde.org/4646/afsinradyo.mp3"
+  },
+  {
+    "name": "Kayseri Kolej FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kolej-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/kolejfm/stream"
+  },
+  {
+    "name": "Radyo Azelya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-azelya-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyoazelya/stream"
+  },
+  {
+    "name": "Kütahya Radyo Dumlupınar",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-dumlupinar-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:6090/stream"
+  },
+  {
+    "name": "Radyo Plus",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-plus-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/kayseriradyoplus/stream"
+  },
+  {
+    "name": "Radyo Seyhan",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-seyhan-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyoseyhan/stream"
+  },
+  {
+    "name": "Şirinnar FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-sirinnar-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/sirinnarfm/stream"
+  },
+  {
+    "name": "Solmaz FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-solmaz-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/solmazfm/stream"
+  },
+  {
+    "name": "Sev Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/balikesir-sev-radyo-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/sevradyo/stream"
+  },
+  {
+    "name": "Radyo Akdeniz FM Hatay",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/hatay-akdeniz-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/hatayakdenizfm/stream"
+  },
+  {
+    "name": "Radyo Nikomedya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-nikomedya-dinle.jpg",
+    "url": "https://sslyayin.radyoyayini.com:7091/stream"
+  },
+  {
+    "name": "Radyo Net Konya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/konya-radyonet-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net:8068/stream"
+  },
+  {
+    "name": "Aydın Radyo Mega",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aydin-radyo-mega-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyomegafm105/stream"
+  },
+  {
+    "name": "Tekirdağ Armoni FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tekirdag-radyo-armoni-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/8074/stream"
+  },
+  {
+    "name": "Samsun Tutku FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tutku-fm-dinle.jpg",
+    "url": "https://sslyayin.radyoyayini.com/8012/stream"
+  },
+  {
+    "name": "Radyo Güven",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aydin-radyo-guven-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4098/stream"
+  },
+  {
+    "name": "Radyo AS FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aydin-radyo-as-fm-dinle.jpg",
+    "url": null
+  },
+  {
+    "name": "Radyo Time Alanya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/alanya-radyo-time-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/alanyaradyotime/stream"
+  },
+  {
+    "name": "Fon Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/malatya-radyo-fon-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyofon/stream"
+  },
+  {
+    "name": "Tutku Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/van-tutku-radyo-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/tutkuradyo/stream"
+  },
+  {
+    "name": "Radyo Aktif Bursa",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-aktif-dinle.jpg",
+    "url": "https://radyoaktif.radyosfer.org/1/stream"
+  },
+  {
+    "name": "Hilal FM Mut",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mut-hilal-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/9314/stream"
+  },
+  {
+    "name": "Mersin Radyo Metropol",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mersin-radyo-metropol-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyometropol/stream"
+  },
+  {
+    "name": "Afyon Radyo Tek",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/afyon-radyo-tek-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:8004/stream"
+  },
+  {
+    "name": "Adana Radyo Başkent",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-baskent-dinle.jpg",
+    "url": "https://baskentaudiovideo.com.tr/adana"
+  },
+  {
+    "name": "Radyo Rota",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/sakarya-radyo-rota-dinle.jpg",
+    "url": "https://sslyayin.radyoyayini.com:7082"
+  },
+  {
+    "name": "Aksaray Ar Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aksaray-ar-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4036/stream"
+  },
+  {
+    "name": "Iğdır FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/igdir-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4158/stream"
+  },
+  {
+    "name": "Mersin Tarsus FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mersin-tarsus-fm-dinle.jpg",
+    "url": "https://tarsusfm.80.yayin.com.tr/stream"
+  },
+  {
+    "name": "Radyo M",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/van-radyo-m-dinle.jpg",
+    "url": "https://radyo.slmbilisim.net/8006/stream"
+  },
+  {
+    "name": "Kastamonu Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kastamonu-fm-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4264/stream"
+  },
+  {
+    "name": "Radyo Moni",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-moni-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4262/stream"
+  },
+  {
+    "name": "Mert FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/adiyaman-mert-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4004/stream"
+  },
+  {
+    "name": "Gebze FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/gebze-fm-dinle.jpg",
+    "url": "https://eminmisin.radyodinle.stream/9530/stream"
+  },
+  {
+    "name": "Banaz Dost FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/usak-banaz-dost-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/banazdostfm/stream"
+  },
+  {
+    "name": "Gurbetçi FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/gurbetci-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/gurbetcifm/stream"
+  },
+  {
+    "name": "Radyo Sefa",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-sefa-dinle.jpg",
+    "url": "https://host10.onlineradyotv.net/8500/stream"
+  },
+  {
+    "name": "Radyo Bu",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-bu-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:8006/stream"
+  },
+  {
+    "name": "EGO Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ego-radyo-dinle.jpg",
+    "url": "https://radio.guventechnology.com/9372/stream"
+  },
+  {
+    "name": "Zara FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/zara-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net:8150/stream"
+  },
+  {
+    "name": "Ege FM 95.4",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ege-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net:2024/stream"
+  },
+  {
+    "name": "Edirne Keşan FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kesan-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/kesanfm"
+  },
+  {
+    "name": "Erzurum İmaj Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erzurum-imaj-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/imajfm/stream"
+  },
+  {
+    "name": "Antalya Side FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/side-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/8155/stream"
+  },
+  {
+    "name": "Radyo Mavi Kocaeli",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kocaeli-radyo-mavi-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/8070/stream"
+  },
+  {
+    "name": "Tunceli Radyo Barış",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/tunceli-radyo-baris-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/8510/stream"
+  },
+  {
+    "name": "KGRT FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/karaman-kgrt-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/7042/stream"
+  },
+  {
+    "name": "Giresun FM 102.5",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/giresun-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/2828/stream"
+  },
+  {
+    "name": "Elazığ Ezgi Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/elazig-ezgi-radyo-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/elazigezgiradyo/stream"
+  },
+  {
+    "name": "89.4 Bizim Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/karabuk-bizim-radyo-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/8162/stream"
+  },
+  {
+    "name": "Adana Kozan Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/kozan-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/3401/stream"
+  },
+  {
+    "name": "Kocaeli Radyo Şahin",
+    "group": "Pop",
+    "logo": "/radio/radyo-sahin.jpg",
+    "url": null
+  },
+  {
+    "name": "Göksun FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/goksun-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net:10970/stream"
+  },
+  {
+    "name": "Vivaldi FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/hatay-vivaldi-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/3133/stream"
+  },
+  {
+    "name": "Tur FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mugla-tur-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/4848/stream"
+  },
+  {
+    "name": "Filiz FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mus-filiz-fm-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/6746/stream"
+  },
+  {
+    "name": "Odea Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/odea-radyo-dinle.jpg",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ODEA128AAC.aac"
+  },
+  {
+    "name": "Akgül FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/akgul-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/akgulfm/stream"
+  },
+  {
+    "name": "Kral FM Aksaray",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-aksaray-kral-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/aksaraykralfm/stream"
+  },
+  {
+    "name": "Aksaray'ın Sesi",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aksarayin-sesi-dinle.jpg",
+    "url": null
+  },
+  {
+    "name": "Radyo Kilim 100.0",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-kilim-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/2727/stream"
+  },
+  {
+    "name": "Bursa Radyo Şampiyon",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bursa-radyo-sampiyon-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4106/stream"
+  },
+  {
+    "name": "Esas Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/esas-radyo-dinle.jpg",
+    "url": "https://yayin.turkhosted.com:6034/stream"
+  },
+  {
+    "name": "Radyo KTÜ",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-ktu-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/radyoktu/stream"
+  },
+  {
+    "name": "Sıla FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/merzifon-sila-fm-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4164/stream"
+  },
+  {
+    "name": "Boyabat Ezgi Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/boyabat-ezgi-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:3044/stream"
+  },
+  {
+    "name": "Radyo 14",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/gerede-fm-radyo-14-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4104/stream"
+  },
+  {
+    "name": "Bingöl FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bingol-fm-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4302/stream"
+  },
+  {
+    "name": "Radyo Van",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-van-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net/radyovan/stream"
+  },
+  {
+    "name": "Radyo V",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/antalya-radyo-v-dinle.jpg",
+    "url": "https://edge1.socialsmart.tv/vtvradyo/bant1/icecast.audio"
+  },
+  {
+    "name": "FRT FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/mugla-frt-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/frtfm/stream"
+  },
+  {
+    "name": "Bafra Barış FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/samsun-baris-fm-dinle.jpg",
+    "url": "https://barisfm.ozelip.com:9588/stream"
+  },
+  {
+    "name": "Çağdaş Radyo Karaman",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/karaman-cagdas-radyo-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4366/stream"
+  },
+  {
+    "name": "CU Radyo – Cumhuriyet Üniversitesi",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/cumhuriyet-universitesi-radyosu.jpg",
+    "url": "https://ip1.ozelip.com/8046/stream"
+  },
+  {
+    "name": "Radyo Gimsa",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-gimsa-dinle.jpg",
+    "url": "https://yayin2.canliyayin.org:9482/stream"
+  },
+  {
+    "name": "Radyo Antalya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-antalya-dinle.jpg",
+    "url": "https://sslyayin.netyayin.net:8036/stream"
+  },
+  {
+    "name": "01 FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-sifir-bir-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/01fm/stream"
+  },
+  {
+    "name": "Bodrum FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bodrum-fm-dinle.jpg",
+    "url": "https://live.bodrumfm.org/stream"
+  },
+  {
+    "name": "Karadeniz Akustik FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/karadeniz-akustik-dinle.jpg",
+    "url": "https://karadenizakustik.radyotvonline.net"
+  },
+  {
+    "name": "Radyo Şok",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-sok-dinle.jpg",
+    "url": "https://sokradyo.80.yayin.com.tr/stream"
+  },
+  {
+    "name": "Radyo Boğaziçi",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-bogazici-dinle.jpg",
+    "url": "https://listen.powerapp.com.tr/radyobogazici/mpeg/icecast.audio"
+  },
+  {
+    "name": "İlaç Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/van-ilac-radyo-dinle.jpg",
+    "url": "https://ilacgibiradyo.ozelip.com/9798/stream"
+  },
+  {
+    "name": "Dinar Dost Radyo",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/dinar-dost-radyo-dinle.jpg",
+    "url": "https://radyo1.radyo-dinle.tc/8062/stream"
+  },
+  {
+    "name": "Erzincan Radyo Tek",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/erzincan-radyo-tek-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/radyotek/stream"
+  },
+  {
+    "name": "Ankara Radyo Beyaz",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ankara-radyo-beyaz-dinle.jpg",
+    "url": "https://radyo.normyazilim.com:8030/radio.mp3"
+  },
+  {
+    "name": "Radyo Ses Ankara",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-ses-ankara-dinle.jpg",
+    "url": "https://radyo.normyazilim.com:8020/radio.mp3"
+  },
+  {
+    "name": "Radyo Likya",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-likya-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4260/stream"
+  },
+  {
+    "name": "Radyo Desibel",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-desibel-dinle.jpg",
+    "url": "https://www.radyodesibel.com/stream.php"
+  },
+  {
+    "name": "Ankara Radyo Özgür",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/ankara-ozgur-radyo-dinle.jpg",
+    "url": "https://radyoozgur.kesintisizyayin.com:9898/stream"
+  },
+  {
+    "name": "Bizim FM Şile",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/sile-bizim-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/bizimfmsile/stream"
+  },
+  {
+    "name": "Radyo 9",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/nazilli-radyo-9-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4010/stream"
+  },
+  {
+    "name": "Raks FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-raks-fm-dinle.jpg",
+    "url": "https://sslyayin.radyoyayini.com:7092"
+  },
+  {
+    "name": "CGTN Türk",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-cgtnturk-dinle.jpg",
+    "url": null
+  },
+  {
+    "name": "Radyo Gold",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-gold-dinle.jpg",
+    "url": "https://ssl120.radyotelekom.com.tr:10804/stream"
+  },
+  {
+    "name": "Adana Süper FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/adana-super-fm-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4002/stream"
+  },
+  {
+    "name": "Radyo Hisar",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-hisar-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4006/stream"
+  },
+  {
+    "name": "Radyo SDÜ",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/suleyman-demirel-universitesi-radyosu.jpg",
+    "url": "https://listen.powerapp.com.tr/radyosduu/mpeg/icecast.audio"
+  },
+  {
+    "name": "Radyo Isparta",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-isparta-dinle.jpg",
+    "url": null
+  },
+  {
+    "name": "Radyo B",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/bartin-radyo-b-dinle.jpg",
+    "url": "https://abamedya.80.yayin.com.tr/stream"
+  },
+  {
+    "name": "Uğur FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/usak-radyo-ugur-fm-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4256/stream/1/?icy=http"
+  },
+  {
+    "name": "Aksaray FM 99.5",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aksaray-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/aksarayfm/stream"
+  },
+  {
+    "name": "Aydın Radyo Flaş",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/aydin-radyo-flas-dinle.jpg",
+    "url": "https://radyo.yayindakiler.com:4096/stream"
+  },
+  {
+    "name": "Kemençe FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-kemence-fm-dinle.jpg",
+    "url": "https://sssx.radyosfer.com/kemencefm/stream"
+  },
+  {
+    "name": "Radyo Arnavutköy",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-arnavutkoy-dinle.jpg",
+    "url": "https://radyo.yayin.com.tr:4206/stream"
+  },
+  {
+    "name": "Enerji FM",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/zonguldak-enerji-fm-dinle.jpg",
+    "url": "https://ssl22.radyotelekom.com/8306/stream"
+  },
+  {
+    "name": "Radyo Ankara",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-ankara-dinle.jpg",
+    "url": "https://radyoankara.ozelip.net:8152"
+  },
+  {
+    "name": "Öz Fm",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-oz-fm-dinle.jpg",
+    "url": "https://ip231.ozelip.com/9914/stream"
+  },
+  {
+    "name": "Radyo Efebey",
+    "group": "Pop",
+    "logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-efebey-dinle.jpg",
+    "url": "https://radyo.radyoimza.com:8016/stream"
+  }
+]
+```[cite: 1]
