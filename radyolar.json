@@ -329,7 +329,7 @@
 	"category": "R",
 	"name": "Radyo Turkuvaz MUSİKİ",
 	"p": 84,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/turkuvaz-musiki.png",
+	"logo": "",
 	"url": "https://trkvz-radyolar.ercdn.net/turkuvazmusiki/chunklist.m3u8"
   },
   {	
@@ -592,7 +592,7 @@
 	"name": "Radyo Spor",
 	"p": 117,
 	"logo": "",
-	"url": "http://moondigitaledge.radyotvonline.net/radyospor/playlist.m3u8"
+	"url": "https://moondigitaledge.radyotvonline.net/radyospor/playlist.m3u8"
 },
 	{	
 	"country":"Radio",
