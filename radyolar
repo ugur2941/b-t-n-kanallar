@@ -5,7 +5,7 @@ https://listen.powerapp.com.tr/powerpop/mpeg/icecast.audio
 http://www.showradyo.com.tr
 #EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-alem-fm.jpg" group-title="Pop",Alem FM
 https://alemfm.radyotvonline.net/alemfmaac
-#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-alem-fm.jpg" group-title="Pop",Alem FM
+#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/radyo-alem-fm.jpg" group-title="Türk Halk Müziği",Türkü Radyo
 https://eu8.fastcast4u.com/proxy/ugur4129/mp3
 #EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/ask-fm-dinle.jpg" group-title="Arabesk",Aşk Fm
 https://stream.netradyom.com/radio/8000/radio.mp3
