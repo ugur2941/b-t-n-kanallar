@@ -24,7 +24,7 @@
 	"name": "Türkü Radyo ",
 	"p": 13,
 	"logo": "", 
-	"url": "https://eu8.fastcast4u.com/proxy/ugur4129/m3u8"
+	"url": "https://eu8.fastcast4u.com/proxy/ugur4129/mp3"
   },
   {
 	"country": "Radio",
@@ -51,7 +51,7 @@
 	"name": "Baba Radyo",
 	"p": 51,
 	"logo": "",
-	"url": "https://ssldyg.radyotvonline.com/best/babaradyo.stream/playlist.m3u8"
+	"url": "https://ssldyg.radyotvonline.com/best/babaradyo.stream/playlist.m3u"
   },
   {	
 	"country":"Radio",
@@ -73,15 +73,6 @@
   },
   {	
 	"country":"Radio",
-	"id": "İstanbul Fm",
-	"category": "İ",
-	"name": "İstanbul Fm",
-	"p": 54,
-	"logo": "",
-	"url": "https://ssldyg2.radyotvonline.com/istanbulfm/istanbulfm.stream/chunklist_w1117139919.m3u8"
-  },
-  {	
-	"country":"Radio",
 	"id": "Joy Türk",
 	"category": "J",
 	"name": "Joy Türk",
@@ -96,7 +87,7 @@
 	"name": "Kral Fm",
 	"p": 56,
 	"logo": "",
-	"url": "https://dygedge2.radyotvonline.net/kralfm/playlist.m3u8"
+	"url": "https://dygedge2.radyotvonline.net/kralfm/playlist.m3u"
   },
   {	
 	"country":"Radio",
