@@ -5,7 +5,7 @@
 	"category": "A",
 	"name": "Alem Fm ",
 	"p": 12,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/alem fm.png", 
+	"logo": "", 
 	"url": "https://alemfm.radyotvonline.net/alemfmaac"
   },
   {
@@ -14,7 +14,7 @@
 	"category": "J",
 	"name": "Joy FM ",
 	"p": 13,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/joy.png", 
+	"logo": "", 
 	"url": "https://25703.live.streamtheworld.com/JOY_FM128AAC"
   },
 {
@@ -32,7 +32,7 @@
 	"category": "R",
 	"name": "Radyo 45'lik ",
 	"p": 14,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_45'lik_logosu.png",
+	"logo": "",
 	"url":"https://stream.radyo45lik.com:4545/"
   },
   {
@@ -41,7 +41,7 @@
 	"category": "R",
 	"name": "Radyo Odtu HİT ",
 	"p": 15,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_ODTÜ_logo.png",
+	"logo": "",
 	"url": "https://stream3.radyoodtu.com.tr:8000/hit"
   },
 {	
@@ -50,7 +50,7 @@
 	"category": "B",
 	"name": "Baba Radyo",
 	"p": 51,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Baba-Radyo.png",
+	"logo": "",
 	"url": "https://ssldyg.radyotvonline.com/best/babaradyo.stream/playlist.m3u8"
   },
   {	
@@ -59,7 +59,7 @@
 	"category": "B",
 	"name": "Best Fm",
 	"p": 52,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/best fm.png",
+	"logo": "",
 	"url": "https://officialbestfm.radyotvonline.net/bestfmofficial"
   },
   {	
@@ -68,7 +68,7 @@
 	"category": "V",
 	"name": "VIRGIN RADIO TÜRKIYE",
 	"p": 53,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Virgin_Radio.png",
+	"logo": "",
 	"url": "https://28933.live.streamtheworld.com/VIRGIN_RADIO128AAC"
   },
   {	
@@ -77,7 +77,7 @@
 	"category": "İ",
 	"name": "İstanbul Fm",
 	"p": 54,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/istanbulfm.png",
+	"logo": "",
 	"url": "https://ssldyg2.radyotvonline.com/istanbulfm/istanbulfm.stream/chunklist_w1117139919.m3u8"
   },
   {	
@@ -86,7 +86,7 @@
 	"category": "J",
 	"name": "Joy Türk",
 	"p": 55,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/joyturk.png",
+	"logo": "",
 	"url": "https://27863.live.streamtheworld.com/JOY_TURK128AAC"
   },
   {	
@@ -95,7 +95,7 @@
 	"category": "K",
 	"name": "Kral Fm",
 	"p": 56,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/KRAL_FM_LOGO-01.png",
+	"logo": "",
 	"url": "https://dygedge2.radyotvonline.net/kralfm/playlist.m3u8"
   },
   {	
@@ -104,7 +104,7 @@
 	"category": "K",
 	"name": "Kral Pop",
 	"p": 57,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/KRAL_POP_RADYO_LOGO-01.png",
+	"logo": "",
 	"url": "https://dygedge.radyotvonline.net/kralpop/playlist.m3u8"
   },
   {	
@@ -113,7 +113,7 @@
 	"category": "M",
 	"name": "Metro Fm",
 	"p": 57,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/metrofm.png",
+	"logo": "",
 	"url": "https://25583.live.streamtheworld.com/METRO_FM128AAC"
   },
   {	
@@ -122,7 +122,7 @@
 	"category": "N",
 	"name": "Number1 FM",
 	"p": 58,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/N1_FM.png",
+	"logo": "",
 	"url": "https://n10101m.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2f95dcb16_1/playlist.m3u8"
   },
   {	
@@ -131,7 +131,7 @@
 	"category": "N",
 	"name": "Best Of Number1",
 	"p": 59,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/N1_BestOf.png",
+	"logo": "",
 	"url": "https://n10101m.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e4266d184a_1/playlist.m3u8"
   },
   {	
@@ -140,7 +140,7 @@
 	"category": "N",
 	"name": "Number1 Türk Fm",
 	"p": 60,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/N1_TurkFM.png",
+	"logo": "",
 	"url": "https://n10101m.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e30cf8d28e_1/playlist.m3u8"
   },
   {	
@@ -149,7 +149,7 @@
 	"category": "P",
 	"name": "Pal Nostalji",
 	"p": 61,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/pall nostalji.png",
+	"logo": "",
 	"url": "https://moondigitaledge.radyotvonline.net/palnostalji/playlist.m3u8"
   },
   {	
@@ -158,7 +158,7 @@
 	"category": "P",
 	"name": "Pal Fm",
 	"p": 62,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/pal_fm.png",
+	"logo": "",
 	"url": "https://moondigitaledge.radyotvonline.net/palfm/playlist.m3u8"
   },
   {	
@@ -167,7 +167,7 @@
 	"category": "P",
 	"name": "POP 90",
 	"p": 63,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/pop90.png",
+	"logo": "",
 	"url": "https://25653.live.streamtheworld.com/POP90128AAC"
   },
   {	
@@ -176,7 +176,7 @@
 	"category": "P",
 	"name": "Power Fm",
 	"p": 64,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power fm.png",
+	"logo": "",
 	"url": "https://live.powerapp.com.tr/powerfmadver/abr/playlist.m3u8"
   },
   {	
@@ -185,7 +185,7 @@
 	"category": "P",
 	"name": "Power Pop",
 	"p": 65,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power pop.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerpop/abr/playlist.m3u8"
   },
   {	
@@ -203,7 +203,7 @@
 	"category": "G",
 	"name": "GÖNÜL TÜRKÜLERİ",
 	"p": 67,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/gonulturkuleri.png",
+	"logo": "",
 	"url": "https://27913.live.streamtheworld.com/GONUL_TURKULERI128AAC"
   },
   {	
@@ -212,7 +212,7 @@
 	"category": "B",
 	"name": "BABYJOY",
 	"p": 68,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/babyjoy.png",
+	"logo": "",
 	"url": "https://22733.live.streamtheworld.com/SC009_SO1AAC"
   },
   {	
@@ -221,7 +221,7 @@
 	"category": "R",
 	"name": "Radyo Ege",
 	"p": 69,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/radyoegeust.png",
+	"logo": "",
 	"url": "https://istek.ozelip.com/radyoege"
   },
   {	
@@ -230,7 +230,7 @@
 	"category": "R",
 	"name": "Radyo Odtu ROCK",
 	"p": 72,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_ODTÜ_logo.png",
+	"logo": "",
 	"url": "https://stream3.radyoodtu.com.tr:8000/rock"
   },
   {	
@@ -239,7 +239,7 @@
 	"category": "R",
 	"name": "Radyo Odtu CANLI",
 	"p": 73,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_ODTÜ_logo.png",
+	"logo": "",
 	"url": "https://stream3.radyoodtu.com.tr:8000/canli"
   },
   {	
@@ -248,7 +248,7 @@
 	"category": "R",
 	"name": "Radyo Odtu EASY",
 	"p": 74,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_ODTÜ_logo.png",
+	"logo": "",
 	"url": "https://stream3.radyoodtu.com.tr:8000/easy"
   },
 {	
@@ -257,7 +257,7 @@
 	"category": "A",
 	"name": "Avrasya Türk",
 	"p": 74,
-	"logo": "https://www.canliradyodinle.fm/wp-content/uploads/radyo-avrasya-turk.jpg",
+	"logo": "",
 	"url": "https://sslyayin.netyayin.net:10909/;/;stream.mp3"
   },
   {	
@@ -266,7 +266,7 @@
 	"category": "R",
 	"name": "Radyo Odtu KARIŞIKKASET",
 	"p": 75,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_ODTÜ_logo.png",
+	"logo": "",
 	"url": "https://stream3.radyoodtu.com.tr:8000/karisikkaset"
   },
   {	
@@ -275,7 +275,7 @@
 	"category": "R",
 	"name": "Radyo Odtu KIRKHARAMİLER",
 	"p": 76,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_ODTÜ_logo.png",
+	"logo": "",
 	"url": "https://stream3.radyoodtu.com.tr:8000/40_haramiler"
   },
   {	
@@ -284,7 +284,7 @@
 	"category": "R",
 	"name": "Radyo Odtu HİPHOP",
 	"p": 77,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_ODTÜ_logo.png",
+	"logo": "",
 	"url": "https://stream3.radyoodtu.com.tr:8000/hiphop"
   },
   {	
@@ -293,7 +293,7 @@
 	"category": "S",
 	"name": "SÜPER FM",
 	"p": 78,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/superfm.png",
+	"logo": "",
 	"url": "https://28553.live.streamtheworld.com/SUPER_FM128AAC"
   },
   {	
@@ -302,7 +302,7 @@
 	"category": "R",
 	"name": "Radyo Trio CANLI",
 	"p": 79,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/triopng.png",
+	"logo": "",
 	"url": "https://radyotrio.radyotvonline.net/radyotrio"
   },
   {	
@@ -311,7 +311,7 @@
 	"name": "Radyo Turkuvaz",
 	"category": "R",
 	"p": 83,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/radyo-turkuvaz.png",
+	"logo": "",
 	"url": "https://trkvz-radyolar.ercdn.net/radyoturkuvaz/playlist.m3u8"
   },
   {	
@@ -320,7 +320,7 @@
 	"category": "R",
 	"name": "Radyo Turkuvaz ROMANTİK",
 	"p": 84,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/turkuvaz-romantik.png",
+	"logo": "",
 	"url": "https://trkvz-radyolar.ercdn.net/turkuvazromantik/chunklist.m3u8"
   },
   {	
@@ -338,7 +338,7 @@
 	"category": "R",
 	"name": "Radyo Turkuvaz NOSTALJİ",
 	"p": 85,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/turkuvaz-nostalji.png",
+	"logo": "",
 	"url": "https://trkvz-radyolar.ercdn.net/turkuvaznostalji/chunklist.m3u8"
   },
   {	
@@ -347,7 +347,7 @@
 	"category": "R",
 	"name": "Radyo Turkuvaz EFSANE",
 	"p": 86,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/turkuvaz-efsane.png",
+	"logo": "",
 	"url": "https://trkvz-radyolar.ercdn.net/turkuvazefsane/chunklist.m3u8"
   },
   {	
@@ -356,7 +356,7 @@
 	"category": "R",
 	"name": "Radyo Turkuvaz ANADOLU",
 	"p": 87,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/turkuvaz-anadolu.png",
+	"logo": "",
 	"url": "https://trkvz-radyolar.ercdn.net/turkuvazanadolu/chunklist.m3u8"
   },
   {		
@@ -365,7 +365,7 @@
 	"category": "S",
 	"name": "Slow Türk",
 	"p": 90,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/slowturk.png",
+	"logo": "",
 	"url": "https://radyo.duhnet.tv/ak_dtvh_slowturk"
   },
   {	
@@ -374,7 +374,7 @@
 	"id": "TRT Fm",
 	"name": "TRT Fm",
 	"p": 92,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/trtfmpng.png",
+	"logo": "",
 	"url": "https://trt.radyotvonline.net/trtfm"
   },
   {	
@@ -383,7 +383,7 @@
 	"category": "K",
 	"name": "KAFA RADYO",
 	"p": 93,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/kafa radyo.png",
+	"logo": "",
 	"url": "https://moondigitaledge2.radyotvonline.net/kafaradyo/playlist.m3u8"
   },
 {	
@@ -392,7 +392,7 @@
 	"category": "P",
 	"name": "Power Plus+",
 	"p": 95,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power plus.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerplus/abr/playlist.m3u8"
   },
   {	
@@ -401,7 +401,7 @@
 	"category": "P",
 	"name": "Power Love",
 	"p": 96,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power love.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerlove/abr/playlist.m3u8"
   },
   {	
@@ -410,7 +410,7 @@
 	"category": "P",
 	"name": "Power Smooth",
 	"p": 97,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power smooth.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powersmooth/abr/playlist.m3u8"
   },
   {	
@@ -419,7 +419,7 @@
 	"category": "P",
 	"name": "Power XL",
 	"p": 98,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power xl.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerextralounge/abr/playlist.m3u8"
   },
   {	
@@ -428,7 +428,7 @@
 	"category": "P",
 	"name": "Power Earth",
 	"p": 99,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power earth.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerearth/abr/playlist.m3u8"
   },
   {	
@@ -437,7 +437,7 @@
 	"category": "P",
 	"name": "Power Deep",
 	"p": 100,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power deep.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerdeep/abr/playlist.m3u8"
   },
   {	
@@ -446,7 +446,7 @@
 	"category": "P",
 	"name": "PowerTürk Rap",
 	"p": 101,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/powerturk rap.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerturkrap/abr/playlist.m3u8"
   },
   {	
@@ -455,7 +455,7 @@
 	"category": "P",
 	"name": "PowerTürk Akustik",
 	"p": 102,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/powerturk akustik.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerturkakustik/abr/playlist.m3u8"
   },
   {	
@@ -464,7 +464,7 @@
 	"category": "P",
 	"name": "PowerTürk Taptaze",
 	"p": 103,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/powerturk taptazr.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerturktaptaze/abr/playlist.m3u8"
   },
   {	
@@ -473,7 +473,7 @@
 	"category": "P",
 	"name": "PowerTürk Dans",
 	"p": 104,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/powerturk dans.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerturkdans/abr/playlist.m3u8"
   },
   {	
@@ -482,7 +482,7 @@
 	"category": "P",
 	"name": "Power R&B Hip Hop",
 	"p": 105,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power hiphop.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powerrbhiphop/abr/playlist.m3u8"
   },
   {	
@@ -491,7 +491,7 @@
 	"category": "P",
 	"name": "Power Smooth Jazz",
 	"p": 105,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/power jaz.png",
+	"logo": "",
 	"url": "https://listen.powerapp.com.tr/powersmoothjazz/abr/playlist.m3u8"
   },
   {	
@@ -500,7 +500,7 @@
 	"category": "K",
 	"name": "Kiss Fm",
 	"p": 106,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/kıss fmpng.png",
+	"logo": "",
 	"url": "https://kiss.radyotvonline.net/kissfm"
   },
   {	
@@ -509,7 +509,7 @@
 	"category": "P",
 	"name": "Pal Station",
 	"p": 107,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/pall station.png",
+	"logo": "",
 	"url": "https://moondigitaledge.radyotvonline.net/palstation/playlist.m3u8"
   },
   {	
@@ -518,7 +518,7 @@
 	"category": "R",
 	"name": "Radyo Fenomen",
 	"p": 108,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyo_Fenomen_logosu.png",
+	"logo": "",
 	"url": "https://live.radyofenomen.com/fenomen/abr/playlist.m3u8"
   },
   {	
@@ -527,7 +527,7 @@
 	"category": "R",
 	"name": "Radyo Viva",
 	"p": 109,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/viva.png",
+	"logo": "",
 	"url": "https://radyoviva.radyotvonline.net/radyovivaaac"
   },
   {	
@@ -536,7 +536,7 @@
 	"category": "T",
 	"name": "TRT Radyo 1",
 	"p": 110,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/trt radyo 1.png",
+	"logo": "",
 	"url": "https://rd-trtradyo1.medya.trt.com.tr/master_128.m3u8"
   },
   {	
@@ -545,7 +545,7 @@
 	"category": "N",
 	"name": "Number1 Türk Damar",
 	"p": 111,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/N1_TR_Damar.png",
+	"logo": "",
 	"url": "https://eustr75.mediatriple.net/Number1Media/20_Number1_Turk_Damar.stream/playlist.m3u8"
   },
   {	
@@ -554,7 +554,7 @@
 	"category": "N",
 	"name": "Number1 Türk Slow",
 	"p": 112,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/N1_TRslow.png",
+	"logo": "",
 	"url": "https://eustr75.mediatriple.net/Number1Media/03_Number1_Turk_Slow.stream/playlist.m3u8"
   },
   {	
@@ -563,7 +563,7 @@
 	"category": "N",
 	"name": "Number1 Türk 90’lar",
 	"p": 113,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/N1_90lar1.png",
+	"logo": "",
 	"url": "https://eustr75.mediatriple.net/Number1Media/04_Number1_Turk_90.stream/playlist.m3u8"
   },
   {	
@@ -572,7 +572,7 @@
 	"category": "Ü",
 	"name": "Üsküdar Musiki Cemiyeti Radyosu",
 	"p": 114,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/umcradyo.png",
+	"logo": "",
 	"url": "https://n10101m.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e392765b48_1/playlist.m3u8"
   },
 
@@ -582,7 +582,7 @@
 	"category": "N",
 	"name": "Number1 Classic",
 	"p": 116,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/N1_Classic.png",
+	"logo": "",
 	"url": "https://n10101m.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e34bfc5042_1/playlist.m3u8"
 },
 	{	
@@ -591,7 +591,7 @@
 	"category": "R",
 	"name": "Radyo Spor",
 	"p": 117,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Radyospor.png",
+	"logo": "",
 	"url": "http://moondigitaledge.radyotvonline.net/radyospor/playlist.m3u8"
 },
 	{	
@@ -600,7 +600,7 @@
 	"category": "L",
 	"name": "Lig Radyo",
 	"p": 117,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/Lig_Radyo.png",
+	"logo": "",
 	"url": "https://ligradyo.radyotvonline.net/ligradyo"
 },
 	{	
@@ -609,7 +609,7 @@
 	"category": "R",
 	"name": "Radyo Gol",
 	"p": 117,
-	"logo": "https://raw.githubusercontent.com/Oktay2617/gunestv/main/Fm_Logo/radyogol.png",
+	"logo": "",
 	"url": "https://edge1.radyotvonline.net/shoutcast/play/radyogol"
 }
   ]
