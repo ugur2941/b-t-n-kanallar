@@ -45,7 +45,9 @@ https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
 https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="ilketv.tr" tvg-logo="https://ilketv.com.tr/wp-content/uploads/2024/06/logo.png" ,İlke TV
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
-#EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv a.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv a
+#EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv HD .tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv HD
+https://kool.ws/kool-iptv/play/24669057008c1d07812ce0
+#EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv SD a.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv SD a
 https://kool.ws/kool-iptv/play/1098172953a40c7864dfeb
 #EXTINF:-1 group-title="HABER" tvg-id="Haber61.tr" tvg-logo="https://cdn.technettv.com/channel/29520/logo_256_1733832303.jpg" ,Haber 61
 https://cdn1-haber61tv.yayin.com.tr/haber61tv/haber61tv/playlist.m3u8
