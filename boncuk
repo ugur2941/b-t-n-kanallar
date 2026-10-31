@@ -101,6 +101,8 @@ https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="MİNİKA GO.tr" tvg-logo="https://cdn.technettv.com/channel/33776/logo_256.png" ,Minika GO
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
+#EXTINF:-1 group-title="ÇOCUK" tvg-id="spacetoongo.tr" tvg-logo="https://img.gercekgundem.com/rcman/Cw820h461q95gc/storage/files/images/2025/06/16/turkiyenin-ilk-galaktik-cocuk-kanali-spacetoon-yayinda-mqvg.jpg" ,spacetoongo
+https://live-tr-next.spacetoongo.com/ST_TR_NEXT/hls/h7qefeiwfbjn1.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="MİNİKA ÇOCUK.tr" tvg-logo="https://www.canlitv.me/poster/minika-cocuk.png" ,Minika Cocuk
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
 #EXTINF:-1 group-title="ÇOCUK" tvg-id="Zarok Tv.tr" tvg-logo="https://sadececocuk.org/wp-content/uploads/2019/06/intrologo.png" ,Zarok Tv
