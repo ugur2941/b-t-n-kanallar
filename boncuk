@@ -61,6 +61,8 @@ https://trt.daioncdn.net/trtspor/master.m3u8?app=web
 https://ekoltv-live.ercdn.net/ekolsport/ekolsport_1080p.m3u8?autoplay=1
 #EXTINF:-1 group-title="SPOR" tvg-id="TraceSports.tr" tvg-logo="https://www.campaignasia.com/media/CAS/TraceSports.jpg" ,Trace Sports
 https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="SPOR" tvg-id="FBTV.tr" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kG04jzq7wxoRvUmeqFO1zzt6CDop8OltgqJ9E9PXj1PuU=s900-c-k-c0x00ffffff-no-rj" ,FBTV
+https://fbtv.fenerbahce.org/fenerbahcetv.stream/playlist.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="TV 100.tr" tvg-logo="https://cdn.technettv.com/channel/22926/logo_256_1707397437.png" ,TV 100
 https://ensonhaber-live.ercdn.net/tv100/tv100.m3u8
 #EXTINF:-1 group-title="ULUSAL" tvg-id="TLC.tr" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/0de9fa25-120c-4b52-b460-e078531f6988.png" ,TLC
