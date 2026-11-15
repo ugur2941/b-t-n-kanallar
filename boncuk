@@ -49,7 +49,7 @@ https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 #EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv HD .tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv HD
 https://xbyte.alwaysdata.net/yt/sozcutelevizyonu.m3u8
-#EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv HD .tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv HD
+#EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv HD b .tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv HD b
 https://kool.ws/kool-iptv/play/24669057008c1d07812ce0
 #EXTINF:-1 group-title="HABER" tvg-id="Sözcü Tv SD a.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xNiEclsHAl2MrC9kEWHsymQyX10KnbSYKw&s" ,Sözcü Tv SD a
 https://kool.ws/kool-iptv/play/1098172953a40c7864dfeb
